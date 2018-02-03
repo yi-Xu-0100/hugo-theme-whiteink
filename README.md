@@ -1,1 +1,1 @@
-"# hugo-theme-wihteink" 
+"# hugo-theme-whiteink" 
