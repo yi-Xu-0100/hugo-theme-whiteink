@@ -1,0 +1,32 @@
+<aside class="sidebar">
+    <div id="search">
+        <div id="search-key">
+            <i class="icon-search icon-large"></i>
+            <form action="//www.google.com/search" target="_blank" class="search-form">
+                <input type="text" name="q" maxlength="20" placeholder="搜索...">
+                <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
+            </form>
+        </div>
+    </div>
+        <div id="avatar">
+            <img src={{"/img/avatar.jpg" | relURL }} alt="avatar">
+            <div class="motto">
+                <span>品水如酒，愚醉……</span>
+            </div>
+        </div>
+        <div id="categories">
+            <div id="category-title">文章分类</div>
+            {{ range .Site.Menus.main }}
+            <li class="category">
+                <a href={{ .URL }}>{{ .Name }}</a>
+                {{ if .HasChildren }}
+                    {{ range .Children }}
+                        <ol class="subcategory">
+                            <a href={{ .URL }}>{{ .Name }}</a>
+                        </ol>
+                    {{ end }}
+                {{ end }}
+            </li>
+            {{ end }}
+      </div>
+</aside>

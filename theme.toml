@@ -11,7 +11,7 @@ features = []
 min_version = "0.34"
 
 [author]
-  name = ""
+  name = "yi_Xu"
   homepage = ""
 
 # If porting an existing theme

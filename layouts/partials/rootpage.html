@@ -1,0 +1,19 @@
+<section class="rootpage">
+    {{ range (where .Data.Pages "Section" "programming").ByDate }}
+    <section class="posts">
+        <article class="post-card">
+            <div class="card-title">
+                <a class="post-title-link" href={{ .URL }}>{{ .Title }}</a>
+            </div>
+            <div class="post-content">
+                {{ .Summary }}
+            </div>
+            
+            <div class="card-meta">
+                <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" .Date }}></time>{{ dateFormat "2006-01-02" .Date }}</span>
+                <a class="read-more" href={{ .URL }}> 阅读全文 </a>
+            </div>
+        </article>
+    </section>
+    {{ end }}
+</section>

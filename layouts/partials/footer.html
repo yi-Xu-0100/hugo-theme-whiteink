@@ -1,0 +1,20 @@
+<footer>
+    <a  {{ if isset .Site.Params "email" }}
+            href="mailto:{{ .Site.Params.Email }}"
+            target = "_blank"
+        {{ else }}
+            href={{ .Site.BaseURL }}
+            target = "_self"
+        {{ end }}
+        target = "_self" rel="nofollow">
+            &copy; 2014 - {{ now.Format "2006" }} {{ .Site.Copyright }}
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    {{ if isset .Site.Params "record" }}
+        <i class="icon-legal"></i>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">{{ .Site.Params.Record }}</a>
+    {{ end }}
+</footer>

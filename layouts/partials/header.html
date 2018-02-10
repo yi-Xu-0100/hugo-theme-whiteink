@@ -1,0 +1,17 @@
+<header>
+    <div class="header">
+        <a id = "site-title" href= {{ .Site.BaseURL }} >
+            <span>{{ .Site.Title }}</span>
+        </a>
+        <ul id="header-menu">
+            {{ $current_URL := .URL }}
+            {{ range .Site.Menus.home}}
+                <li>
+                    <a href= {{ .URL }} {{ if eq .URL $current_URL }} class="active" {{ end }} >
+                        {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+</header>

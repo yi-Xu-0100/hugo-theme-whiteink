@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
-<body>
-  {{ range first 10 .Data.Pages }}
-    <h1>{{ .Title }}</h1>
-  {{ end }}
-</body>
+<html lang = "{{.Site.LanguageCode}}">
+    {{ partial "head.html" . }}
+    <body>
+        {{ partial "mobile-navbar.html" . }}
+        {{ partial "header.html" . }}
+        <section class = "main">
+            {{ partial "rootpage.html" . }}
+            {{ partial "sidebar.html" . }}
+        </section>
+        {{ partial "footer.html" . }}
+    </body>
 </html>
+
