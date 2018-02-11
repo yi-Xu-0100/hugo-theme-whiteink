@@ -1,5 +1,5 @@
-<section class="rootpage">
-    {{ range (where .Data.Pages "Section" "programming").ByDate }}
+<section id="rootpage">
+    {{ range (where .Data.Pages "Section" "programming" ).ByDate }}
     <section class="posts">
         <article class="post-card">
             <div class="card-title">
@@ -16,4 +16,11 @@
         </article>
     </section>
     {{ end }}
+    <div class="root-pagination">
+        {{ range  first 1 (after 1 .Site.Menus.home) }}
+            <a class="next-page" href= {{ .URL }}>
+                下一页
+            </a>
+        {{ end }}
+    </div>
 </section>

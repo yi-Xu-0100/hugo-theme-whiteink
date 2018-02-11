@@ -1,0 +1,8 @@
+<aside class="sidebar">
+    <div id="post-menu">
+        <h1 id="toc-title">目录</h1>
+    {{ if ne .Params.toc "false" }}
+        <div id="toc">{{ .TableOfContents }}</div>
+    {{ end }}
+    </div>
+</aside>

@@ -22,12 +22,21 @@
     padding: 0;
 }
 
-#header-menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 18px;
-}
-
 #header-menu .active {
     color: #007fff;
+}
+
+@media (min-width: 650px){
+    #header-menu li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 18px;
+    }
+}
+@media (max-width: 649px){
+    #header-menu li {
+        list-style: none;
+        display: inline-block;
+        padding: 0 0 0 5px;
+    }
 }

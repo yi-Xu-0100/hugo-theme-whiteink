@@ -1,7 +1,22 @@
-.rootpage {
-    width: 70%;
-    flex-basis: 70%;
-    align-self: flex-start;
+@media (min-width: 650px){
+    #rootpage {
+        width: 61.8%;
+        flex-basis: 61.8%;
+    }
+
+    .posts {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 649px){
+        #rootpage {
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+#rootpage {
     overflow: hidden;
     margin: 0 auto;
 }
@@ -9,7 +24,6 @@
 .posts {
     background: #fff;
     margin-top: 24px;
-    margin-right: 20px;
     padding: 20px;
     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.05);
 }
@@ -33,6 +47,6 @@
 }
 
 .read-more:hover {
-    background: #000;
+    background: #007fff;
     color: #fff;
 }

@@ -1,7 +1,12 @@
 .sidebar {
+    width: 38.2%;
+    flex-basis: 38.2%;
+    margin-top: 24px;
+}
+
+#roll {
+    top: 15px;
     position: sticky;
-    flex-basis: 30%;
-    margin-top: 1.5em;
 }
 
 #search {
@@ -78,3 +83,10 @@
 .category {
     list-style: none;
 }
+
+@media (max-width: 649px){
+    .sidebar {
+        display: none;
+    }
+}
+

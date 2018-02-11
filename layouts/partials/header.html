@@ -4,10 +4,10 @@
             <span>{{ .Site.Title }}</span>
         </a>
         <ul id="header-menu">
-            {{ $current_URL := .URL }}
-            {{ range .Site.Menus.home}}
+            {{ $currentURL := .URL }}
+            {{ range .Site.Menus.home }}
                 <li>
-                    <a href= {{ .URL }} {{ if eq .URL $current_URL }} class="active" {{ end }} >
+                    <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>
                         {{ .Name }}
                     </a>
                 </li>
