@@ -1,0 +1,27 @@
+<article id="post">
+    <div id="post-title">
+        <h1>归 档</h1>
+    </div>
+    <div id="categories">
+        {{ range .Site.Menus.main }}
+        <li class="category">
+            <a href={{ .URL }}>{{ .Name }}</a>
+            {{ if .HasChildren }}
+                {{ range .Children }}
+                    <ol class="subcategory">
+                        <a href={{ .URL }}>{{ .Name }}</a>
+                    </ol>
+                {{ end }}
+            {{ end }}
+        </li>
+        {{ end }}
+    </div>
+    <div class="post-pagination">
+        <a class="prev-page" href={{ "/" |relURL }} title="首页">
+            上一页
+        </a>
+        <a class="next-page" href= {{ "about/" | relURL }} title="关于">
+            下一页
+        </a>
+    </div>
+</article>

@@ -5,8 +5,36 @@
         {{ partial "mobile-navbar.html" . }}
         {{ partial "header.html" . }}
         <section class="main">
-            {{ partial "post.html" . }}
-            {{ partial "menu.html" . }}
+            {{ partial "main.html" . }}
+            {{ if and (isset .Params "toc") (.Params.toc) }}
+                {{ partial "menu.html" . }}
+            {{else if and (isset .Params "toc") (ne .Params.toc "true") }}
+                <style type="text/css">
+                    #post {
+                        max-width: 960px;
+                        width: 100%;
+                        flex-basis: 100%;
+                        margin: 24px 0 auto;
+                    }
+                    .main {
+                        max-width: 960px;
+                    }
+                </style>
+            {{ else if and (isset .Site.Params "toc") (.Site.Params.toc) }}
+                {{ partial "menu.html" . }}
+            {{ else }}
+                <style type="text/css">
+                    #post {
+                        max-width: 960px;
+                        width: 100%;
+                        flex-basis: 100%;
+                        margin: 24px 0 auto;
+                    }
+                    .main {
+                        max-width: 960px;
+                    }
+                </style>
+            {{ end }}
         </section>
         {{ partial "footer.html" . }}
     </body>

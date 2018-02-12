@@ -6,11 +6,15 @@
         {{ .Content }}
     </div>
     <div class="post-pagination">
-        <a class="prev-page" href={{ .Prev.URL }}>
+        {{ with .Prev }}
+        <a class="prev-page" href={{ .URL | relURL }}>
             上一页
         </a>
-        <a class="next-page" href= {{ .Next.URL }}>
+        {{ end }}
+        {{ with .Next }}
+        <a class="next-page" href= {{ .URL | relURL }}>
             下一页
         </a>
+        {{ end }}
     </div>
 </article>

@@ -16,11 +16,11 @@
         </article>
     </section>
     {{ end }}
-    <div class="root-pagination">
-        {{ range  first 1 (after 1 .Site.Menus.home) }}
-            <a class="next-page" href= {{ .URL }}>
+    {{ range  first 1 (after 1 .Site.Menus.home) }}
+        <div class="root-pagination">
+            <a class="next-page" href= {{ .URL }} title="归档">
                 下一页
             </a>
-        {{ end }}
-    </div>
+        </div>
+    {{ end }}
 </section>
