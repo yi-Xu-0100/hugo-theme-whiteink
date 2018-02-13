@@ -7,7 +7,7 @@
         <section class="main">
             {{ partial "main.html" . }}
             {{ if and (isset .Params "toc") (.Params.toc) }}
-                {{ partial "menu.html" . }}
+                {{ partial "toc.html" . }}
             {{else if and (isset .Params "toc") (ne .Params.toc "true") }}
                 <style type="text/css">
                     #post {
@@ -21,7 +21,7 @@
                     }
                 </style>
             {{ else if and (isset .Site.Params "toc") (.Site.Params.toc) }}
-                {{ partial "menu.html" . }}
+                {{ partial "toc.html" . }}
             {{ else }}
                 <style type="text/css">
                     #post {

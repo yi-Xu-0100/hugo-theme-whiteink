@@ -7,12 +7,12 @@
     </div>
     <div class="post-pagination">
         {{ with .Prev }}
-        <a class="prev-page" href={{ .URL | relURL }}>
+        <a class="prev-page" href={{ .URL }}>
             上一页
         </a>
         {{ end }}
         {{ with .Next }}
-        <a class="next-page" href= {{ .URL | relURL }}>
+        <a class="next-page" href= {{ .URL }}>
             下一页
         </a>
         {{ end }}
