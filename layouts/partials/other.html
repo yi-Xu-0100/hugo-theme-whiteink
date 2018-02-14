@@ -1,0 +1,23 @@
+<section id="sectionpage">
+    <article class="introduction">
+        <div id="section-title">
+            <h1>{{.Title}}</h1>
+        </div>
+        {{.Content}}
+    </article>
+    <ul>
+    {{ range .Data.Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
+
+    {{ range  first 1 (after 1 .Site.Menus.home) }}
+        <div class="root-pagination">
+            <a class="next-page" href= {{ .URL }} title="归档">
+                下一页
+            </a>
+        </div>
+    {{ end }}
+</section>
