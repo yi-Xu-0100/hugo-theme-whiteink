@@ -1,34 +1,32 @@
 <aside class="sidebar">
-    <div id="roll">
-        <div id="search">
-            <div id="search-key">
-                <i class="icon-search icon-large"></i>
-                <form action="//www.google.com/search" target="_blank" class="search-form">
-                    <input type="text" name="q" maxlength="20" placeholder="搜索...">
-                    <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
-                </form>
+    <div id="search" class="card">
+        <div id="search-key">
+            <i class="icon-search icon-large"></i>
+            <form action="//www.google.com/search" target="_blank" class="search-form">
+                <input type="text" name="q" maxlength="20" placeholder="搜索...">
+                <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
+            </form>
+        </div>
+    </div>
+        <div id="avatar" class="card">
+            <img src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+            <div class="motto">
+                <span>{{ .Site.Params.motto }}</span>
             </div>
         </div>
-            <div id="avatar">
-                <img src={{"/img/avatar.jpg" | relURL }} alt="avatar">
-                <div class="motto">
-                    <span>品水如酒，愚醉……</span>
-                </div>
-            </div>
-            <div id="categories">
-                <div id="category-title">文章分类</div>
-                {{ range .Site.Menus.main }}
-                <li class="category">
-                    <a href={{ .URL }}>{{ .Name }}</a>
-                    {{ if .HasChildren }}
-                        {{ range .Children }}
-                            <ol class="subcategory">
-                                <a href={{ .URL }}>{{ .Name }}</a>
-                            </ol>
-                        {{ end }}
+        <div id="categories" class="card">
+            <div id="category-title">文章分类</div>
+            {{ range .Site.Menus.main }}
+            <li class="category">
+                <a href={{ .URL }}>{{ .Name }}</a>
+                {{ if .HasChildren }}
+                    {{ range .Children }}
+                        <ol class="subcategory">
+                            <a href={{ .URL }}>{{ .Name }}</a>
+                        </ol>
                     {{ end }}
-                </li>
                 {{ end }}
-          </div>
+            </li>
+            {{ end }}
       </div>
 </aside>

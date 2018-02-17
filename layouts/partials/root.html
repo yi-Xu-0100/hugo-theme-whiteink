@@ -1,0 +1,20 @@
+{{ range (where .Data.Pages "Section" "programming" ).ByDate }}
+<article class="card posts">
+    <a class="post-title-link" href={{ .URL }}><h1 class="card-title">{{ .Title }}</h1></a>
+    <div class="post-content">
+        {{ .Summary }}
+    </div>
+    
+    <div class="card-meta">
+        <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" .Date }}></time>{{ dateFormat "2006-01-02" .Date }}</span>
+        <a class="button read-more" href={{ .URL }}> 阅读全文 </a>
+    </div>
+</article>
+{{ end }}
+{{ range  first 1 (after 1 .Site.Menus.home) }}
+    <div class="card root-pagination">
+        <a class="button next-page" href= {{ .URL }} title="归档">
+            <span >下一页</span>
+        </a>
+    </div>
+{{ end }}

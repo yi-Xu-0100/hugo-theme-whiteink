@@ -1,17 +1,15 @@
 <header>
-    <div class="header">
-        <a id = "site-title" href= {{ .Site.BaseURL }} >
-            <span>{{ .Site.Title }}</span>
-        </a>
-        <ul id="header-menu">
-            {{ $currentURL := .URL }}
-            {{ range .Site.Menus.home }}
-                <li>
-                    <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>
-                        {{ .Name }}
-                    </a>
-                </li>
-            {{ end }}
-        </ul>
-    </div>
+    <a id = "site-title" href= {{ .Site.BaseURL }} >
+        <span>{{ .Site.Title }}</span>
+    </a>
+    <ul id="header-menu">
+        {{ $currentURL := .URL }}
+        {{ range .Site.Menus.home }}
+            <li>
+                <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>
+                    {{ .Name }}
+                </a>
+            </li>
+        {{ end }}
+    </ul>
 </header>

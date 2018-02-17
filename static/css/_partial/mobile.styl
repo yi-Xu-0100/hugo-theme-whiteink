@@ -1,0 +1,30 @@
+#mobile-avatar {
+    display: none;
+}
+
+#mobile-navbar {
+    display: none;
+}
+
+@media (max-width: 450px){
+    #mobile-avatar {
+        display: block;
+    }
+    #mobile-avatar img {
+        width: 36px;
+        position: absolute;
+        border-radius: 30px;
+        top: calc((60px - 36px) /2);
+        left: 20px;
+        
+    }
+    #mobile-navbar {
+        display: block;
+        width: 36px;
+        position: absolute;
+        border-radius: 30px;
+        top: calc((60px - 36px) /2);
+        right: 20px;
+        list-style: center;
+    }
+}
