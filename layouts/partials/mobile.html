@@ -1,0 +1,29 @@
+<div id="mobile-avatar">
+    <a href={{ "about" | relURL }}>
+        <img class="animated zoomIn" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+    </a>
+</div>
+<div id="mobile-navbar">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="jquery-menu">
+    <div id="mobile-search">
+        <i class="icon-search icon-large"></i>
+        <form action="//www.google.com/search" target="_blank" class="search-form">
+            <input type="text" name="q" maxlength="20" placeholder="搜索...">
+            <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
+        </form>
+    </div>
+    <ul id="mobile-menu">
+        {{ $currentURL := .URL }}
+        {{ range .Site.Menus.home }}
+            <li>
+                <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>
+                    {{ .Name }}
+                </a>
+            </li>
+        {{ end }}
+    {{ partial "mobile-toc.html" . }}
+</div>

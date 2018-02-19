@@ -9,7 +9,9 @@
         </div>
     </div>
         <div id="avatar" class="card">
-            <img src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+            <a href={{ "about" | relURL }}>
+                <img class="animated zoomIn" id="avatar-img" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+            </a>
             <div class="motto">
                 <span>{{ .Site.Params.motto }}</span>
             </div>

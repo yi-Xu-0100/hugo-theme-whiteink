@@ -11,14 +11,11 @@ header {
     border-bottom: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #909090;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 16px;
-    display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    font-size: 1.5em;
+    display: flex;
 }
 
 #container {
@@ -48,6 +45,7 @@ p {
 * {
     box-sizing: border-box;
 }
+
 #main {
     max-width: 690px;
     
@@ -61,8 +59,10 @@ p {
 @import "_partial/sidebar";
 @import "_partial/root";
 @import "_partial/footer";
-@import "_partial/font-awesome";
 @import "_partial/pagination";
 @import "_partial/menu";
 @import "_partial/post";
 @import "_partial/mobile";
+
+@import "_partial/font-awesome";
+@import "_partial/animate";
