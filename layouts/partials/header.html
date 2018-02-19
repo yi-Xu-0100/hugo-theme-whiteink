@@ -4,6 +4,9 @@
             <span>{{ .Site.Title }}</span>
         </a>
         <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
             {{ $currentURL := .URL }}
             {{ range .Site.Menus.home }}
                 <li>

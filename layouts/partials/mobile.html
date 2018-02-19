@@ -1,14 +1,19 @@
-<div id="mobile-avatar">
+<div>
     <a href={{ "about" | relURL }}>
-        <img class="animated zoomIn" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
     </a>
 </div>
-<div id="mobile-navbar">
+<div id="mobile-navbar" class="mobile">
     <div class=" button mobile-navbar">
         <span>菜单</span>
     </div>
 </div>
-<div id="jquery-menu">
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
     <div id="mobile-search">
         <i class="icon-search icon-large"></i>
         <form action="//www.google.com/search" target="_blank" class="search-form">

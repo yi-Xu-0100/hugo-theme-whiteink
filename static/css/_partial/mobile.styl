@@ -1,4 +1,4 @@
-#mobile-avatar,#mobile-navbar,#mobile-toc,#jquery-menu {
+.mobile, #gotop.mobile.headroom.headroom--top{
     display: none;//
 }
 
@@ -6,30 +6,45 @@
     background-color: #007fff;
 }
 
-.mobile-title, {
+.mobile-title {
     color: #fff !important;
 }
 
-@media (max-width: 450px){
-    #mobile-avatar {
+@media (max-width: 500px) {
+    #mobile-avatar{
         display: block;
     }
-    #mobile-avatar img {
+    #mobile-avatar {
+        display: block;
         width: 36px;
         position: fixed;
         border-radius: 30px;
-        top: calc((60px - 36px) /2);
+        margin-top: calc((60px - 36px) /2);
+        top: 0;
         left: 20px;
-        z-index: 100;
+        z-index: 120;
+        
+    }
+    #gotop {
+        display: block;
+        position: fixed;
+        border-radius: 30px;
+        margin-top: calc((60px - 36px) /2);
+        top: 0;
+        right: 20px;
+        width: fit-content;
+        z-index: 120;
         
     }
     #mobile-navbar {
         display: block;
         position: absolute;
         border-radius: 30px;
-        top: calc((60px - 36px) /2);
+        margin-top: calc((60px - 36px) /2);
+        top: 0;
         right: 20px;
-        list-style: center;
+        width: fit-content;
+        z-index: 130;
     }
 }
 
@@ -46,16 +61,16 @@
     padding: 0;
     list-style: none;
     width: 100%;
-    line-height: 1.8em;
 }
 #jquery-menu ul li {
     width: 100%;
     display: block;
 }
 
-#jquery-menu ul li a {
+#mobile-search, #jquery-menu ul li a, #mobile-toc-title{
     width: 100%;
-    float: left;
+    float: right;
+    line-height: 1.8em;
 }
 
 #jquery-menu ul li:hover>a {
@@ -105,26 +120,21 @@
     width: 100%;
 }
 
-.headroom--not-top {
+.headroom--unpinned {
+    top: -100px !important;
+    transition: all .2s ease-in-out;
+}
+.headroom--pinned {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     transition: all .2s ease-in-out;
     z-index: 99;
-}
-.headroom--unpinned {
-    top: -100px;
-}
-.headroom--pinned {
-    top: 0;
 }
 .headroom--bottom {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0 !important;
     right: 0;
     transition: all .2s ease-in-out;
     z-index: 99;
-
 }
