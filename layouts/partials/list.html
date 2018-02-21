@@ -1,36 +1,33 @@
-<section id="sectionpage">
-    <article class="introduction">
-        <div id="section-title">
-            <h1>{{.Title}}</h1>
-        </div>
+<article id="introduction">
+    <div id="section-title" class="card">
+        <h1>{{.Title}}</h1>
         {{.Content}}
-    </article>
-        {{ $currentURL := .URL }}
-        {{ range .Site.Menus.main }}
-            {{ if eq $currentURL .URL }}
-                {{ if .HasChildren }}
-                    <li>
-                        {{ range .Children }}
-                            <ol>
-                                <a href={{ .URL }}>{{ .Name }}</a>
-                            </ol>
-                        {{ end }}
-                    </li>
-                {{ end }}
+    </div>
+</article>
+<div class="card">
+    {{ $currentURL := .URL }}
+    {{ range .Site.Menus.main }}
+        {{ if eq $currentURL .URL }}
+            {{ if .HasChildren }}
+                    {{ range .Children }}
+                        <div class="list">
+                            <a href={{ .URL }}>{{ .Name }}</a>
+                        </div>
+                    {{ end }}
+                </li>
             {{ end }}
         {{ end }}
-    <ul>
+    {{ end }}
     {{ range .Data.Pages }}
-        <li>
-            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-    {{ end }}
-    </ul>
-    {{ range  first 1 (after 1 .Site.Menus.home) }}
-        <div class="root-pagination">
-            <a class="next-page" href= {{ .URL }} title="归档">
-                下一页
-            </a>
-        </div>
-    {{ end }}
-</section>
+    <div class="list">
+        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+    </div>
+{{ end }}
+</div>
+{{ range  first 1 (after 1 .Site.Menus.home) }}
+    <div class="card pagination">
+        <a class="button next-page" href= {{ .URL }} title="归档">
+            下一页
+        </a>
+    </div>
+{{ end }}

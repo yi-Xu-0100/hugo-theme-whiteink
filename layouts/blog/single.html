@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang={{ .Site.LanguageCode }}>
-    {{ partial "head.html" . }}
-    <body>
-        {{ partial "mobile.html" . }}
-        {{ partial "header.html" . }}
-        <section class="main">
-            {{ partial "post.html" . }}
-            {{ partial "toc.html" . }}
-        </section>
-        {{ partial "footer.html" . }}
-    </body>
-</html>
+{{ define "main" }}
+    {{ partial "main.html" . }}
+{{ end }}
+
+{{ define "sidebar" }}
+    {{ partial "sidebar.html" . }}
+    {{ partial "toc.html" . }}
+{{ end }}
