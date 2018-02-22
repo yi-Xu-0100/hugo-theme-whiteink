@@ -1,6 +1,8 @@
-<aside class="sidebar">
-    <div id="post-menu">
-        <h1 id="toc-title">目录</h1>
-        <div id="toc">{{ .TableOfContents }}</div>
-    </div>
-</aside>
+{{ if .TableOfContents }}
+    <aside class="sidebar">
+        <div id="post-menu">
+            <h1 id="toc-title">目录</h1>
+            <div id="toc">{{ .TableOfContents }}</div>
+        </div>
+    </aside>
+{{ end }}

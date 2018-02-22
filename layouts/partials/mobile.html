@@ -24,11 +24,19 @@
     <ul id="mobile-menu">
         {{ $currentURL := .URL }}
         {{ range .Site.Menus.home }}
-            <li>
-                <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>
-                    {{ .Name }}
-                </a>
-            </li>
+            {{ if eq .Name "归档" }}
+                {{ range $.Site.Menus.main }}
+                    <li>
+                        <a href={{ .URL }}>{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            {{ else }}
+                <li>
+                    <a href= {{ .URL }}>
+                        {{ .Name }}
+                    </a>
+                </li>
+            {{ end }}
         {{ end }}
     {{ partial "mobile-toc.html" . }}
 </div>

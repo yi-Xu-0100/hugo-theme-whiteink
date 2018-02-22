@@ -32,35 +32,22 @@ header {
     justify-content: center;
 }
 
-body ul {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover {
-    color: #007fff;
-}
-
-p {
-    margin: 1.5em 0px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 #main {
     width: 100%;
-    max-width: 960px;
+    max-width: 650px;
+}
+@media (max-width:950px) {
+    #sidebar {
+        display: none;
+    }
 }
 
-#sidebar {
-    width: 310px;
+@media (min-width:950px) {
+    #sidebar {
+        width: 310px;
+    }
 }
+
 @import "_partial/components";
 @import "_partial/header";
 @import "_partial/sidebar";
@@ -70,6 +57,8 @@ p {
 @import "_partial/menu";
 @import "_partial/post";
 @import "_partial/mobile";
+@import "_partial/section";
 
 @import "_partial/font-awesome";
 @import "_partial/animate";
+@import "_partial/syntax";
