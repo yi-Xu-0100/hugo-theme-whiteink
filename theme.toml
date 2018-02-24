@@ -5,16 +5,17 @@ name = "WhiteInk"
 license = "MIT"
 licenselink = "https://github.com/yi-Xu-0100/hugo-theme-whiteink/blob/master/LICENSE.md"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://github.com/yi-Xu-0100/hugo-theme-whiteink"
 tags = []
 features = []
 
 [author]
   name = "yi_Xu"
-  homepage = ""
+  homepage = "https://github.com/yi-Xu-0100"
+
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Aath"
+  homepage = "https://github.com/lewis-geek/hexo-theme-Aath"
+  repo = "https://github.com/lewis-geek/hexo-theme-Aath"

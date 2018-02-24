@@ -1,100 +1,27 @@
-archetypeDir =                "archetypes"
-# hostname (and path) to the root, e.g. http://spf13.com/
-baseURL =                     "https:\/\/yi-Xu-0100.github.io\/hugo-theme-whiteink\/"
-# include content marked as draft
-buildDrafts =                 false
-# include content with publishdate in the future
-buildFuture =                 false
-# include content already expired
-buildExpired =                false
-# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
-relativeURLs =                false
-canonifyURLs =                false
-# config file (default is path/config.yaml|json|toml)
-config =                     "config.toml"
-contentDir =                  "content"
-dataDir =                     "data"
-defaultLayout =               "post"
-# Missing translations will default to this content language
-defaultContentLanguage =      "zh-cmn-Hans"
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
-defaultContentLanguageInSubdir =  false
-disableLiveReload =           false
-# Do not inject generator meta tag on homepage
-disableHugoGeneratorInject =  false
-# Allows you to disable all page types and will render nothing related to 'kind';
-# values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
-disableKinds = []
-# Do not make the url/path to lowercase
-disablePathToLower =          false
-# Enable Emoji emoticons support for page content; see emoji-cheat-sheet.com
-enableEmoji =                 true
-# Show a placeholder instead of the default value or an empty string if a translation is missing
-enableMissingTranslationPlaceholders = false
-footnoteAnchorPrefix =        ""
-footnoteReturnLinkContents =  ""
-# google analytics tracking id
-googleAnalytics =             ""
-# if true, auto-detect Chinese/Japanese/Korean Languages in the content. (.Summary and .WordCount can work properly in CJKLanguage)
-hasCJKLanguage =              true
-languageCode =                "zh-cmn-Hans"
-# the length of text to show in a .Summary
-summaryLength =              50
-layoutDir =                   "layouts"
-# Enable Logging
-log =                         false
-# Log File path (if set, logging enabled automatically)
-#logFile =
-# maximum number of items in the RSS feed
-rssLimit =                    15
-# "toml","yaml", or "json"
-metaDataFormat =              "toml"
-newContentEditor =            "C:\\Program Files (x86)\\Notepad++\\notepad++.exe"
-# Don't sync permission mode of files
-noChmod =                     false
-# Don't sync modification time of files
-noTimes =                     false
-# Pagination
-paginate =                    10
-paginatePath =                "page"
-# See "content-management/permalinks"
-#permalinks =
-# Pluralize titles in lists using inflect
-pluralizeListTitles =         true
-# Preserve special characters in taxonomy names ("Gérard Depardieu" vs "Gerard Depardieu")
-preserveTaxonomyNames =       false
-# filesystem path to write files to
-publishDir =                  "public"
-# enables syntax guessing for code fences without specified language
-pygmentsCodeFences = true
-# color-codes for highlighting derived from this style
-pygmentsStyle =               "monokai"
-# true: use pygments-css or false: color-codes directly
-# see "Section Menu for Lazy Bloggers", /templates/menu-templates for more info
-#SectionPagesMenu =
-# default sitemap configuration map
-#sitemap =
-# filesystem path to read static files relative from
-staticDir =                   "static"
-# display memory and timing of different steps of the program
-stepAnalysis =                false
-# theme to use (located by default in /themes/THEMENAME/)
-themesDir =                   "../.."
-theme =                       "WhiteInk"
-title =                       "WhiteInk"
-# if true, use /filename.html instead of /filename/
-uglyURLs =                    false
-# verbose output
-verbose =                     true
-# verbose logging
-verboseLog =                  false
-# watch filesystem for changes and recreate as needed
-watch =                       true
-copyright = "yi_Xu"
-pygmentsOptions = "linenos=table"
+baseURL =                       "https://yi-Xu-0100.github.io/hugo-theme-whiteink/"
+config =                        "config.toml"
+enableEmoji =                   true
+hasCJKLanguage =                true
+languageCode =                  "zh-cmn-Hans"
+summaryLength =                 50
+log =                           false
+rssLimit =                      15
+metaDataFormat =                "toml"
+newContentEditor =              "C:\\Program Files (x86)\\Notepad++\\notepad++.exe"
+themesDir =                     "../../"
+theme =                         "hugo-theme-whiteink"
+title =                         "WhiteInk"
+verbose =                       true
+watch =                         true
+disableFastRender =             true
+pygmentsOptions =               "linenos=table"
 pygmentsCodeFencesGuessSyntax = true
-pygmentsUseClasses            = true
-
+pygmentsUseClasses =            true
+pygmentsCodeFences =            true
+pygmentsStyle =                 "monokai"
+copyright =                     "yi_Xu"
+#sitemap =                      ""
+#googleAnalytics =              ""
 [taxonomies]
     category = "categories"
     tag = "tags"
@@ -148,4 +75,3 @@ pygmentsUseClasses            = true
     image = "img/background.jpg"
     type = "website"
     motto = "品水如酒，愚醉……"
-    toc = true
