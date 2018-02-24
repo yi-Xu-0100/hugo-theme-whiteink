@@ -1,19 +1,15 @@
 # hugo-theme-WhiteInk
 
-## content
+a hugo theme for yixuju, which ports from [hexo-theme-Aath](https://github.com/lewis-geek/hexo-theme-Aath) .
+## exampleSite
 
 Content copy from [yixuju](https://github.com/yi-Xu-0100/yixuju) .
-
-## themes
-
-Demo theme for Hugo.
 
 ## test
 
 ``` git
-git clone -b Demo-website https://github.com/yi-Xu-0100/hugo-theme-whiteink.git
-cd hugo-theme-whiteink/
-git clone -b master https://github.com/yi-Xu-0100/hugo-theme-whiteink.git themes/WhiteInk
+git clone --depth=1 https://github.com/yi-Xu-0100/hugo-theme-whiteink.git
+cd exampleSite/
 hugo server
 ```
 
