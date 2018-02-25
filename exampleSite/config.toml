@@ -25,6 +25,10 @@ copyright =                     "yi_Xu"
 [taxonomies]
     category = "categories"
     tag = "tags"
+    编程体验 = "programming"
+    学习思考 = "studying"
+    其他分享 = "other"
+    生活感悟 = "blog"
 
 [menu]
     [[menu.main]]
