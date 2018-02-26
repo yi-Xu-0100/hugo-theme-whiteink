@@ -26,7 +26,7 @@ def onerror(func, path, exc_info):
 def message(words):
     return "\n*****************************************************************\n\t\t {words}\n*****************************************************************\n".format(words=words)
 
-def deploy():
+def deploy(repo):
     if os.path.exists('./public/'):
         print(message('清空 public 目录！'))
         shutil.rmtree('./public/', onerror=onerror)
@@ -40,10 +40,11 @@ def deploy():
             os.system('git checkout -b gh-pages')
             os.system('git add --all')
             os.system('git commit -m "Rebuild site at {now}"'.format(now=datetime.datetime.now()))
-            os.system('git remote add origin git@github.com:yi-Xu-0100/hugo-theme-whiteink.git')
+            print(message('向远程库（{repo}）推送！'.format(repo=repo))
+            os.system('git remote add origin {repo}'.format(repo=repo)
             os.system('git push -f origin gh-pages:gh-pages')
         except Exception as e:
             print(e)
     
 if __name__ == "__main__":
-    deploy()
+    deploy('git@github.com:yi-Xu-0100/hugo-theme-whiteink.git')

@@ -20,7 +20,6 @@ pygmentsUseClasses =            true
 pygmentsCodeFences =            true
 pygmentsStyle =                 "monokai"
 copyright =                     "yi_Xu"
-#sitemap =                      ""
 #googleAnalytics =              ""
 [taxonomies]
     category = "categories"
