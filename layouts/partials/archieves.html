@@ -1,0 +1,48 @@
+<article id="post" class="card">
+    <div id="post-title">
+        <h1>归 档</h1>
+    </div>
+    <div id="archieve" class="card">
+        {{ range .Site.Menus.main }}
+        <li class="category">
+            <a href={{ .URL }}>{{ .Name }}</a>
+            {{ if .HasChildren }}
+                {{ range .Children }}
+                    <ol class="subcategory">
+                        <a href={{ .URL }}>{{ .Name }}</a>
+                    </ol>
+                {{ end }}
+            {{ end }}
+        </li>
+        {{ end }}
+    </div>
+</article>
+{{ if or (and (isset .Params "prev") (ne .Params.Prev "none")) (and (isset .Params "next") (ne .Params.Next "none")) }}
+    <div class=" card pagination">
+    {{ with .Params.Prev }}
+        <a class="button prev-page" href={{ . | relURL }} {{ with $.Params.prevTitle }} title={{ . }} {{ end }}>
+            上一页
+        </a>
+    {{ end }}
+        {{ with .Params.Next }}
+        <a class="button next-page" href= {{ . | relURL }} {{ with $.Params.nextTitle }} title={{ . }} {{ end }}>
+            下一页
+        </a>
+        {{ end }}
+    </div>
+{{ else }}
+    {{ if ne .Type "page" }}
+        <div class=" card pagination">
+        {{ with .PrevInSection }}
+            <a class="button prev-page" href={{ .URL }} title={{ .Title }}>
+                上一页
+            </a>
+        {{ end }}
+            {{ with .NextInSection }}
+            <a class="button next-page" href= {{ .URL }} title={{ .Title }}>
+                下一页
+            </a>
+            {{ end }}
+        </div>
+    {{ end }}
+{{ end }}

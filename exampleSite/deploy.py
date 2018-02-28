@@ -26,22 +26,25 @@ def onerror(func, path, exc_info):
 def message(words):
     return "\n*****************************************************************\n\t\t {words}\n*****************************************************************\n".format(words=words)
 
-def deploy(repo):
+def deploy(repo, isPush=False):
     if os.path.exists('./public/'):
         print(message('清空 public 目录！'))
         shutil.rmtree('./public/', onerror=onerror)
-    else:
+    try:
+        print(message('执行 hugo 生成站点！'))
+        os.system('hugo')
+        os.chdir('./public/')
+    except Exception as e:
+        print(e)
+    if (isPush == True):
         try:
-            print(message('执行 hugo 生成站点！'))
-            os.system('hugo')
-            os.chdir('./public/')
             print(message('初始化 git ！'))
             os.system('git init')
             os.system('git checkout -b gh-pages')
             os.system('git add --all')
             os.system('git commit -m "Rebuild site at {now}"'.format(now=datetime.datetime.now()))
-            print(message('向远程库（{repo}）推送！'.format(repo=repo))
-            os.system('git remote add origin {repo}'.format(repo=repo)
+            print(message('向远程库（{repo}）推送！'.format(repo=repo)))
+            os.system('git remote add origin {repo}'.format(repo=repo))
             os.system('git push -f origin gh-pages:gh-pages')
         except Exception as e:
             print(e)

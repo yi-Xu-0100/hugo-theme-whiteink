@@ -2,9 +2,9 @@
 comments = false
 date = "2017-10-22 21:37:49"
 title = "关于逸絮居 - yi_Xu"
-prev = "/categories/"
+prev = "/page/archieves/"
 prevTitle = "归档"
-next = "/cards/"
+next = "/page/cards/"
 nextTitle = "卡片集"
 toc = false
 +++

@@ -18,7 +18,7 @@
         </div>
         <div id="categories" class="card">
             <div id="category-title">文章分类</div>
-            {{ range .Site.Menus.main }}
+            {{ range .Site.Menus.main.ByWeight }}
             <li class="category">
                 <a href={{ .URL }}>{{ .Name }}</a>
                 {{ if .HasChildren }}
