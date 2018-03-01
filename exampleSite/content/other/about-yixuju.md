@@ -1,7 +1,7 @@
 +++
 categories = "生活感悟"
 date = "2017-03-24"
-tags = "Blog"
+tags = ["Blog"]
 title = "关于逸絮居的介绍"
 
 +++

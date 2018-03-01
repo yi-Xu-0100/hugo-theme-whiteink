@@ -9,7 +9,7 @@
         </div>
     </div>
         <div id="avatar" class="card">
-            <a href={{ "about" | relURL }}>
+            <a href={{ "/page/about" | relURL }}>
                 <img class="animated zoomIn" id="avatar-img" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
             </a>
             <div id="motto">
@@ -18,7 +18,7 @@
         </div>
         <div id="categories" class="card">
             <div id="category-title">文章分类</div>
-            {{ range .Site.Menus.main }}
+            {{ range .Site.Menus.main.ByWeight }}
             <li class="category">
                 <a href={{ .URL }}>{{ .Name }}</a>
                 {{ if .HasChildren }}

@@ -24,50 +24,42 @@ copyright =                     "yi_Xu"
 [taxonomies]
     category = "categories"
     tag = "tags"
-    编程体验 = "programming"
-    学习思考 = "studying"
-    其他分享 = "other"
-    生活感悟 = "blog"
+
+[permalinks]
+    post = "/:section/:title/"
 
 [menu]
     [[menu.main]]
         Name = "编程体验"
         Weight = 1
         Identifier = "programming"
-        URL = "\/programming\/"
-    # [[menu.main]]
-        # Name = "学习思考"
-        # Weight = 2
-        # Identifier = "studying"
-        # URL = "\/studying\/"
+        URL = "/programming/"
     [[menu.main]]
         Name = "其他分享"
         Weight = 3
         Identifier = "other"
-        URL = "\/other\/"
+        URL = "/other/"
     [[menu.main]]
         Name = "生活感悟"
         Weight = 4
         Identifier = "blog"
-        URL = "\/blog\/"
+        URL = "/blog/"
     [[menu.home]]
         Name = "首页"
         Weight = 1
-        URL = "\/"
+        URL = "/"
     [[menu.home]]
         Name = "归档"
         Weight = 2
-        URL = "\/categories\/"
+        URL = "/page/archieves/"
     [[menu.home]]
         Name = "关于"
         Weight = 3
-        Identifier = "about"
-        URL = "\/about\/"
+        URL = "/page/about/"
     [[menu.home]]
         Name = "卡片集"
         Weight = 4
-        Identifier = "cards"
-        URL = "\/cards\/"
+        URL = "/page/cards/"
 
 [params]
     author = "yi_Xu"

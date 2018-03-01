@@ -3,8 +3,10 @@ comments = false
 date = "2017-03-24"
 donate = false
 title = "分类&标签"
-prev = "/about/"
+prev = "/page/about/"
+prevTitle = "关于"
 next = "/"
+nextTitle = "首页"
 toc = false
 +++
 
