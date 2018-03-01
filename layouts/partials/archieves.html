@@ -3,6 +3,7 @@
         <h1>归 档</h1>
     </div>
     <div id="archieve" class="card">
+        <h2>Categories</h2>
         {{ range .Site.Menus.main }}
         <li class="category">
             <a href={{ .URL }}>{{ .Name }}</a>
@@ -15,6 +16,14 @@
             {{ end }}
         </li>
         {{ end }}
+    </div>
+    <div class="card category">
+        <h2>Tags</h2>
+<ul id="all-tags">
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <a href='{{ "/tags/" | relLangURL }}{{ $name | urlize }}' class="button tag">{{ $name }}<span class="tag-count">{{.Count}}</span></a>
+  {{ end }}
+</ul>
     </div>
 </article>
 {{ if or (and (isset .Params "prev") (ne .Params.Prev "none")) (and (isset .Params "next") (ne .Params.Next "none")) }}
