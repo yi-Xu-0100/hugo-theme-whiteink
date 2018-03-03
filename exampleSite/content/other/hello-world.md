@@ -1,10 +1,12 @@
-+++
-categories = "其他分享"
-date = "2017-03-25 09:17:43"
-tags = ["Hexo", "Yelee", "Simiki", "Github"]
-title = "Hello World"
-
-+++
+---
+date: 2017-03-22 09:17:43
+tags:
+- hexo
+- yelee
+- simiki
+- github
+title: Hello World
+---
 
 这本是`Hexo`搭建博客时自动生成的页面，我将其搬运到我的[`Wiki`](https://wiki.yixuju.cn/Introduction/getting-started-for-hexo.html)中，并在此处填写我的填坑之旅。
 <!--more-->
@@ -45,7 +47,6 @@ title = "Hello World"
 >* 主题选择看自己喜欢，主题配置找该主题的教程就行，大部分都非常详细。实在不行，去`Github`上提issue，作者或其他热心人会很乐意回答你的。这是[我的主题Yelee配置教程](http://moxfive.coding.me/yelee/)。
 
 个人对主题的小修改如下：
-
 >* **下方的`Copy`改成`Copyright`**。以下为解决方案：
 在`themes\yelee\layout\_partial\footer.ejs`中找到以下内容：
 >``` js
@@ -62,7 +63,6 @@ title = "Hello World"
     <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
 </div>
 ```
-
 >* **添加打赏功能**，教程参考：[为Hexo博客添加版权说明和打赏功能](http://colin1994.github.io/2016/06/02/hexo-copyright-and-donate/)，当然我只是选取其中部分进行匹配我的需要。以下为解决方案：
 >在`themes\yelee\_config.yml`中添加以下内容：
 >``` yaml
