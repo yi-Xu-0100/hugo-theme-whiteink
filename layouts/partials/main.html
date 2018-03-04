@@ -5,13 +5,7 @@
     <div id="post-cotent">
         {{ .Content }}
     </div>
-    {{ if .Params.tags }}
-        <div class="post-tags">
-        {{ range .Params.tags }}
-            <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">&nbsp#{{ . }}</a>
-        {{ end }}
-        </div>
-    {{ end }}
+    {{ partial "copyright.html" . }}
 </article>
 {{ if or (and (isset .Params "prev") (ne .Params.Prev "none")) (and (isset .Params "next") (ne .Params.Next "none")) }}
     <div class=" card pagination">
