@@ -1,10 +1,12 @@
-+++
-categories = "编程体验"
-date = "2018-01-08"
-tags = ["Python3", "HTML", "Csv"]
-title = "python实现HTML的表格转csv"
+---
+date: '2018-01-08'
+tags:
+- python3
+- html
+- csv
+title: python实现HTML的表格转csv
+---
 
-+++
 
 个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。
 <!--more-->

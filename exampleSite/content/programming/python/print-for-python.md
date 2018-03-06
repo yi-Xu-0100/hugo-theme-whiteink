@@ -1,10 +1,13 @@
-+++
-categories = ["其他分享", "学习思考"]
-date = "2017-07-23 14:22:28"
-tags = ["Python3", "Python2", "Print", "Input"]
-title = "Python 中的 Print"
+---
+date: '2017-07-23 14:22:28'
+tags:
+- python3
+- python2
+- print
+- input
+title: Python 中的 Print
+---
 
-+++
 
 编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……
 <!--more-->

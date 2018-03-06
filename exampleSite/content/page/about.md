@@ -1,13 +1,12 @@
-+++
-comments = false
-date = "2017-10-22 21:37:49"
-title = "关于逸絮居 - yi_Xu"
-prev = "/page/archieves/"
-prevTitle = "归档"
-next = "/page/cards/"
-nextTitle = "卡片集"
-toc = false
-+++
+---
+date: 2017-10-22
+next: /page/cards/
+nextTitle: 卡片集
+prev: /page/archieves/
+prevTitle: 归档
+title: 关于逸絮居 - yi_Xu
+---
+
 
 ## <i class="icon-user"></i> 关于 - yi_Xu
 
@@ -18,6 +17,15 @@ toc = false
 + email: [yi_Xu@yixuju.cn](mailto:yi_Xu@yixuju.cn)
 
 ## <i class="icon-home"></i> 关于 - 逸絮居
+
+### 2017.03.01
+
+正式完成个人主题 [hugo-theme-whiteink_v0.2](https://github.com/yi-Xu-0100/hugo-theme-whiteink/releases/tag/v0.2) 。
+
+### 2017.02.27
+
+正式完成个人主题 [hugo-theme-whiteink_v0.1](https://github.com/yi-Xu-0100/hugo-theme-whiteink/releases/tag/v1.0) 。
+
 ### 2017.11.25
 
 正式完成个人主题 [hexo-theme-whiteink](https://github.com/yi-Xu-0100/hexo-theme-whiteink) 。

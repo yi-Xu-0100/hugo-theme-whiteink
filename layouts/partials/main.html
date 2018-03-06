@@ -5,7 +5,7 @@
     <div id="post-cotent">
         {{ .Content }}
     </div>
-
+    {{ partial "copyright.html" . }}
 </article>
 {{ if or (and (isset .Params "prev") (ne .Params.Prev "none")) (and (isset .Params "next") (ne .Params.Next "none")) }}
     <div class=" card pagination">

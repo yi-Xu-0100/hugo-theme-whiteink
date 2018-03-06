@@ -1,10 +1,9 @@
-+++
-categories = "生活感悟"
-date = "2014-06-02"
-tags = "Blog"
-title = "静晌"
-
-+++
+---
+date: 2014-06-02
+tags:
+- blog
+title: 静晌
+---
 
 我在桌几旁，略显破旧的小椅上坐着……
 <!--more-->

@@ -1,0 +1,35 @@
+<div id="copyright" class="card">
+{{ if .Params.title }}
+    <div><span> 文章标题：{{ .Params.title }}</span>
+    </div>
+{{ end }}
+{{ if .Params.author }}
+    <div><span> 文章作者：{{ .Params.author }}</span>
+    </div>
+{{else if .Site.Params.author}}
+    <div><span> 文章作者：{{ .Site.Params.author }}</span>
+    </div>
+{{ end }}
+{{ if .Params.tags }}
+    <div>文章标签：{{ range .Params.tags }}<a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/">#{{ . }}&nbsp</a>{{ end }}
+    </div>
+{{ end }}
+{{ if .Params.categories }}
+    <div>文章分类：{{ range .Params.categories }}<a href="{{ $.Site.LanguagePrefix | absURL }}/categories/{{ . | urlize }}/">&nbsp#{{ . }}</a>
+    {{ end }}
+    </div>
+{{ end }}
+{{ if .Params.date }}
+    <div>创建时间：<time datetime={{ dateFormat "2006-01-02" .Params.date }}></time>{{ dateFormat "2006-01-02" .Params.date }}{{ if $.Params.updated_at }} | 最新更新于：<time datetime={{ dateFormat "2006-01-02" $.Params.updated_at }}></time>{{ dateFormat "2006-01-02" $.Params.updated_at }}{{ end }}
+    </div>
+{{ end }}
+    <div>原始链接：{{ .URL | absURL}}<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='{{ .URL | absURL}}' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+{{ if .Params.copyright }}
+    <div> 许可协议：{{ .Params.copyright }}
+    </div>
+{{else if .Site.Params.lience }}
+    <div>许可协议：{{ .Site.Params.lience | safeHTML }}
+    </div>
+{{ end }}
+</div>

@@ -1,7 +1,8 @@
-+++
-linkTitle = "programming"
-title = "编程体验"
-+++
+---
+linkTitle: programming
+title: 编程体验
+---
+
 
 现代社会互联网技术高速发展，编程变成必备技能，我希望能够记录我的学习经历。
 

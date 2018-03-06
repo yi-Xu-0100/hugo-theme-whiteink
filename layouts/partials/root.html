@@ -12,7 +12,7 @@
         <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" .Date }}></time>{{ dateFormat "2006-01-02" .Date }}</span>
         {{ if .Params.tags }}
             {{ range .Params.tags }}
-                <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/" class="card-tag">&nbsp#{{ . }}</a>
+                <a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/" class="card-tag">&nbsp#{{ . }}</a>
             {{ end }}
         {{ end }}
         <a class="button read-more" href={{ .URL }}> 阅读全文 </a>
@@ -20,6 +20,9 @@
     <div id="read-info">字数：{{ .WordCount }} 阅读时间：{{ .ReadingTime }} 分钟</div>
 </article>
 {{ end }}
+
+
+
 {{ range first 5 (where .Data.Pages "Section" "other" ).ByDate.Reverse }}
 <article class="card posts">
     <a class="post-title-link" href={{ .URL }}><h1 class="card-title">{{ .Title }}</h1></a>

@@ -1,10 +1,12 @@
-+++
-categories = "其他分享"
-date = "2017-06-02 07:41:49"
-tags = ["Ubuntu", "Shadowsocks", "Polipo", "Terminal"]
-title = "一些安装完Ubuntu 16.04需要做的事(网络设置)"
-
-+++
+---
+date: 2017-06-02 07:41:49
+tags:
+- ubuntu
+- shadowsocks
+- polipo
+- terminal
+title: 一些安装完Ubuntu 16.04需要做的事(网络设置)
+---
 
 最近不满足于在 `Windows` 的系统中使用虚拟机的 `Ubuntu` 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 `Windows` ，但最后还是装好了觊觎已久的我的第一个 `Linux` 系统—— `Ubuntu` 。下面是我重装一次 `Ubuntu` 后总结的装机后应该要做的事，就酱……
 <!--more-->

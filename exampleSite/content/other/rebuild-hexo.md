@@ -1,10 +1,11 @@
-+++
-categories = "其他分享"
-date = "2017-11-19 21:29:55"
-tags = ["Hexo", "ECS", "Theme"]
-title = "重启Hexo"
-
-+++
+---
+date: 2017-11-19 21:29:55
+tags:
+- hexo
+- ecs
+- theme
+title: 重启Hexo
+---
 
 我的云主机经历千辛万苦，终于备案成功，我也将我的 blog 搬到我的 vps 上了，我希望还我一个干净的主题，写一点这期间的磕磕绊绊。
 <!--more-->
