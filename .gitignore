@@ -24,6 +24,6 @@ _testmain.go
 
 .DS_Store
 
-/public/*
-/themes/*
-/exampleSite/public/*
+/public/
+/themes/
+/exampleSite/public/
