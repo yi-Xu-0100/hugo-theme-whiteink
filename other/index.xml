@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>其他分享 on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/</link>
+    <description>Recent content in 其他分享 on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Sun, 19 Nov 2017 21:29:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>重启Hexo</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/rebuild-hexo/</link>
+      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/rebuild-hexo/</guid>
+      <description>&lt;p&gt;我的云主机经历千辛万苦，终于备案成功，我也将我的 blog 搬到我的 vps 上了，我希望还我一个干净的主题，写一点这期间的磕磕绊绊。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>购买阿里云ECS</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/buy-cloud-server/</link>
+      <pubDate>Mon, 23 Oct 2017 19:31:55 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/buy-cloud-server/</guid>
+      <description>&lt;p&gt;我还是下定决心，买了一台云主机，阿里云的云服务器，云翼计划的支持让我能够更好的实现我想要的东西。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一些安装完Ubuntu 16.04需要做的事(网络设置)</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/</link>
+      <pubDate>Fri, 02 Jun 2017 07:41:49 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/</guid>
+      <description>&lt;p&gt;最近不满足于在 &lt;code&gt;Windows&lt;/code&gt; 的系统中使用虚拟机的 &lt;code&gt;Ubuntu&lt;/code&gt; 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 &lt;code&gt;Windows&lt;/code&gt; ，但最后还是装好了觊觎已久的我的第一个 &lt;code&gt;Linux&lt;/code&gt; 系统—— &lt;code&gt;Ubuntu&lt;/code&gt; 。下面是我重装一次 &lt;code&gt;Ubuntu&lt;/code&gt; 后总结的装机后应该要做的事，就酱……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于逸絮居的介绍</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/about-yixuju/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/about-yixuju/</guid>
+      <description>&lt;p&gt;这个小天地能够让我有着足够的冲动，坚持早起并完成这样的构建，我觉得这是我打心底喜欢的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/hello-world/</link>
+      <pubDate>Wed, 22 Mar 2017 09:17:43 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/hello-world/</guid>
+      <description>&lt;p&gt;这本是&lt;code&gt;Hexo&lt;/code&gt;搭建博客时自动生成的页面，我将其搬运到我的&lt;a href=&#34;https://wiki.yixuju.cn/Introduction/getting-started-for-hexo.html&#34;&gt;&lt;code&gt;Wiki&lt;/code&gt;&lt;/a&gt;中，并在此处填写我的填坑之旅。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>good night</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/good-night/</link>
+      <pubDate>Tue, 21 Mar 2017 21:10:50 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/good-night/</guid>
+      <description>good night!</description>
+    </item>
+    
+  </channel>
+</rss>

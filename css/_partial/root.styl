@@ -1,0 +1,53 @@
+#root {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.posts:hover #read-info {
+    display: block;
+}.posts:hover .card-tag {
+    display: block;
+}
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 -20px;
+}
+
+.card-meta {
+    //display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 34px;
+}
+.card-time, .card-tag {
+    float: left;
+    margin-top: 10px;
+}
+.card-tag {
+    display: none;
+    font-weight: 600;
+}
+.read-more {
+    float: right;
+    color: #0084ff;
+    background-color: rgba(0,132,255,.1);
+}
+
+.read-more:hover {
+    background-color: rgba(0,132,255,.2);
+}
+
+#read-info {
+    position: relative;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    padding: 5px;
+    font-size: 0.5em;
+    color: #999;
+}
+@media (min-width: 960px) {
+    #read-info {
+        display: none;
+    }
+}

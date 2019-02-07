@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/</link>
+    <description>Recent content in Pages on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Sun, 11 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>归档</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/archieves/</link>
+      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/archieves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>关于逸絮居 - yi_Xu</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/about/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/about/</guid>
+      <description>关于 - yi_Xu 解语：品水如酒，愚醉…… github: https://github.com/yi-Xu-0100 email: yi_Xu@yixuju.cn 关于 - 逸絮居 2017.03.01 正式完成个人主题 hugo-theme-whiteink_v0.2 。 2017.02.27 正式完成个人主题 hugo-theme-whiteink_v0.1 。 2017.11.25 正</description>
+    </item>
+    
+    <item>
+      <title>分类&amp;标签</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/cards/</link>
+      <pubDate>Fri, 24 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/cards/</guid>
+      <description>友情链接 A lucky coder 预告板 2018 年 02 月 03 日 添加网站文章的优化 seo 方式 2017 年 11 月 26 日 添加设计 hugo-theme-whiteink 时基本内容 【 2018-03-02 修改】 2017</description>
+    </item>
+    
+  </channel>
+</rss>

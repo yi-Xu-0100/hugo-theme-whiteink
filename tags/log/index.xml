@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</link>
+    <description>Recent content in Log on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Thu, 17 Aug 2017 13:19:48 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python3 中的 log 文件配置方法</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/</link>
+      <pubDate>Thu, 17 Aug 2017 13:19:48 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/</guid>
+      <description>&lt;p&gt;Python 中有好用的 logging 模块，方便我们为程序添加 log 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 print 的方式来观察输出实在是忧伤，所以我试着配置了 log ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content='yi_Xu' />
+<meta name="description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
+<meta name="keywords" content='web,python,blog' />
+<meta name="generator" content="Hugo 0.53" />
+<meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/' />
+<meta property="og:title" content='python3 实现 hugo 站点中的 front matter 的修改' />
+<meta property="og:description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
+<meta property="og:site_name" content='WhiteInk' />
+<meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta property="og:locale" content='zh-CN' />
+<meta property="fb:app_id" content='198934840692875' />
+<meta property="fb:admins" content='' />
+<meta itemprop="name" content='python3 实现 hugo 站点中的 front matter 的修改' />
+<meta itemprop="description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
+<meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta name="twitter:card" content='summary' />
+
+<meta name="twitter:site" content='' />
+
+<meta name="twitter:creator" content='' />
+<meta name="twitter:title" content='python3 实现 hugo 站点中的 front matter 的修改' />
+<meta name="twitter:description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
+<meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<title>python3 实现 hugo 站点中的 front matter 的修改 | WhiteInk </title>
+<link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/ />
+<link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
+<link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+<link rel="stylesheet" href=/hugo-theme-whiteink/css/style.css />
+<script src=/hugo-theme-whiteink/js/jquery-3.3.1.min.js></script>
+<script src=/hugo-theme-whiteink/js/custom.js></script>
+        
+        
+    </head>
+    <body>
+        <div>
+    <a href=/hugo-theme-whiteink/about>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+    </a>
+</div>
+<div id="mobile-navbar" class="mobile">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
+    <div id="mobile-search">
+        <i class="icon-search icon-large"></i>
+        <form action="//www.google.com/search" target="_blank" class="search-form">
+            <input type="text" name="q" maxlength="20" placeholder="搜索...">
+            <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+        </form>
+    </div>
+    <ul id="mobile-menu">
+        
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/>
+                        首页
+                    </a>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/>
+                        关于
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/>
+                        卡片集
+                    </a>
+                </li>
+            
+        
+    
+</div>
+        <header>
+    <div id="header">
+        <a id = "site-title" href= https://yi-Xu-0100.github.io/hugo-theme-whiteink/ >
+            <span>WhiteInk</span>
+        </a>
+        <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
+            
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/ >
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/archieves/ >
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/ >
+                        关于
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/ >
+                        卡片集
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</header>
+
+        <div id="container">
+            <section id="main">
+                
+    <article id="post" class="card">
+    <div id="post-title">
+        <h1>python3 实现 hugo 站点中的 front matter 的修改</h1>
+    </div>
+    <div id="post-cotent">
+        <p>将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
+
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;yi_Xu&#39;</span>
+
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">chardet</span>
+<span class="kn">import</span> <span class="nn">yaml</span>
+
+<span class="k">def</span> <span class="nf">get_files_name</span><span class="p">(</span><span class="nb">dir</span><span class="o">=</span><span class="s1">&#39;./content&#39;</span><span class="p">):</span>
+    <span class="n">content</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="nb">dir</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">path</span><span class="p">,</span><span class="n">dir_list</span><span class="p">,</span><span class="n">file_list</span> <span class="ow">in</span> <span class="n">content</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+            <span class="k">yield</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">file_name</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">get_charset</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="s2">&#34;rb&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">chardet</span><span class="o">.</span><span class="n">detect</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_meta_data</span><span class="p">(</span><span class="nb">dir</span><span class="o">=</span><span class="s1">&#39;./content/&#39;</span><span class="p">):</span>
+    <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">get_files_name</span><span class="p">(</span><span class="nb">dir</span><span class="o">=</span><span class="nb">dir</span><span class="p">):</span>
+        <span class="n">meta_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">get_charset</span><span class="p">(</span><span class="nb">file</span><span class="p">)[</span><span class="s1">&#39;encoding&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="bp">False</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">((</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)):</span>
+                        <span class="n">start</span> <span class="o">=</span> <span class="bp">True</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">((</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)):</span>
+                        <span class="k">break</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">meta_data</span> <span class="o">+=</span> <span class="n">line</span>
+        <span class="k">yield</span> <span class="nb">file</span><span class="p">,</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">meta_data</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">change_meta_data</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="n">change_meta_data</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+    <span class="n">meta_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;rU&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="n">get_charset</span><span class="p">(</span><span class="nb">file</span><span class="p">)[</span><span class="s1">&#39;encoding&#39;</span><span class="p">])</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="bp">False</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">content</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">+=</span> <span class="n">line</span>
+            <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">((</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)):</span>
+                    <span class="n">start</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="p">((</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">line</span> <span class="o">==</span> <span class="s1">&#39;---</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="p">)):</span>
+                    <span class="n">content</span> <span class="o">=</span> <span class="bp">True</span>
+                    <span class="n">start</span> <span class="o">=</span> <span class="bp">False</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">meta_data</span> <span class="o">+=</span> <span class="n">line</span>
+    <span class="k">if</span> <span class="n">change_meta_data</span> <span class="o">!=</span> <span class="s1">&#39;&#39;</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s2">&#34;remove {file} fail &#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">file</span><span class="o">=</span><span class="nb">file</span><span class="p">))</span>
+            <span class="k">raise</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;{meta_data}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">meta_data</span><span class="o">=</span><span class="n">change_meta_data</span><span class="p">))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;---</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;{content}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">data</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">delete_meta_key</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">meta</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">meta</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">get_meta_data</span><span class="p">():</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># delete categories, fancebox, toc, donate, type, comments</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;categories&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;fancebox&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;toc&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;donate&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+        <span class="n">fix_meta</span> <span class="o">=</span> <span class="n">delete_meta_key</span><span class="p">(</span><span class="s1">&#39;comments&#39;</span><span class="p">,</span><span class="n">fix_meta</span><span class="p">)</span>
+
+        <span class="c1"># change tags to []</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">])</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>
+                <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">])</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">fix_meta</span><span class="p">[</span><span class="s1">&#39;tags&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]:</span>
+                <span class="n">fix_meta</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;tags&#39;</span><span class="p">)</span>
+        <span class="n">meta_data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">,</span> <span class="n">allow_unicode</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> \
+                              <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">default_flow_style</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+        <span class="c1"># write change to md</span>
+        <span class="n">change_meta_data</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">change_meta_data</span><span class="o">=</span><span class="n">meta_data</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div id="copyright" class="card">
+
+    <div><span> 文章标题：python3 实现 hugo 站点中的 front matter 的修改</span>
+    </div>
+
+
+    <div><span> 文章作者：yi_Xu</span>
+    </div>
+
+
+    <div>文章标签：<a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/">#yaml&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/">#json&nbsp</a>
+    </div>
+
+
+
+    <div>创建时间：<time datetime=2018-03-03></time>2018-03-03
+    </div>
+
+    <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+
+    <div>许可协议：<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </div>
+
+</div>
+</article>
+
+    
+        <div class=" card pagination">
+        
+            <a class="button prev-page" href=/hugo-theme-whiteink/programming/python/html-to-csv/ title=python实现HTML的表格转csv>
+                上一页
+            </a>
+        
+            
+        </div>
+    
+
+
+            </section>
+            <section id="sidebar">
+                
+    <aside class="sidebar">
+    <div id="search" class="card">
+        <div id="search-key">
+            <i class="icon-search icon-large"></i>
+            <form action="//www.google.com/search" target="_blank" class="search-form">
+                <input type="text" name="q" maxlength="20" placeholder="搜索...">
+                <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+            </form>
+        </div>
+    </div>
+        <div id="avatar" class="card">
+            <a href=/hugo-theme-whiteink/page/about>
+                <img class="animated zoomIn" id="avatar-img" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+            </a>
+            <div id="motto">
+                <span>品水如酒，愚醉……</span>
+            </div>
+        </div>
+        <div id="categories" class="card">
+            <div id="category-title">文章分类</div>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                
+                    
+                        <ol class="subcategory">
+                            <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                        </ol>
+                    
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                
+            </li>
+            
+      </div>
+</aside>
+    
+
+            </section>
+        </div>
+        <footer>
+    <a  
+            href="mailto:yi_Xu@yixuju.cn"
+            target = "_blank"
+        
+        target = "_self" rel="nofollow">
+            &copy; 2014 - 2019 yi_Xu
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    
+        <i class="icon-legal"></i>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+    
+</footer>
+    </body>
+</html>

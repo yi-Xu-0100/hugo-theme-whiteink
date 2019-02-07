@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simiki on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/simiki/</link>
+    <description>Recent content in Simiki on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Wed, 22 Mar 2017 09:17:43 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/simiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/hello-world/</link>
+      <pubDate>Wed, 22 Mar 2017 09:17:43 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/hello-world/</guid>
+      <description>&lt;p&gt;这本是&lt;code&gt;Hexo&lt;/code&gt;搭建博客时自动生成的页面，我将其搬运到我的&lt;a href=&#34;https://wiki.yixuju.cn/Introduction/getting-started-for-hexo.html&#34;&gt;&lt;code&gt;Wiki&lt;/code&gt;&lt;/a&gt;中，并在此处填写我的填坑之旅。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

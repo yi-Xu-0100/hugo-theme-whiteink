@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Csv on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/</link>
+    <description>Recent content in Csv on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python实现HTML的表格转csv</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/</guid>
+      <description>&lt;p&gt;个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

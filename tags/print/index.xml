@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Print on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/</link>
+    <description>Recent content in Print on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Sun, 23 Jul 2017 14:22:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python 中的 Print</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/</link>
+      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/</guid>
+      <description>&lt;p&gt;编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

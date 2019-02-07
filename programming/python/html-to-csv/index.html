@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content='yi_Xu' />
+<meta name="description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
+<meta name="keywords" content='web,python,blog' />
+<meta name="generator" content="Hugo 0.53" />
+<meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/' />
+<meta property="og:title" content='python实现HTML的表格转csv' />
+<meta property="og:description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
+<meta property="og:site_name" content='WhiteInk' />
+<meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta property="og:locale" content='zh-CN' />
+<meta property="fb:app_id" content='198934840692875' />
+<meta property="fb:admins" content='' />
+<meta itemprop="name" content='python实现HTML的表格转csv' />
+<meta itemprop="description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
+<meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta name="twitter:card" content='summary' />
+
+<meta name="twitter:site" content='' />
+
+<meta name="twitter:creator" content='' />
+<meta name="twitter:title" content='python实现HTML的表格转csv' />
+<meta name="twitter:description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
+<meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<title>python实现HTML的表格转csv | WhiteInk </title>
+<link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/ />
+<link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
+<link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+<link rel="stylesheet" href=/hugo-theme-whiteink/css/style.css />
+<script src=/hugo-theme-whiteink/js/jquery-3.3.1.min.js></script>
+<script src=/hugo-theme-whiteink/js/custom.js></script>
+        
+        
+    </head>
+    <body>
+        <div>
+    <a href=/hugo-theme-whiteink/about>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+    </a>
+</div>
+<div id="mobile-navbar" class="mobile">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
+    <div id="mobile-search">
+        <i class="icon-search icon-large"></i>
+        <form action="//www.google.com/search" target="_blank" class="search-form">
+            <input type="text" name="q" maxlength="20" placeholder="搜索...">
+            <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+        </form>
+    </div>
+    <ul id="mobile-menu">
+        
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/>
+                        首页
+                    </a>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/>
+                        关于
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/>
+                        卡片集
+                    </a>
+                </li>
+            
+        
+    
+</div>
+        <header>
+    <div id="header">
+        <a id = "site-title" href= https://yi-Xu-0100.github.io/hugo-theme-whiteink/ >
+            <span>WhiteInk</span>
+        </a>
+        <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
+            
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/ >
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/archieves/ >
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/ >
+                        关于
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/ >
+                        卡片集
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</header>
+
+        <div id="container">
+            <section id="main">
+                
+    <article id="post" class="card">
+    <div id="post-title">
+        <h1>python实现HTML的表格转csv</h1>
+    </div>
+    <div id="post-cotent">
+        <p>个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python">    <span class="c1"># -*- coding: utf-8 -*-</span>
+
+
+    <span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;yi_Xu&#39;</span>
+
+
+    <span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+
+    <span class="k">class</span> <span class="nc">getPage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;page1.html&#39;</span><span class="p">),</span> <span class="n">classname</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">backup_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">csv_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">src</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">classname</span> <span class="o">=</span> <span class="n">classname</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">src</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">backup_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_change.html&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_modify.csv&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_page</span><span class="p">()</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">page_table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_table</span><span class="p">()</span>
+
+        <span class="k">def</span> <span class="nf">_get_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">src</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">src</span><span class="p">),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">html_code</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="k">return</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_code</span><span class="p">,</span> <span class="s2">&#34;html.parser&#34;</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">modify_backup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">html_code</span><span class="p">,</span> <span class="n">backup_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">backup_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;result&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span><span class="p">)),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">html_code</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>
+
+        <span class="k">def</span> <span class="nf">modify_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+            <span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">page_html</span><span class="o">.</span><span class="n">tr</span>
+            <span class="n">csv_src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">)</span>
+            <span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
+                    <span class="n">child</span><span class="o">.</span><span class="n">string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="n">column_number</span><span class="p">])</span>
+                <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">modify_backup</span><span class="p">(</span><span class="n">page_html</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">_get_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">csv_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span><span class="o">.</span><span class="n">tbody</span><span class="o">.</span><span class="n">tr</span>
+            <span class="n">csv_src</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">))</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
+                    <span class="n">tables</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">count</span><span class="p">,</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span><span class="o">.</span><span class="n">string</span><span class="p">))</span>
+                <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
+                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+            <span class="n">data</span><span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;*&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">column_number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
+                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">csv_src</span><span class="p">)</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+                <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">df</span>
+
+
+    <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+        <span class="n">page</span> <span class="o">=</span> <span class="n">getPage</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s1">&#39;./html/page1.html&#39;</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">page_table</span><span class="p">)</span>
+        <span class="c1">#page.modify_table(result = &#39;./result/page1.html&#39;)</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div id="copyright" class="card">
+
+    <div><span> 文章标题：python实现HTML的表格转csv</span>
+    </div>
+
+
+    <div><span> 文章作者：yi_Xu</span>
+    </div>
+
+
+    <div>文章标签：<a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/">#html&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/">#csv&nbsp</a>
+    </div>
+
+
+
+    <div>创建时间：<time datetime=2018-01-08></time>2018-01-08
+    </div>
+
+    <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+
+    <div>许可协议：<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </div>
+
+</div>
+</article>
+
+    
+        <div class=" card pagination">
+        
+            <a class="button prev-page" href=/hugo-theme-whiteink/programming/python/python3-logconfig/ title=Python3&#32;中的&#32;log&#32;文件配置方法>
+                上一页
+            </a>
+        
+            
+            <a class="button next-page" href= /hugo-theme-whiteink/programming/python/change-meta-data/ title=python3&#32;实现&#32;hugo&#32;站点中的&#32;front&#32;matter&#32;的修改>
+                下一页
+            </a>
+            
+        </div>
+    
+
+
+            </section>
+            <section id="sidebar">
+                
+    <aside class="sidebar">
+    <div id="search" class="card">
+        <div id="search-key">
+            <i class="icon-search icon-large"></i>
+            <form action="//www.google.com/search" target="_blank" class="search-form">
+                <input type="text" name="q" maxlength="20" placeholder="搜索...">
+                <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+            </form>
+        </div>
+    </div>
+        <div id="avatar" class="card">
+            <a href=/hugo-theme-whiteink/page/about>
+                <img class="animated zoomIn" id="avatar-img" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+            </a>
+            <div id="motto">
+                <span>品水如酒，愚醉……</span>
+            </div>
+        </div>
+        <div id="categories" class="card">
+            <div id="category-title">文章分类</div>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                
+                    
+                        <ol class="subcategory">
+                            <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                        </ol>
+                    
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                
+            </li>
+            
+      </div>
+</aside>
+    
+
+            </section>
+        </div>
+        <footer>
+    <a  
+            href="mailto:yi_Xu@yixuju.cn"
+            target = "_blank"
+        
+        target = "_self" rel="nofollow">
+            &copy; 2014 - 2019 yi_Xu
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    
+        <i class="icon-legal"></i>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+    
+</footer>
+    </body>
+</html>

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content='yi_Xu' />
+<meta name="description" content='编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……' />
+<meta name="keywords" content='web,python,blog' />
+<meta name="generator" content="Hugo 0.53" />
+<meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/' />
+<meta property="og:title" content='Python 中的 Print' />
+<meta property="og:description" content='编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……' />
+<meta property="og:site_name" content='WhiteInk' />
+<meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta property="og:locale" content='zh-CN' />
+<meta property="fb:app_id" content='198934840692875' />
+<meta property="fb:admins" content='' />
+<meta itemprop="name" content='Python 中的 Print' />
+<meta itemprop="description" content='编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……' />
+<meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta name="twitter:card" content='summary' />
+
+<meta name="twitter:site" content='' />
+
+<meta name="twitter:creator" content='' />
+<meta name="twitter:title" content='Python 中的 Print' />
+<meta name="twitter:description" content='编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……' />
+<meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<title>Python 中的 Print | WhiteInk </title>
+<link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/ />
+<link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
+<link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+<link rel="stylesheet" href=/hugo-theme-whiteink/css/style.css />
+<script src=/hugo-theme-whiteink/js/jquery-3.3.1.min.js></script>
+<script src=/hugo-theme-whiteink/js/custom.js></script>
+        
+        
+    </head>
+    <body>
+        <div>
+    <a href=/hugo-theme-whiteink/about>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+    </a>
+</div>
+<div id="mobile-navbar" class="mobile">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
+    <div id="mobile-search">
+        <i class="icon-search icon-large"></i>
+        <form action="//www.google.com/search" target="_blank" class="search-form">
+            <input type="text" name="q" maxlength="20" placeholder="搜索...">
+            <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+        </form>
+    </div>
+    <ul id="mobile-menu">
+        
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/>
+                        首页
+                    </a>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/>
+                        关于
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/>
+                        卡片集
+                    </a>
+                </li>
+            
+        
+    
+    <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
+    <div id="mobile-toc" class="mobile"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#python-中的一般-print-的语法">Python 中的一般 Print 的语法</a>
+<ul>
+<li><a href="#对单引号-和双引号-的显示问题">对单引号(&ldquo;)和双引号(&rdquo;&ldquo;)的显示问题</a></li>
+<li><a href="#print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</a></li>
+<li><a href="#input-和-raw-input-的区别">input() 和 raw_input() 的区别</a></li>
+<li><a href="#相关说明">相关说明</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav></div></li>
+
+</div>
+        <header>
+    <div id="header">
+        <a id = "site-title" href= https://yi-Xu-0100.github.io/hugo-theme-whiteink/ >
+            <span>WhiteInk</span>
+        </a>
+        <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
+            
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/ >
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/archieves/ >
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/ >
+                        关于
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/ >
+                        卡片集
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</header>
+
+        <div id="container">
+            <section id="main">
+                
+    <article id="post" class="card">
+    <div id="post-title">
+        <h1>Python 中的 Print</h1>
+    </div>
+    <div id="post-cotent">
+        <p>编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……</p>
+
+<h2 id="python-中的一般-print-的语法">Python 中的一般 Print 的语法</h2>
+
+<h3 id="对单引号-和双引号-的显示问题">对单引号(&ldquo;)和双引号(&rdquo;&ldquo;)的显示问题</h3>
+
+<p>print 需要用引号来标记输出信息，但如果输出中含有单引号或者双引号时，有时需要转义。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;I don&#39;t like Tony&#39;s dog.&#34;</span>
+ <span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="o">.</span>
+ <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;I don&#34;t like Tony&#34;s dog.&#39;</span>
+ <span class="n">I</span> <span class="n">don</span><span class="s2">&#34;t like Tony&#34;</span><span class="n">s</span> <span class="n">dog</span><span class="o">.</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上述例子可以看出，对于两边的引号， Python 会将其默认为标记符，只要句子中的引号和标记符不同，可以不使用转义。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;I don&#39;t like Tony&#39;s dog, But Tony said that I don&#39;t care you.&#34;</span>
+<span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="p">,</span> <span class="n">But</span> <span class="n">Tony</span> <span class="n">said</span> <span class="n">that</span> <span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t care you.</span><span class="err">
+</span><span class="err"></span><span class="s1">&gt;&gt;&gt; print &#34;I don&#39;</span><span class="n">t</span> <span class="n">like</span> <span class="n">Tony</span><span class="s1">&#39;s dog, But Tony said : I don&#39;</span><span class="n">t</span> <span class="n">care</span> <span class="n">you</span><span class="o">.</span><span class="s2">&#34;</span><span class="err">
+</span><span class="err"></span><span class="s2">I don&#39;t like Tony&#39;s dog, But Tony said : I don&#39;t care you.</span><span class="err">
+</span><span class="err"></span><span class="s2">&gt;&gt;&gt; print &#34;</span><span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="p">,</span> <span class="n">But</span> <span class="n">Tony</span> <span class="n">said</span><span class="p">:</span> <span class="s2">&#34;I don&#39;t care you.&#34;&#34;</span><span class="err">
+</span><span class="err"></span><span class="s2">  File &#34;</span><span class="o">&lt;</span><span class="n">stdin</span><span class="o">&gt;</span><span class="s2">&#34;, line 1</span><span class="err">
+</span><span class="err"></span><span class="s2">    print &#34;</span><span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="p">,</span> <span class="n">But</span> <span class="n">Tony</span> <span class="n">said</span><span class="p">:</span> <span class="s2">&#34;I don&#39;t care you.&#34;&#34;</span><span class="err">
+</span><span class="err"></span><span class="s2">                                                    ^</span><span class="err">
+</span><span class="err"></span><span class="s2">SyntaxError: invalid syntax</span><span class="err">
+</span><span class="err"></span><span class="s2">&gt;&gt;&gt; print &#34;</span><span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="p">,</span> <span class="n">But</span> <span class="n">Tony</span> <span class="n">said</span><span class="p">:</span> \<span class="s2">&#34;I don&#39;t care you.</span><span class="se">\&#34;</span><span class="s2">&#34;</span>
+<span class="n">I</span> <span class="n">don</span><span class="s1">&#39;t like Tony&#39;</span><span class="n">s</span> <span class="n">dog</span><span class="p">,</span> <span class="n">But</span> <span class="n">Tony</span> <span class="n">said</span><span class="p">:</span> <span class="s2">&#34;I don&#39;t care you.&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上述例子看出，如何两边默认的标记符中出现相同的标记符，需要加上转义符号(\)。当然要显示(\)，需要使用(\\)。</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">转义字符</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">\(在行尾时)</td>
+<td align="center">续行符</td>
+</tr>
+
+<tr>
+<td align="center">\\</td>
+<td align="center">反斜杠符号</td>
+</tr>
+
+<tr>
+<td align="center">\&lsquo;</td>
+<td align="center">单引号</td>
+</tr>
+
+<tr>
+<td align="center">\&ldquo;</td>
+<td align="center">双引号</td>
+</tr>
+
+<tr>
+<td align="center">\a</td>
+<td align="center">响铃</td>
+</tr>
+
+<tr>
+<td align="center">\b</td>
+<td align="center">退格 (Backspace)</td>
+</tr>
+
+<tr>
+<td align="center">\e</td>
+<td align="center">转义</td>
+</tr>
+
+<tr>
+<td align="center">\000</td>
+<td align="center">空</td>
+</tr>
+
+<tr>
+<td align="center">\n</td>
+<td align="center">换行</td>
+</tr>
+
+<tr>
+<td align="center">\v</td>
+<td align="center">纵向制表符</td>
+</tr>
+
+<tr>
+<td align="center">\t</td>
+<td align="center">横向制表符</td>
+</tr>
+
+<tr>
+<td align="center">\r</td>
+<td align="center">回车</td>
+</tr>
+
+<tr>
+<td align="center">\f</td>
+<td align="center">换页</td>
+</tr>
+
+<tr>
+<td align="center">\oyy</td>
+<td align="center">八进制数 yy 代表的字符，例如：\o12 代表换行</td>
+</tr>
+
+<tr>
+<td align="center">\xyy</td>
+<td align="center">十进制数 yy 代表的字符，例如：\x0a 代表换行</td>
+</tr>
+
+<tr>
+<td align="center">\other</td>
+<td align="center">其它的字符以普通格式输出</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;Good </span><span class="si">%s</span><span class="s2">!&#34;</span> <span class="o">%</span> <span class="s1">&#39;luck&#39;</span>
+<span class="n">Good</span> <span class="n">luck</span><span class="err">!</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;Good </span><span class="si">%r</span><span class="s2">!&#34;</span> <span class="o">%</span> <span class="s1">&#39;luck&#39;</span>
+<span class="n">Good</span> <span class="s1">&#39;luck&#39;</span><span class="err">!</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;Good </span><span class="si">%r</span><span class="s2">!&#34;</span> <span class="o">%</span> <span class="s2">&#34;luck&#34;</span>
+<span class="n">Good</span> <span class="s1">&#39;luck&#39;</span><span class="err">!</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s2">&#34;Hi,</span><span class="si">%s</span><span class="s2">!&#34;</span> <span class="o">%</span> <span class="s2">&#34;Tom&#39;s son&#34;</span>
+<span class="n">Hi</span><span class="p">,</span><span class="n">Tom</span><span class="s1">&#39;s son!</span><span class="err">
+</span><span class="err"></span><span class="s1">&gt;&gt;&gt; print &#34;Hi,</span><span class="si">%r</span><span class="s1">!&#34; % &#34;Tom&#39;</span><span class="n">s</span> <span class="n">son</span><span class="s2">&#34;</span><span class="err">
+</span><span class="err"></span><span class="s2">Hi,&#34;</span><span class="n">Tom</span><span class="s1">&#39;s son&#34;!</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>可以看出， %s 输出为你想要输出的内容，而 %r 输出为原始内容。</p>
+
+<h3 id="input-和-raw-input-的区别">input() 和 raw_input() 的区别</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="nb">input</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+    <span class="nb">input</span><span class="p">([</span><span class="n">prompt</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">value</span>
+
+    <span class="n">Equivalent</span> <span class="n">to</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span><span class="o">.</span>
+<span class="p">(</span><span class="n">END</span><span class="p">)</span>
+<span class="nb">raw_input</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+    <span class="nb">raw_input</span><span class="p">([</span><span class="n">prompt</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">string</span>
+
+    <span class="n">Read</span> <span class="n">a</span> <span class="n">string</span> <span class="kn">from</span> <span class="nn">standard</span> <span class="nn">input.</span>  <span class="nn">The</span> <span class="nn">trailing</span> <span class="nn">newline</span> <span class="nn">is</span> <span class="nn">stripped.</span>
+    <span class="n">If</span> <span class="n">the</span> <span class="n">user</span> <span class="n">hits</span> <span class="n">EOF</span> <span class="p">(</span><span class="n">Unix</span><span class="p">:</span> <span class="n">Ctl</span><span class="o">-</span><span class="n">D</span><span class="p">,</span> <span class="n">Windows</span><span class="p">:</span> <span class="n">Ctl</span><span class="o">-</span><span class="n">Z</span><span class="o">+</span><span class="n">Return</span><span class="p">),</span> <span class="k">raise</span> <span class="ne">EOFError</span><span class="o">.</span>
+    <span class="n">On</span> <span class="n">Unix</span><span class="p">,</span> <span class="n">GNU</span> <span class="n">readline</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">if</span> <span class="n">enabled</span><span class="o">.</span>  <span class="n">The</span> <span class="n">prompt</span> <span class="n">string</span><span class="p">,</span> <span class="k">if</span> <span class="n">given</span><span class="p">,</span>
+    <span class="ow">is</span> <span class="n">printed</span> <span class="n">without</span> <span class="n">a</span> <span class="n">trailing</span> <span class="n">newline</span> <span class="n">before</span> <span class="n">reading</span><span class="o">.</span>
+<span class="p">(</span><span class="n">END</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上述由 pydoc 得到。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">()</span>
+<span class="mi">2</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">raw_input</span><span class="p">()</span>
+<span class="mi">2</span>
+<span class="s1">&#39;2&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">(),</span><span class="mi">2</span>
+<span class="mi">2</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">raw_input</span><span class="p">(),</span><span class="mi">2</span>
+<span class="mi">2</span>
+<span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="nb">input</span><span class="p">(),</span><span class="mi">2</span><span class="p">]</span>
+<span class="mi">2</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="nb">raw_input</span><span class="p">(),</span><span class="mi">2</span><span class="p">]</span>
+<span class="mi">2</span>
+<span class="p">[</span><span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>不知道你发现了什么没有，希望你能够理解。比较不同哦。</p>
+
+<h3 id="相关说明">相关说明</h3>
+
+<ul>
+<li>上述代码在 Python2.7.12环境下测试</li>
+<li>【2017-08-16 19:09:15】更新： python3+ 仅支持input()</li>
+</ul>
+    </div>
+    <div id="copyright" class="card">
+
+    <div><span> 文章标题：Python 中的 Print</span>
+    </div>
+
+
+    <div><span> 文章作者：yi_Xu</span>
+    </div>
+
+
+    <div>文章标签：<a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/">#python2&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/">#print&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/input/">#input&nbsp</a>
+    </div>
+
+
+
+    <div>创建时间：<time datetime=2017-07-23></time>2017-07-23
+    </div>
+
+    <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+
+    <div>许可协议：<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </div>
+
+</div>
+</article>
+
+    
+        <div class=" card pagination">
+        
+            
+            <a class="button next-page" href= /hugo-theme-whiteink/programming/python/python3-logconfig/ title=Python3&#32;中的&#32;log&#32;文件配置方法>
+                下一页
+            </a>
+            
+        </div>
+    
+
+
+            </section>
+            <section id="sidebar">
+                
+    <aside class="sidebar">
+    <div id="search" class="card">
+        <div id="search-key">
+            <i class="icon-search icon-large"></i>
+            <form action="//www.google.com/search" target="_blank" class="search-form">
+                <input type="text" name="q" maxlength="20" placeholder="搜索...">
+                <input type="hidden" name="sitesearch" value=https://yi-Xu-0100.github.io/hugo-theme-whiteink/>
+            </form>
+        </div>
+    </div>
+        <div id="avatar" class="card">
+            <a href=/hugo-theme-whiteink/page/about>
+                <img class="animated zoomIn" id="avatar-img" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+            </a>
+            <div id="motto">
+                <span>品水如酒，愚醉……</span>
+            </div>
+        </div>
+        <div id="categories" class="card">
+            <div id="category-title">文章分类</div>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                
+                    
+                        <ol class="subcategory">
+                            <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                        </ol>
+                    
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                
+            </li>
+            
+            <li class="category">
+                <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                
+            </li>
+            
+      </div>
+</aside>
+    
+    <aside class="sidebar">
+        <div id="post-menu">
+            <h1 id="toc-title">目录</h1>
+            <div id="toc"><nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#python-中的一般-print-的语法">Python 中的一般 Print 的语法</a>
+<ul>
+<li><a href="#对单引号-和双引号-的显示问题">对单引号(&ldquo;)和双引号(&rdquo;&ldquo;)的显示问题</a></li>
+<li><a href="#print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</a></li>
+<li><a href="#input-和-raw-input-的区别">input() 和 raw_input() 的区别</a></li>
+<li><a href="#相关说明">相关说明</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav></div>
+        </div>
+    </aside>
+
+
+            </section>
+        </div>
+        <footer>
+    <a  
+            href="mailto:yi_Xu@yixuju.cn"
+            target = "_blank"
+        
+        target = "_self" rel="nofollow">
+            &copy; 2014 - 2019 yi_Xu
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    
+        <i class="icon-legal"></i>
+        <a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+    
+</footer>
+    </body>
+</html>

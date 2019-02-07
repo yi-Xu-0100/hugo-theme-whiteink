@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(0,0,0,.05);
+    font-family: '.SFNSText-Regular', 'Helvetica Neue', Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    letter-spacing: 0.02em;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #909090;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+    z-index: 99;
+}
+
+#container {
+    max-width: 960px;
+    padding: 0 16px;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    width: 100%;
+    max-width: 650px;
+}
+@media (max-width:950px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+@media (min-width:950px) {
+    #sidebar {
+        width: 310px;
+    }
+}
+
+@import "_partial/animate";
+@import "_partial/archieves";
+@import "_partial/components";
+@import "_partial/font-awesome";
+@import "_partial/footer";
+@import "_partial/header";
+@import "_partial/mobile";
+@import "_partial/pagination";
+@import "_partial/post";
+@import "_partial/root";
+@import "_partial/sidebar";
+@import "_partial/syntax";
