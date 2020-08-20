@@ -65,9 +65,11 @@ copyright =                     "yi_Xu"
     author = "yi_Xu"
     email = "yi_Xu@yixuju.cn"
     record = "鲁ICP备17049362号"
-    description = "A website about yi_Xu."
+    description = "A website about yi_Xu. The content includes the sharing of programming experience and blog about life perception."
     keywords = "web,python,blog"
     image = "img/background.jpg"
-    type = "website"
+    locale = "zh-CN"
+    app_id = 198934840692875
+    card = "summary"
     motto = "品水如酒，愚醉……"
     lience = '<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'

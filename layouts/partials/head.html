@@ -4,14 +4,34 @@
 <meta http-equiv="cache-control" content="no-cache" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 <meta name="format-detection" content="telephone=no" />
+<meta name="author" content='{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ $.Site.Params.author }}{{ end }}' />
+<meta name="description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
+<meta name="keywords" content='{{ if isset .Params "keywords" }}{{ .Params.keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}' />
+<meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+<meta property="og:url" content='{{ .URL | absURL }}' />
+<meta property="og:title" content='{{ .Title }}' />
+<meta property="og:description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
+<meta property="og:site_name" content='{{ .Site.Title }}' />
+<meta property="og:image" content='{{ if isset .Site.Params "image" }}{{ .Site.Params.image | absURL }}{{ end }}' />
+<meta property="og:locale" content='{{ if isset .Site.Params "locale" }}{{ .Site.Params.locale }}{{ end }}' />
+<meta property="fb:app_id" content='{{ if isset .Site.Params "app_id" }}{{ .Site.Params.app_id }}{{ end }}' />
+<meta property="fb:admins" content='{{ if isset .Site.Params "admins" }}{{ .Site.Params.admins }}{{ end }}' />
+<meta itemprop="name" content='{{ .Title }}' />
+<meta itemprop="description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
+<meta itemprop="image" content='{{ if isset .Site.Params "image" }}{{ .Site.Params.image | absURL }}{{ end }}' />
+<meta name="twitter:card" content='{{ if isset .Site.Params "card" }}{{ .Site.Params.card }}{{ end }}' />
+<!-- @site_account -->
+<meta name="twitter:site" content='{{ if isset .Site.Params "site_account" }}{{ .Site.Params.site_account }}{{ end }}' />
+<!-- @individual_account -->
+<meta name="twitter:creator" content='{{ if isset .Site.Params "individual_account" }}{{ .Site.Params.individual_account }}{{ end }}' />
+<meta name="twitter:title" content='{{ .Title }}' />
+<meta name="twitter:description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
+<meta name="twitter:image" content='{{ if isset .Site.Params "image" }}{{ .Site.Params.image | absURL }}{{ end }}' />
+<title>{{ .Title }}{{ if ne .Title $.Site.Title }} | {{ $.Site.Title }} {{ end }}</title>
 <link rel="canonical" href={{ .URL | absURL }} />
-<link rel="copyright" href={{ "copyright.html" | relURL }}>
-<link rel="shortcut icon" type="image/ico" href={{ "/favicon.ico" | relURL }} />
-<!-- <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png"> -->
-<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+<link rel="icon" type="image/x-icon" href={{ "/favicon.ico" | relURL }} />
+<link rel="icon" type="image/png" href={{ "/favicon.png" | relURL }} />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
 <link rel="stylesheet" href={{ "/css/style.css" | relURL }} />
 <script src={{ "/js/jquery-3.3.1.min.js" | relURL }}></script>
 <script src={{ "/js/custom.js" | relURL }}></script>
