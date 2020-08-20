@@ -3,8 +3,8 @@
 
 name = "WhiteInk"
 license = "MIT"
-licenselink = "https://github.com/yi-Xu-0100/hugo-theme-whiteink/blob/master/LICENSE.md"
-description = ""
+licenselink = "https://github.com/yi-Xu-0100/hugo-theme-whiteink/blob/master/LICENSE"
+description = "personal theme for yixuju"
 homepage = "https://github.com/yi-Xu-0100/hugo-theme-whiteink"
 tags = []
 features = []
@@ -12,7 +12,6 @@ features = []
 [author]
   name = "yi_Xu"
   homepage = "https://github.com/yi-Xu-0100"
-
 
 # If porting an existing theme
 [original]

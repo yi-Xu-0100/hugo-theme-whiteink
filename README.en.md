@@ -1,4 +1,4 @@
-# Hugo-Theme-WhiteInk
+## Hugo-Theme-WhiteInk
 
 a hugo theme for yixuju, which learn from [hexo-theme-Aath](https://github.com/lewis-geek/hexo-theme-Aath) .
 
