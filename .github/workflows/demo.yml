@@ -1,4 +1,4 @@
-name: Demo Build
+name: Demo
 
 on:
   push:
@@ -20,8 +20,8 @@ jobs:
 
       - name: Build
         run: |
-        cd exampleSite/
-        hugo
+          cd exampleSite/
+          hugo
 
       - name: hugo-deploy-gh-pages
         uses: peaceiris/actions-gh-pages@v3
