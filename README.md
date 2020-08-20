@@ -1,6 +1,6 @@
 ## Hugo-Theme-WhiteInk
 
-[![workflows status](https://github.com/yi-Xu-0100/hugo-theme-whiteink/workflows/workflows/Demo/badge.svg)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/actions?query=workflow%3ADemo)
+[![workflows status](https://github.com/yi-Xu-0100/hugo-theme-whiteink/workflows/Demo/badge.svg)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/actions?query=workflow%3ADemo)
 [![GitHub last commit](https://img.shields.io/github/last-commit/yi-Xu-0100/hugo-theme-whiteink)](https://github.yixuju.cn/hugo-theme-whiteink/)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/yi-Xu-0100/hugo-theme-whiteink)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/releases)
 [![LICENSE](https://img.shields.io/github/license/yi-Xu-0100/hugo-theme-whiteink)](./LICENSE)

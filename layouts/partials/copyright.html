@@ -28,8 +28,8 @@
 {{ if .Params.copyright }}
     <div> 许可协议：{{ .Params.copyright }}
     </div>
-{{else if .Site.Params.lience }}
-    <div>许可协议：{{ .Site.Params.lience | safeHTML }}
+{{else if .Site.Params.license }}
+    <div>许可协议：{{ .Site.Params.license | safeHTML }}
     </div>
 {{ end }}
 </div>
