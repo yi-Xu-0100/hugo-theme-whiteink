@@ -38,7 +38,7 @@
 ``` bash
 git clone --depth=1 https://github.com/yi-Xu-0100/hugo-theme-whiteink.git
 cd exampleSite/
-hugo server
+hugo server --watch
 ```
 
 测试站点访问：<http://localhost:1313/hugo-theme-whiteink>
@@ -46,3 +46,16 @@ hugo server
 ## License
 
 + [MIT](./LICENSE)
+
+## 更新日志
+
+### V3.0.2
+
++ 修复 404 页面图片链接错误
++ 更新最新修改时间默认值
+
+### V3.0.1
+
++ 修复 License 拼写错误
++ 迁移 meta 去 head 模板中
++ 修复 readme 和 config 文件内容

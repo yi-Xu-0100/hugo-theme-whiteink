@@ -20,7 +20,7 @@
     </div>
 {{ end }}
 {{ if .Params.date }}
-    <div>创建时间：<time datetime={{ dateFormat "2006-01-02" .Params.date }}></time>{{ dateFormat "2006-01-02" .Params.date }}{{ if $.Params.updated_at }} | 最新更新于：<time datetime={{ dateFormat "2006-01-02" $.Params.updated_at }}></time>{{ dateFormat "2006-01-02" $.Params.updated_at }}{{ end }}
+    <div>创建时间：<time datetime={{ dateFormat "2006-01-02" .Params.date }}></time>{{ dateFormat "2006-01-02" .Params.date }} | 最新更新于：<time datetime={{ dateFormat "2006-01-02" (or $.Params.updated_at .Params.date) }}></time>{{ dateFormat "2006-01-02" (or $.Params.updated_at .Params.date) }}
     </div>
 {{ end }}
     <div>原始链接：{{ .URL | absURL}}<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='{{ .URL | absURL}}' aria-label="复制成功！"><i class="icon-copy"></i></span>
