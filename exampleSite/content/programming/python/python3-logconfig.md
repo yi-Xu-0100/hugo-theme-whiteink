@@ -278,7 +278,7 @@ disable_existing_loggers: False
 
 `log.log` 输出如下：
 
-```
+``` log
 2017-08-17 20:57:32,535 - main.py - 39 - [INFO] 测试info
 2017-08-17 20:57:32,535 - main.py - 40 - [WARNING] 测试warn
 2017-08-17 20:57:32,536 - main.py - 41 - [ERROR] 测试error
