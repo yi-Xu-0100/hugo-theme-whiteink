@@ -36,7 +36,7 @@ title: 关于逸絮居 - yi_Xu
 
 ### 2017.11.15
 
-工信部备案成功，备案号：[鲁ICP备17049362号](https://www.miitbeian.gov.cn) 。
+工信部备案成功，备案号：[鲁ICP备17049362号](https://beian.miit.gov.cn/) 。
 
 ### 2017.10.23
 
