@@ -49,6 +49,13 @@ hugo server --watch
 
 ## 更新日志
 
+### V3.0.4
+
++ 更新备案信息链接地址为：<https://beian.miit.gov.cn/>
+
+<details>
+<summary>展开查看</summary>
+
 ### V3.0.3
 
 + 再次修复 404 页面图片链接错误
@@ -64,3 +71,5 @@ hugo server --watch
 + 修复 License 拼写错误
 + 迁移 meta 去 head 模板中
 + 修复 readme 和 config 文件内容
+
+</details>
