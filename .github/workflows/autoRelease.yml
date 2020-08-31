@@ -1,0 +1,29 @@
+name: autoRelease
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  note:
+    name: Write release note
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: metcalfc/changelog-generator@v0.4.1
+        id: changelog
+        with:
+          myToken: ${{ secrets.GITHUB_TOKEN }}
+          base-ref: v0.0.5
+      - uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          draft: false
+          prerelease: false
