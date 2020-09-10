@@ -6,7 +6,7 @@ on:
       - 'v*.*.*'
 
 jobs:
-  set tag to release:
+  set-tag-to-release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
