@@ -9,7 +9,7 @@
         {{ end }}
     </div>
     <div class="card-meta">
-        <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" .Date }}></time>{{ dateFormat "2006-01-02" .Date }}</span>
+        <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" (or .Params.updated_at .Params.date) }}></time>{{ dateFormat "2006-01-02" (or .Params.updated_at .Params.date) }}</span>
         {{ if .Params.tags }}
             {{ range .Params.tags }}
                 <a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/" class="card-tag">&nbsp#{{ . }}</a>
@@ -34,7 +34,7 @@
         {{ end }}
     </div>
     <div class="card-meta">
-        <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" .Date }}></time>{{ dateFormat "2006-01-02" .Date }}</span>
+        <span class="card-time"><i class="icon-calendar"></i> <time datetime={{ dateFormat "2006-01-02" (or .Params.updated_at .Params.date) }}></time>{{ dateFormat "2006-01-02" (or .Params.updated_at .Params.date) }}</span>
         {{ if .Params.tags }}
             {{ range .Params.tags }}
                 <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/" class="card-tag">&nbsp#{{ . }}</a>

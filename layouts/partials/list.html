@@ -20,7 +20,7 @@
     {{ end }}
     {{ range .Data.Pages }}
         <div class="list list-post">
-            <a class="post-link" href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+            <a class="post-link" href="{{.Permalink}}">{{ dateFormat "2006-01-02" (or .Params.updated_at .Params.date) }} | {{.Title}}</a>
             <span class="read-info">字数：{{ .WordCount }} 预计时间：{{ .ReadingTime }} 分钟</span>
         </div>
     {{ end }}
