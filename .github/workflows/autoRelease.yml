@@ -6,20 +6,20 @@ on:
       - 'v*.*.*'
 
 jobs:
-  set-tag-to-release:
+  autoRelease:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v2.3.2
+        uses: actions/checkout@v2.3.2
 
       - name: Write release note
-      - uses: metcalfc/changelog-generator@v0.4.3
+        uses: metcalfc/changelog-generator@v0.4.3
         id: changelog
         with:
           myToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create release
-      - uses: actions/create-release@v1.1.3
+        uses: actions/create-release@v1.1.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
