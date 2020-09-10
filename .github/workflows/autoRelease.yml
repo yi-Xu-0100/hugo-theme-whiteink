@@ -11,13 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
       - uses: metcalfc/changelog-generator@v0.4.3
         id: changelog
         with:
           myToken: ${{ secrets.GITHUB_TOKEN }}
-          base-ref: v0.0.5
       - uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
