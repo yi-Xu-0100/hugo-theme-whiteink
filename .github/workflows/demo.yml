@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   hugo-deploy-gh-pages:
     runs-on: ubuntu-latest
@@ -18,7 +21,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
         with:
-          hugo-version: '0.53'
+          hugo-version: '0.76.5'
 
       - name: Build
         run: |
