@@ -48,6 +48,7 @@ $(document).ready(function () {
   $('#gotop').headroom();
 
   // 剪贴板设置
+  // eslint-disable-next-line no-undef
   var clipboard = new ClipboardJS('.copy-path');
 
   clipboard.on('success', function (e) {

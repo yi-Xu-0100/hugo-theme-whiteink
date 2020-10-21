@@ -7,7 +7,7 @@
             <li>
                 <a class="gotop" href="#">置顶</a>
             </li>
-            {{ $currentURL := .URL }}
+            {{ $currentURL := .RelPermalink }}
             {{ range .Site.Menus.home }}
                 <li>
                     <a href= {{ .URL }} {{ if eq $currentURL .URL }}class="active"{{ end }}>

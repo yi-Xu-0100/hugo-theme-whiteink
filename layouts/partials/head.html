@@ -7,8 +7,8 @@
 <meta name="author" content='{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ $.Site.Params.author }}{{ end }}' />
 <meta name="description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
 <meta name="keywords" content='{{ if isset .Params "keywords" }}{{ .Params.keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}' />
-<meta name="generator" content="Hugo {{ .Hugo.Version }}" />
-<meta property="og:url" content='{{ .URL | absURL }}' />
+{{ .Hugo.Generator }}
+<meta property="og:url" content='{{ .RelPermalink | absURL }}' />
 <meta property="og:title" content='{{ .Title }}' />
 <meta property="og:description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
 <meta property="og:site_name" content='{{ .Site.Title }}' />
@@ -28,7 +28,7 @@
 <meta name="twitter:description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
 <meta name="twitter:image" content='{{ if isset .Site.Params "image" }}{{ .Site.Params.image | absURL }}{{ end }}' />
 <title>{{ .Title }}{{ if ne .Title $.Site.Title }} | {{ $.Site.Title }} {{ end }}</title>
-<link rel="canonical" href={{ .URL | absURL }} />
+<link rel="canonical" href={{ .RelPermalink | absURL }} />
 <link rel="icon" type="image/x-icon" href={{ "/favicon.ico" | relURL }} />
 <link rel="icon" type="image/png" href={{ "/favicon.png" | relURL }} />
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />

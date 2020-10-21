@@ -1,3 +1,5 @@
 /public/
 /themes/
 /exampleSite/public/
+.vscode/
+node_modules/

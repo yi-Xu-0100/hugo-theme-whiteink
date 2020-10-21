@@ -1,3 +1,6 @@
 node_modules/
 /exampleSite/public/
 public/
+.vscode/
+static/js/custom.min.js
+static/css/style.min.css

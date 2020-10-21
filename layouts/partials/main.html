@@ -24,12 +24,12 @@
     {{ if ne .Type "page" }}
         <div class=" card pagination">
         {{ with .PrevInSection }}
-            <a class="button prev-page" href={{ .URL }} title={{ .Title }}>
+            <a class="button prev-page" href={{ .RelPermalink }} title={{ .Title }}>
                 上一页
             </a>
         {{ end }}
             {{ with .NextInSection }}
-            <a class="button next-page" href= {{ .URL }} title={{ .Title }}>
+            <a class="button next-page" href= {{ .RelPermalink }} title={{ .Title }}>
                 下一页
             </a>
             {{ end }}

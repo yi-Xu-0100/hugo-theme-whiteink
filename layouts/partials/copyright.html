@@ -11,19 +11,21 @@
     </div>
 {{ end }}
 {{ if .Params.tags }}
-    <div>文章标签：{{ range .Params.tags }}<a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/">#{{ . }}&nbsp</a>{{ end }}
+    <div>文章标签：{{ range .Params.tags }}
+      <a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/">#{{ . }}&nbsp</a>{{ end }}
     </div>
 {{ end }}
 {{ if .Params.categories }}
-    <div>文章分类：{{ range .Params.categories }}<a href="{{ $.Site.LanguagePrefix | absURL }}/categories/{{ . | urlize }}/">&nbsp#{{ . }}</a>
+    <div>文章分类：{{ range .Params.categories }}
+      <a href="{{ $.Site.LanguagePrefix | absURL }}/categories/{{ . | urlize }}/">&nbsp#{{ . }}</a>
     {{ end }}
     </div>
 {{ end }}
 {{ if .Params.date }}
-    <div>创建时间：<time datetime={{ dateFormat "2006-01-02" .Params.date }}></time>{{ dateFormat "2006-01-02" .Params.date }} | 最新更新于：<time datetime={{ dateFormat "2006-01-02" (or $.Params.updated_at .Params.date) }}></time>{{ dateFormat "2006-01-02" (or $.Params.updated_at .Params.date) }}
+    <div>创建时间：<time datetime={{ dateFormat "2006-01-02" .Params.date }}></time>{{ dateFormat "2006-01-02" .Params.date }} | 最新更新于：<time datetime={{ (or .Lastmod .Date).Format "2006-01-02" }}></time>{{ (or .Lastmod .Date).Format "2006-01-02" }}
     </div>
 {{ end }}
-    <div>原始链接：{{ .URL | absURL}}<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='{{ .URL | absURL}}' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    <div>原始链接：{{ .Permalink | absURL}}<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='{{ .Permalink | absURL}}' aria-label="复制成功！"><i class="icon-copy"></i></span>
     </div>
 {{ if .Params.copyright }}
     <div> 许可协议：{{ .Params.copyright }}

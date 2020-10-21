@@ -73,3 +73,4 @@ copyright =                     "yi_Xu"
     card = "summary"
     motto = "品水如酒，愚醉……"
     license = '<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+    mainSections = ["programming", "other"]
