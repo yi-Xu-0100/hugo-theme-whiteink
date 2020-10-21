@@ -16,6 +16,8 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ### ♻️ Changed
 
+- 🔥 删除 sync2gitee
+
 ### 🐛 Fixed
 
 - 🐛 修复时间错误
