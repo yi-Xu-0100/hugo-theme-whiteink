@@ -9,7 +9,8 @@
     "clear": "rimraf -rf exampleSite/public/* static/css/style.min.css static/js/custom.min.js",
     "build-css": "stylus static/css/style.styl -c -o static/css/style.min.css",
     "build-js": "uglifyjs static/js/custom.js -c -o static/js/custom.min.js",
-    "rebuild": "npm run clear && npm run build-css && npm run build-js",
+    "add-css-js": "git add static/css/style.min.css static/js/custom.min.js",
+    "rebuild": "npm run clear && npm run build-css && npm run build-js && npm run add-css-js",
     "test": "npm run rebuild && cd exampleSite/ && hugo server"
   },
   "husky": {
