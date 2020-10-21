@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on WhiteInk</title>
@@ -7,85 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Thu, 15 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 03 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/blog/</link>
-      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Csv</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/</link>
-      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ecs</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ecs/</link>
-      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ecs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Firstblog</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/firstblog/</link>
-      <pubDate>Tue, 21 Mar 2017 21:10:50 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/firstblog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Github</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/github/</link>
-      <pubDate>Wed, 22 Mar 2017 09:17:43 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hexo</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</link>
-      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/</link>
-      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Input</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/input/</link>
-      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/input/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Json</title>
+      <title>json</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
@@ -94,43 +18,7 @@
     </item>
     
     <item>
-      <title>Log</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</link>
-      <pubDate>Thu, 17 Aug 2017 13:19:48 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Polipo</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/</link>
-      <pubDate>Fri, 02 Jun 2017 07:41:49 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Print</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/</link>
-      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python2</title>
-      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/</link>
-      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
-      
-      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python3</title>
+      <title>python3</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/</link>
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
@@ -139,11 +27,119 @@
     </item>
     
     <item>
-      <title>Record</title>
+      <title>yaml</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/blog/</link>
+      <pubDate>Thu, 15 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csv</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecs</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ecs/</link>
+      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ecs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hexo</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</link>
+      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theme</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/theme/</link>
+      <pubDate>Sun, 19 Nov 2017 21:29:55 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>record</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/record/</link>
       <pubDate>Mon, 23 Oct 2017 19:31:55 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/record/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</link>
+      <pubDate>Thu, 17 Aug 2017 13:19:48 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>input</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/input/</link>
+      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/input/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>print</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/</link>
+      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/print/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python2</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/</link>
+      <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polipo</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/</link>
+      <pubDate>Fri, 02 Jun 2017 07:41:49 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/</guid>
       <description></description>
     </item>
     

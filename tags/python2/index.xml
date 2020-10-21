@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python2 on WhiteInk</title>
+    <title>python2 on WhiteInk</title>
     <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/</link>
-    <description>Recent content in Python2 on WhiteInk</description>
+    <description>Recent content in python2 on WhiteInk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Sun, 23 Jul 2017 14:22:28 +0000</lastBuildDate>
-    
-	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 23 Jul 2017 14:22:28 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python 中的 Print</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/</link>

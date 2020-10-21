@@ -10,7 +10,7 @@
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
 <meta name="keywords" content='web,python,blog' />
-<meta name="generator" content="Hugo 0.53" />
+<meta name="generator" content="Hugo 0.76.5" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/' />
 <meta property="og:title" content='python实现HTML的表格转csv' />
 <meta property="og:description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
@@ -111,6 +111,9 @@
             
         
     
+    <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
+    <div id="mobile-toc" class="mobile"><nav id="TableOfContents"></nav></div></li>
+
 </div>
         <header>
     <div id="header">
@@ -160,10 +163,9 @@
     </div>
     <div id="post-cotent">
         <p>个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。</p>
-
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -229,6 +231,7 @@
 </span><span class="lnt">64
 </span><span class="lnt">65
 </span><span class="lnt">66
+</span><span class="lnt">67
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-python" data-lang="python">    <span class="c1"># -*- coding: utf-8 -*-</span>
@@ -296,7 +299,9 @@
     <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
         <span class="n">page</span> <span class="o">=</span> <span class="n">getPage</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s1">&#39;./html/page1.html&#39;</span><span class="p">)</span>
         <span class="k">print</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">page_table</span><span class="p">)</span>
-        <span class="c1">#page.modify_table(result = &#39;./result/page1.html&#39;)</span></code></pre></td></tr></table>
+        <span class="c1">#page.modify_table(result = &#39;./result/page1.html&#39;)</span>
+
+</code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -310,7 +315,10 @@
     </div>
 
 
-    <div>文章标签：<a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/">#html&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/">#csv&nbsp</a>
+    <div>文章标签：
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/html/">#html&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/csv/">#csv&nbsp</a>
     </div>
 
 
@@ -391,6 +399,13 @@
       </div>
 </aside>
     
+    <aside class="sidebar">
+        <div id="post-menu">
+            <h1 id="toc-title">目录</h1>
+            <div id="toc"><nav id="TableOfContents"></nav></div>
+        </div>
+    </aside>
+
 
             </section>
         </div>
@@ -403,7 +418,7 @@
             &copy; 2014 - 2020 yi_Xu
     </a>
     <i class="icon-lightbulb"></i>
-    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo 0.76.5</a>
     <i class="icon-coffee"></i>
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     

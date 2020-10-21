@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>其他分享 on WhiteInk</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Sun, 19 Nov 2017 21:29:55 +0000</lastBuildDate>
-    
-	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 19 Nov 2017 21:29:55 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重启Hexo</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/rebuild-hexo/</link>

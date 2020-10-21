@@ -10,7 +10,7 @@
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
 <meta name="keywords" content='web,python,blog' />
-<meta name="generator" content="Hugo 0.53" />
+<meta name="generator" content="Hugo 0.76.5" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/' />
 <meta property="og:title" content='python3 实现 hugo 站点中的 front matter 的修改' />
 <meta property="og:description" content='将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。' />
@@ -111,6 +111,9 @@
             
         
     
+    <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
+    <div id="mobile-toc" class="mobile"><nav id="TableOfContents"></nav></div></li>
+
 </div>
         <header>
     <div id="header">
@@ -160,10 +163,9 @@
     </div>
     <div id="post-cotent">
         <p>将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。</p>
-
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">  1
+<pre class="chroma"><code><span class="lnt">  1
 </span><span class="lnt">  2
 </span><span class="lnt">  3
 </span><span class="lnt">  4
@@ -374,7 +376,8 @@
 
         <span class="c1"># write change to md</span>
         <span class="n">change_meta_data</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">change_meta_data</span><span class="o">=</span><span class="n">meta_data</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">)</span></code></pre></td></tr></table>
+        <span class="k">print</span><span class="p">(</span><span class="n">fix_meta</span><span class="p">)</span>
+</code></pre></td></tr></table>
 </div>
 </div>
     </div>
@@ -388,12 +391,15 @@
     </div>
 
 
-    <div>文章标签：<a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/">#yaml&nbsp</a><a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/">#json&nbsp</a>
+    <div>文章标签：
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/">#python3&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/">#yaml&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/">#json&nbsp</a>
     </div>
 
 
 
-    <div>创建时间：<time datetime=2018-03-03></time>2018-03-03 | 最新更新于：<time datetime=2020-09-10></time>2020-09-10
+    <div>创建时间：<time datetime=2018-03-03></time>2018-03-03 | 最新更新于：<time datetime=2020-10-21></time>2020-10-21
     </div>
 
     <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/' aria-label="复制成功！"><i class="icon-copy"></i></span>
@@ -465,6 +471,13 @@
       </div>
 </aside>
     
+    <aside class="sidebar">
+        <div id="post-menu">
+            <h1 id="toc-title">目录</h1>
+            <div id="toc"><nav id="TableOfContents"></nav></div>
+        </div>
+    </aside>
+
 
             </section>
         </div>
@@ -477,7 +490,7 @@
             &copy; 2014 - 2020 yi_Xu
     </a>
     <i class="icon-lightbulb"></i>
-    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo</a>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo 0.76.5</a>
     <i class="icon-coffee"></i>
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     

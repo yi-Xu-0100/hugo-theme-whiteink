@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Log on WhiteInk</title>
+    <title>log on WhiteInk</title>
     <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/</link>
-    <description>Recent content in Log on WhiteInk</description>
+    <description>Recent content in log on WhiteInk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Thu, 17 Aug 2017 13:19:48 +0000</lastBuildDate>
-    
-	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 17 Aug 2017 13:19:48 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/log/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python3 中的 log 文件配置方法</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/</link>

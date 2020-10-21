@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ubuntu on WhiteInk</title>
+    <title>ubuntu on WhiteInk</title>
     <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ubuntu/</link>
-    <description>Recent content in Ubuntu on WhiteInk</description>
+    <description>Recent content in ubuntu on WhiteInk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Fri, 02 Jun 2017 07:41:49 +0000</lastBuildDate>
-    
-	<atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 02 Jun 2017 07:41:49 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一些安装完Ubuntu 16.04需要做的事(网络设置)</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/</link>
