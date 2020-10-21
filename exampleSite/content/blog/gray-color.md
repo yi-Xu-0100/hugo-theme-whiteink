@@ -1,7 +1,7 @@
 ---
 date: 2014-07-05
 tags:
-- blog
+  - blog
 title: 灰白的色彩
 ---
 

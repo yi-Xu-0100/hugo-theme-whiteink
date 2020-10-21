@@ -1,7 +1,7 @@
 ---
 date: 2014-07-18
 tags:
-- blog
+  - blog
 title: 什么样的世界
 ---
 

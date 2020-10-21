@@ -1,7 +1,7 @@
 ---
 date: 2018-01-07
 tags:
-- blog
+  - blog
 title: 试着休息
 ---
 

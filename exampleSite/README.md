@@ -10,7 +10,7 @@ Demo theme for Hugo.
 
 ## test
 
-``` git
+```git
 git clone -b Demo-website https://github.com/yi-Xu-0100/hugo-theme-whiteink.git
 cd hugo-theme-whiteink/
 git clone -b master https://github.com/yi-Xu-0100/hugo-theme-whiteink.git themes/WhiteInk

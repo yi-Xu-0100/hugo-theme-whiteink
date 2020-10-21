@@ -1,18 +1,18 @@
 ---
 date: 2018-03-03
 tags:
-- python3
-- yaml
-- json
+  - python3
+  - yaml
+  - json
 title: python3 实现 hugo 站点中的 front matter 的修改
 updated_at: 2020-09-10 19:31:29
 ---
 
-
 将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。
+
 <!--more-->
 
-``` python
+```python
 # -*- coding: utf-8 -*-
 
 

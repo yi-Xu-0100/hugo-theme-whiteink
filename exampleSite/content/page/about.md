@@ -7,14 +7,13 @@ prevTitle: 归档
 title: 关于逸絮居 - yi_Xu
 ---
 
-
 ## <i class="icon-user"></i> 关于 - yi_Xu
 
-+ 解语：品水如酒，愚醉……
+- 解语：品水如酒，愚醉……
 
-+ github: https://github.com/yi-Xu-0100
+- github: https://github.com/yi-Xu-0100
 
-+ email: [yi_Xu@yixuju.cn](mailto:yi_Xu@yixuju.cn)
+- email: [yi_Xu@yixuju.cn](mailto:yi_Xu@yixuju.cn)
 
 ## <i class="icon-home"></i> 关于 - 逸絮居
 
@@ -36,7 +35,7 @@ title: 关于逸絮居 - yi_Xu
 
 ### 2017.11.15
 
-工信部备案成功，备案号：[鲁ICP备17049362号](https://beian.miit.gov.cn/) 。
+工信部备案成功，备案号：[鲁 ICP 备 17049362 号](https://beian.miit.gov.cn/) 。
 
 ### 2017.10.23
 

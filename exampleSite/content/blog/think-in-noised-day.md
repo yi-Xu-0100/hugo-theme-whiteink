@@ -1,7 +1,7 @@
 ---
 date: 2015-01-16
 tags:
-- blog
+  - blog
 title: 闹日思
 ---
 
