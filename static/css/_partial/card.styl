@@ -1,0 +1,36 @@
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.2);
+    border: 1px #333;;
+}
+
+.card-title {
+    border-left: 5px solid #ffa000;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 -20px;
+}
+
+.card-meta {
+    //display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 34px;
+}
+.card-time, .card-tag {
+    float: left;
+    margin-top: 10px;
+}
+.card-tag {
+    display: none;
+    font-weight: 600;
+}
+
+.posts:hover .card-tag {
+    display: block;
+}

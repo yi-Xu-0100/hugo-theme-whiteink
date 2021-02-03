@@ -4,8 +4,8 @@
   "description": "Hugo theme whiteink",
   "main": "dist/index.js",
   "scripts": {
-    "lint-check": "prettier --check **/*.{css,js,yml,json,md} && eslint .",
-    "format": "prettier --write **/*.{css,js,yml,json,md} && eslint .",
+    "lint-check": "prettier --check **/*.{css,js,yml,yaml,json,md} && eslint .",
+    "format": "prettier --write **/*.{css,js,yml,yaml,json,md} && eslint .",
     "clear": "rimraf -rf exampleSite/public/* static/css/style.min.css static/js/custom.min.js",
     "build-css": "stylus static/css/style.styl -c -o static/css/style.min.css",
     "build-js": "uglifyjs static/js/custom.js -c -o static/js/custom.min.js",
@@ -19,12 +19,12 @@
     }
   },
   "lint-staged": {
-    "**/*.{css, js}": [
+    "**/*.{js}": [
       "prettier --write",
       "git add",
       "eslint"
     ],
-    "**/*.{md,json,yml}": [
+    "**/*.{md,json,yml,yaml}": [
       "prettier --write",
       "git add"
     ]

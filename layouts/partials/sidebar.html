@@ -1,34 +1,33 @@
 <aside class="sidebar">
-    <div id="search" class="card">
-        <div id="search-key">
-            <i id="search-icon" class="icon-search icon-large"></i>
-            <form action="//www.google.com/search" target="_blank" class="search-form">
-                <input type="text" name="q" maxlength="20" placeholder="搜索...">
-                <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
-            </form>
-        </div>
-    </div>
-        <div id="avatar" class="card">
-            <a href={{ "/page/about" | relURL }}>
-                <img class="animated zoomIn" id="avatar-img" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
-            </a>
-            <div id="motto">
-                <span>{{ .Site.Params.motto }}</span>
-            </div>
-        </div>
-        <div id="categories" class="card">
-            <div id="category-title">文章分类</div>
-            {{ range .Site.Menus.main.ByWeight }}
-            <li class="category">
-                <a href={{ .URL }}>{{ .Name }}</a>
-                {{ if .HasChildren }}
-                    {{ range .Children }}
-                        <ol class="subcategory">
-                            <a href={{ .URL }}>{{ .Name }}</a>
-                        </ol>
-                    {{ end }}
-                {{ end }}
-            </li>
-            {{ end }}
+  <div id="avatar" class="card">
+      <a href={{ "/page/about" | relURL }}>
+          <img class="animated zoomIn" id="avatar-img" src={{"/img/avatar.jpg" | relURL }} alt={{ .Site.Params.author }}>
+      </a>
+      <div id="motto">
+          <span>{{ .Site.Params.motto }}</span>
       </div>
+  </div>
+  <div id="categories" class="card">
+      <div class="card-title sidebar-title">文章分类</div>
+      {{ range .Site.Menus.main.ByWeight }}
+      <li class="category">
+          <a href={{ .URL }}>{{ .Name }}</a>
+          {{ if .HasChildren }}
+              {{ range .Children }}
+                  <ol class="subcategory">
+                      <a href={{ .URL }}>{{ .Name }}</a>
+                  </ol>
+              {{ end }}
+          {{ end }}
+      </li>
+      {{ end }}
+  </div>
+  <div id="communication" class="card">
+    <div class="card-title sidebar-title">联系方式</div>
+    {{ range .Site.Params.contact }}
+    <li class="communication-list">
+      <span>{{ .Name }}: <a href="{{ .URL }}" target="_blank" rel="nofollow">{{ .Text }}</a></span>
+    </li>
+    {{ end }}
+</div>
 </aside>

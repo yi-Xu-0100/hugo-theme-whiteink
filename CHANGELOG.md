@@ -1,4 +1,4 @@
-## CHANGELOG
+# CHANGELOG
 
 All notable changes to this project will be documented in this file.
 
@@ -12,11 +12,13 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 ### ✨ Added
 
 - ✨ 使用 Lastmod 关键词
-- 使用 Hugo v0.76.5
+- ✨ 侧边栏增加联系方式
 
 ### ♻️ Changed
 
 - 🔥 删除 sync2gitee
+- 🔥 删除 搜索栏
+- ⬆ 使用 Hugo v0.80.0
 
 ### 🐛 Fixed
 

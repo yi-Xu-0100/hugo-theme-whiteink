@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
 
 env:
   TZ: Asia/Shanghai
@@ -21,7 +18,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.4.13
         with:
-          hugo-version: '0.76.5'
+          hugo-version: '0.80.0'
 
       - name: Build
         run: |

@@ -20,7 +20,7 @@ pygmentsUseClasses =            true
 pygmentsCodeFences =            true
 pygmentsStyle =                 "monokai"
 copyright =                     "yi_Xu"
-#googleAnalytics =              ""
+# googleAnalytics =              ""
 [taxonomies]
     category = "categories"
     tag = "tags"
@@ -72,5 +72,24 @@ copyright =                     "yi_Xu"
     app_id = 198934840692875
     card = "summary"
     motto = "品水如酒，愚醉……"
-    license = '<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
+    license = '<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank rel="nofollow">知识共享署名-非商业性使用 4.0 国际许可协议</a>'
     mainSections = ["programming", "other"]
+    [[params.contact]]
+        Name = "TG 频道"
+        Text = "t.me/yixuju_notify"
+        URL = "https://t.me/yixuju_notify"
+    [[params.contact]]
+        Name = "TG 群组"
+        Text = "t.me/yixuju"
+        URL = "https://t.me/yixuju"
+    [[params.contact]]
+        Name = "QQ 群组"
+        Text = "495793229"
+        URL = "https://jq.qq.com/?_wv=1027&k=XKIJXRol"
+    [[params.contact]]
+        Name = "联系邮箱"
+        Text = "yi_Xu@yixuju.cn"
+        URL = "mailto:yi_Xu@yixuju.cn"
+    [[params.contact]]
+        Name = "微信公众号"
+        Text = "逸絮居"

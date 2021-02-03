@@ -1,4 +1,4 @@
-## Hugo-Theme-WhiteInk
+# Hugo-Theme-WhiteInk
 
 [![sync2gitee](https://github.com/yi-Xu-0100/hugo-theme-whiteink/workflows/sync2gitee/badge.svg)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/actions?query=workflow%3sync2gitee)
 [![Demo](https://github.com/yi-Xu-0100/hugo-theme-whiteink/workflows/Demo/badge.svg)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/actions?query=workflow%3ADemo)
