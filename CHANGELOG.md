@@ -9,22 +9,27 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 ## [Unreleased]
 
+### [0.0.8] - 2021-02-04
+
 ### ✨ Added
 
-- ✨ 使用 Lastmod 关键词
-- ✨ 侧边栏增加联系方式
+- ✨ use Lastmod keyword (#11)
+- ✨ add contact into sidebar
 
 ### ♻️ Changed
 
-- 🔥 删除 sync2gitee
-- 🔥 删除 搜索栏
-- ⬆ 使用 Hugo v0.80.0
+- 🔥 delete sync2gitee workflow
+- 🔥 delete search
+- ⬆ use Hugo v0.80.0
+- 🔥 delete headroom.js
+- 🔥 delete mobile-search
+- 📝 update tag style in archieves (#8)
 
 ### 🐛 Fixed
 
-- 🐛 修复时间错误
-
-### 🔒 Security
+- 🐛 fix time error (#6)
+- 📝 fix .Hugo to hugo
+- 📝 fix .URL to .RelPermalink
 
 ## [0.0.7]
 
@@ -84,11 +89,12 @@ The emoji used in the `GitHub` commit message is based on [gitmoji](https://gitm
 
 - 🎉 基本功能发布
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.0.7...HEAD
-[0.0.7]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.7
-[0.0.6]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.6
-[0.0.5]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.5
-[0.0.4]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.4
-[0.0.3]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.3
-[0.0.2]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.2
-[0.0.1]: https://github.com/mindsers/changelog-reader-action/compare/v0.0.1
+[unreleased]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/compare/v0.0.8...HEAD
+[0.0.8]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.8
+[0.0.7]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.7
+[0.0.6]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.6
+[0.0.5]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.5
+[0.0.4]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.4
+[0.0.3]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.3
+[0.0.2]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.2
+[0.0.1]: https://github.com/yi-Xu-0100/hugo-theme-whiteink/tree/v0.0.1

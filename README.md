@@ -6,6 +6,11 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/yi-Xu-0100/hugo-theme-whiteink)](https://github.com/yi-Xu-0100/hugo-theme-whiteink/releases)
 [![LICENSE](https://img.shields.io/github/license/yi-Xu-0100/hugo-theme-whiteink)](./LICENSE)
 
+[![views](https://raw.githubusercontent.com/yi-Xu-0100/traffic2badge/traffic/traffic-hugo-theme-whiteink/views.svg)](https://github.com/yi-Xu-0100/traffic2badge/tree/traffic#-hugo-theme-whiteink)
+[![views per week](https://raw.githubusercontent.com/yi-Xu-0100/traffic2badge/traffic/traffic-hugo-theme-whiteink/views_per_week.svg)](https://github.com/yi-Xu-0100/traffic2badge/tree/traffic#-hugo-theme-whiteink)
+[![clones](https://raw.githubusercontent.com/yi-Xu-0100/traffic2badge/traffic/traffic-hugo-theme-whiteink/clones.svg)](https://github.com/yi-Xu-0100/traffic2badge/tree/traffic#-hugo-theme-whiteink)
+[![clones per week](https://raw.githubusercontent.com/yi-Xu-0100/traffic2badge/traffic/traffic-hugo-theme-whiteink/clones_per_week.svg)](https://github.com/yi-Xu-0100/traffic2badge/tree/traffic#-hugo-theme-whiteink)
+
 [逸絮居](https://www.yixuju.cn/)的主题, 样式灵感来自 [hexo-theme-Aath](https://github.com/lewis-geek/hexo-theme-Aath).
 
 内容来自[逸絮居](https://www.yixuju.cn/)
@@ -33,18 +38,15 @@
 
 - 标头菜单有多级菜单。
 - 脚标添加 `rss` 和社交图标。
-- 修复 #11 （更新 updated_at 为官方的 lastmod）
 - 完成 #10 （脚本修改时区问题）
-- 完成 #8 （修改归档标签带有角标）
 - 修复 #7 （修复没有下一页 bug）
-- 修复 #6 （修复首页显示文章顺序为最新发布为最先）
 
 ## 个人测试
 
 ```bash
 git clone --depth=1 https://github.com/yi-Xu-0100/hugo-theme-whiteink.git
-cd exampleSite/
-hugo server --watch
+npm install
+npm run test
 ```
 
 测试站点访问：<http://localhost:1313/hugo-theme-whiteink>
