@@ -21,7 +21,7 @@
         <h2>Tags</h2>
     <ul id="all-tags">
       {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-            <a href='{{ "/tags/" | relLangURL }}{{ $name | urlize }}' class="button tag">{{ $name }}<span class="tag-count">{{.Count}}</span></a>
+            <a href='{{ "/tags/" | relLangURL }}{{ $name | urlize }}' class="button tag">{{ $name }}<sup class="tag-count">{{.Count}}</sup></a>
       {{ end }}
     </ul>
     </div>
