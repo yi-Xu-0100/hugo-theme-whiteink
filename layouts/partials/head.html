@@ -7,7 +7,7 @@
 <meta name="author" content='{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ $.Site.Params.author }}{{ end }}' />
 <meta name="description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
 <meta name="keywords" content='{{ if isset .Params "keywords" }}{{ .Params.keywords }}{{ else }}{{ .Site.Params.keywords }}{{ end }}' />
-{{ .Hugo.Generator }}
+{{ hugo.Generator }}
 <meta property="og:url" content='{{ .RelPermalink | absURL }}' />
 <meta property="og:title" content='{{ .Title }}' />
 <meta property="og:description" content='{{ if .Summary }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}' />
@@ -34,6 +34,5 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
 <link rel="stylesheet" href={{ "/css/style.min.css" | relURL }} />
 <script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://unpkg.com/headroom.js@0.11.0/dist/headroom.min.js"></script>
 <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
 <script src={{ "/js/custom.min.js" | relURL }}></script>

@@ -23,7 +23,7 @@ $(document).ready(function () {
   // 移动端页面设置
   $('#mobile-navbar').click(function () {
     $('#jquery-menu').toggle(500);
-    $('header').toggleClass('mobile-header');
+    $('#header').toggleClass('mobile-header');
     $('#site-title').toggleClass('mobile-title');
     $('.mobile-navbar').toggleClass('mobile-title');
   });
@@ -39,13 +39,10 @@ $(document).ready(function () {
   });
   $('#mobile-toc-title a').click(function () {
     $('#jquery-menu').toggle(500);
-    $('header').toggleClass('mobile-header');
+    $('#header').toggleClass('mobile-header');
     $('#site-title').toggleClass('mobile-title');
     $('.mobile-navbar').toggleClass('mobile-title');
   });
-  $('header').headroom();
-  $('#mobile-avatar').headroom();
-  $('#gotop').headroom();
 
   // 剪贴板设置
   // eslint-disable-next-line no-undef

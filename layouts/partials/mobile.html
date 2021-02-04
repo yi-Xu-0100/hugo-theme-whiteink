@@ -14,15 +14,7 @@
     </div>
 </div>
 <div id="jquery-menu" class="mobile">
-    <div id="mobile-search">
-        <i class="icon-search icon-large"></i>
-        <form action="//www.google.com/search" target="_blank" class="search-form">
-            <input type="text" name="q" maxlength="20" placeholder="搜索...">
-            <input type="hidden" name="sitesearch" value={{ .Site.BaseURL }}>
-        </form>
-    </div>
     <ul id="mobile-menu">
-        {{ $currentURL := .URL }}
         {{ range .Site.Menus.home }}
             {{ if eq .Name "归档" }}
                 {{ range $.Site.Menus.main }}
