@@ -1,5 +1,5 @@
-/public/
-/themes/
-/exampleSite/public/
+public/
+themes/
+exampleSite/
 .vscode/
 node_modules/
