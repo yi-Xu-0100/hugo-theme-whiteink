@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
-    <lastBuildDate>Sun, 19 Nov 2017 21:29:55 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Aug 2020 08:40:39 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Windows 终端中设置代理</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/</link>
+      <pubDate>Fri, 28 Aug 2020 08:40:39 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/</guid>
+      <description>&lt;p&gt;代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 &lt;code&gt;VPN&lt;/code&gt; 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 &lt;code&gt;git clone&lt;/code&gt; 命令下载 &lt;code&gt;Github&lt;/code&gt; 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>【建站拾橞】第一期：git 初探与基础应用</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/the-gains-from-personal-blog-building-1/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/the-gains-from-personal-blog-building-1/</guid>
+      <description>&lt;p&gt;因为个人喜好，我学习了相关的基础知识，搭建了这个静态博客。在这摸索的过程中，我学到了许多东西，希望记录下一些应用心得。第一期的内容，主要是结合经历，对git的基础操作有个记录。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>重启Hexo</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/rebuild-hexo/</link>
@@ -27,7 +45,7 @@
     </item>
     
     <item>
-      <title>一些安装完Ubuntu 16.04需要做的事(网络设置)</title>
+      <title>一些安装完 Ubuntu 16.04 需要做的事(网络设置)</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/</link>
       <pubDate>Fri, 02 Jun 2017 07:41:49 +0000</pubDate>
       

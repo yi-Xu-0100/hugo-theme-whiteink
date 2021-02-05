@@ -14,7 +14,7 @@
       <pubDate>Thu, 17 Aug 2017 13:19:48 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/</guid>
-      <description>&lt;p&gt;Python 中有好用的 logging 模块，方便我们为程序添加 log 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 print 的方式来观察输出实在是忧伤，所以我试着配置了 log ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Python&lt;/code&gt; 中有好用的 &lt;code&gt;logging&lt;/code&gt; 模块，方便我们为程序添加 &lt;code&gt;log&lt;/code&gt; 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 &lt;code&gt;print&lt;/code&gt; 的方式来观察输出实在是忧伤，所以我试着配置了 &lt;code&gt;log&lt;/code&gt; ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?&lt;/p&gt;</description>
     </item>
     
   </channel>

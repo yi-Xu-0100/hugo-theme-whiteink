@@ -9,17 +9,17 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='最近不满足于在 Windows 的系统中使用虚拟机的 Ubuntu 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 Windows ，但最后还是装好了觊觎已久的我的第一个 Linux 系统—— Ubuntu 。下面是我重装一次 Ubuntu 后总结的装机后应该要做的事，就酱……' />
-<meta name="keywords" content='web,python,blog' />
+<meta name="keywords" content='web,python,blog,batch' />
 <meta name="generator" content="Hugo 0.80.0" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/' />
-<meta property="og:title" content='一些安装完Ubuntu 16.04需要做的事(网络设置)' />
+<meta property="og:title" content='一些安装完 Ubuntu 16.04 需要做的事(网络设置)' />
 <meta property="og:description" content='最近不满足于在 Windows 的系统中使用虚拟机的 Ubuntu 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 Windows ，但最后还是装好了觊觎已久的我的第一个 Linux 系统—— Ubuntu 。下面是我重装一次 Ubuntu 后总结的装机后应该要做的事，就酱……' />
 <meta property="og:site_name" content='WhiteInk' />
 <meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
 <meta property="og:locale" content='zh-CN' />
 <meta property="fb:app_id" content='198934840692875' />
 <meta property="fb:admins" content='' />
-<meta itemprop="name" content='一些安装完Ubuntu 16.04需要做的事(网络设置)' />
+<meta itemprop="name" content='一些安装完 Ubuntu 16.04 需要做的事(网络设置)' />
 <meta itemprop="description" content='最近不满足于在 Windows 的系统中使用虚拟机的 Ubuntu 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 Windows ，但最后还是装好了觊觎已久的我的第一个 Linux 系统—— Ubuntu 。下面是我重装一次 Ubuntu 后总结的装机后应该要做的事，就酱……' />
 <meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
 <meta name="twitter:card" content='summary' />
@@ -27,10 +27,10 @@
 <meta name="twitter:site" content='' />
 
 <meta name="twitter:creator" content='' />
-<meta name="twitter:title" content='一些安装完Ubuntu 16.04需要做的事(网络设置)' />
+<meta name="twitter:title" content='一些安装完 Ubuntu 16.04 需要做的事(网络设置)' />
 <meta name="twitter:description" content='最近不满足于在 Windows 的系统中使用虚拟机的 Ubuntu 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 Windows ，但最后还是装好了觊觎已久的我的第一个 Linux 系统—— Ubuntu 。下面是我重装一次 Ubuntu 后总结的装机后应该要做的事，就酱……' />
 <meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
-<title>一些安装完Ubuntu 16.04需要做的事(网络设置) | WhiteInk </title>
+<title>一些安装完 Ubuntu 16.04 需要做的事(网络设置) | WhiteInk </title>
 <link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/something-doing-after-ubuntu1604-installation/ />
 <link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
 <link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
@@ -115,9 +115,7 @@
       <ul>
         <li><a href="#网卡设置">网卡设置</a></li>
         <li><a href="#更换下载源">更换下载源</a></li>
-        <li><a href="#设置-ss-科学上网个人使用">设置 ss 科学上网(个人使用)</a></li>
         <li><a href="#设置-web-使用">设置 web 使用</a></li>
-        <li><a href="#设置终端走代理">设置终端走代理</a></li>
       </ul>
     </li>
     <li><a href="#总结">总结</a></li>
@@ -169,16 +167,16 @@
                 
     <article id="post" class="card">
     <div id="post-title">
-        <h1>一些安装完Ubuntu 16.04需要做的事(网络设置)</h1>
+        <h1>一些安装完 Ubuntu 16.04 需要做的事(网络设置)</h1>
     </div>
     <div id="post-cotent">
         <p>最近不满足于在 <code>Windows</code> 的系统中使用虚拟机的 <code>Ubuntu</code> 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 <code>Windows</code> ，但最后还是装好了觊觎已久的我的第一个 <code>Linux</code> 系统—— <code>Ubuntu</code> 。下面是我重装一次 <code>Ubuntu</code> 后总结的装机后应该要做的事，就酱……</p>
 <h2 id="安装-ubuntu-1604">安装 <code>Ubuntu 16.04</code></h2>
 <p>感觉网上教程很多，但有些误区，毕竟有些资料有点老，所以稍微说说。</p>
 <blockquote>
-<p>安装介质： U 盘(个人首推)</p>
+<p>安装介质： U盘(个人首推)</p>
 <p>安装的系统： <code>Ubuntu 16.04 + Windows 10</code> (个人使用)</p>
-<p>U 盘刻录： <a href="https://rufus.akeo.ie/">Rufus</a> (小巧简单)</p>
+<p>U盘刻录： <a href="https://rufus.akeo.ie/">Rufus</a> (小巧简单)</p>
 <p>个人硬件： 笔记本(<code>战神 Z6-SL7D1</code>)</p>
 <p><strong>温馨提示：请注意备份原系统和相关重要资料，以防各种意外发生……</strong></p>
 </blockquote>
@@ -192,8 +190,8 @@
 <h3 id="装机后可能的错误">装机后可能的错误</h3>
 <p><strong>不知道我是不是倒霉，其实我不是如你所想一次成功，然后捣鼓坏了，觉得好多事要每次装机都做，然后才记录一下。</strong></p>
 <ul>
-<li>我因为上面的引导问题装过 <strong>3</strong> 次，终于理解了问题所在时，发现我以前重装的 <code>Windows 10</code> 引导是假冒的 <code>UEFI</code>的方式(没有 efi 分区，从系统盘的 boot 启动)，重装 <code>Windows 10</code>后，才最终正确安装 <code>Ubuntu 16.04</code> 。</li>
-<li>我一晚上正确安装完 <code>Ubuntu 16.04</code> 后，觉得没问题就准备第二天起再看看……然后启动时一直有错误。。。我能怎么办，我也很绝望啊~</li>
+<li>我因为上面的引导问题装过 <strong>3</strong> 次，终于理解了问题所在时，发现我以前重装的 <code>Windows 10</code> 引导是假冒的 <code>UEFI</code>的方式(没有 efi 分区，从系统盘的boot启动)，重装 <code>Windows 10</code>后，才最终正确安装 <code>Ubuntu 16.04</code> 。</li>
+<li>我一晚上正确安装完 <code>Ubuntu 16.04</code> 后，觉得没问题就准备第二天起再看看……然后启动时一直有错误。我能怎么办，我也很绝望啊~</li>
 <li>我的错误是
 <ul>
 <li>“BUG： soft lockup - CPU#5 stuck for 23s！”</li>
@@ -206,7 +204,7 @@
 <h2 id="网络设置">网络设置</h2>
 <p>网络没了，怎么算用电脑(我知道我错了……但还好啦)</p>
 <h3 id="网卡设置">网卡设置</h3>
-<p><strong>注意： 本人没有这个问题，本人的笔记本是 <code>战神 Z6-SL7D1</code>，没有网卡驱动没有加载的问题。如果有这样的问题，可能需要插网线，或者手机用 USB 共享网络，然后从网上查一下具体的驱动并安装，具体教程请自行百度/谷歌，祝顺……</strong></p>
+<p><strong>注意： 本人没有这个问题，本人的笔记本是 <code>战神 Z6-SL7D1</code>，没有网卡驱动没有加载的问题。如果有这样的问题，可能需要插网线，或者手机用USB共享网络，然后从网上查一下具体的驱动并安装，具体教程请自行百度/谷歌，祝顺……</strong></p>
 <h3 id="更换下载源">更换下载源</h3>
 <ul>
 <li><strong>备份源的配置文件</strong>(以防万一……)</li>
@@ -216,7 +214,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 </code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -227,7 +225,7 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo gedit /etc/apt/sources.list
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo gedit /etc/apt/sources.list
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
@@ -241,113 +239,34 @@
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt update
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt update
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
 <p>温馨提示：现在好像建议使用 <code>apt</code> 而不是 <code>apt-get</code> ，请注意跟上时代，貌似确实好点。</p>
 </blockquote>
-<h3 id="设置-ss-科学上网个人使用">设置 ss 科学上网(个人使用)</h3>
-<p>有一些知识不得不说，百度给出的答案有点答非所问……</p>
-<ul>
-<li>通过 pip 安装 shadowsocks :</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt update
-$ apt install python-pip
-$ pip install shadowsocks
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>设置配置文件 :</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo gedit etc/shadowsocks.json
-</code></pre></td></tr></table>
-</div>
-</div><p>文件内容基本格式如下：(具体内容请按照个人情况修改)</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
-  <span class="nt">&#34;server&#34;</span><span class="p">:</span> <span class="s2">&#34;my_server_ip&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;server_port&#34;</span><span class="p">:</span> <span class="mi">8080</span><span class="p">,</span>
-  <span class="nt">&#34;local_address&#34;</span><span class="p">:</span> <span class="s2">&#34;127.0.0.1&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;local_port&#34;</span><span class="p">:</span> <span class="mi">1080</span><span class="p">,</span>
-  <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;mypassword&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;timeout&#34;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
-  <span class="nt">&#34;method&#34;</span><span class="p">:</span> <span class="s2">&#34;aes-256-cfb&#34;</span><span class="p">,</span>
-  <span class="nt">&#34;fast_open&#34;</span><span class="p">:</span> <span class="kc">false</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>部署 shadowsocks ，并设置开机自启 :</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sslocal -c /etc/shadowsocks.json -d start
-$ sudo gedit /etc/rc.local
-</code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>如果这个文件打开后没有任何的引导语句，建议不保存并关闭。</p>
-<p>最好 cd 到 etc/ 中去用 ls 看一看，如果没找到，也可能在 rc.d/ 中。</p>
-</blockquote>
-<p>在 <code>exit 0</code> 的前面一行添加以下语句 :</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo /usr/local/bin/sslocal -c /etc/shadowsocks.json -d start
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="设置-web-使用">设置 web 使用</h3>
+<h3 id="设置-web-使用">设置 web 使用</h3>
 <ul>
 <li>个人使用： <code>chorme</code></li>
 <li>浏览器是我们可视化查询网络资源的途径，设置好浏览器，那些设置会消失， <code>Google Chorme</code> 是很好的账户同步设置的方式。(前提：你使用 <code>Google</code> 账号以前在同步中)</li>
 <li>安装 <code>Google Chorme</code> 的一般方案：
 <ul>
-<li>网上下载安装包，然后本地安装，以下为安装命令：(抱歉本人不会源码编译安装。)</li>
-<li>在安装包所在位置使用命令：</li>
-</ul>
+<li>
+<p>网上下载安装包，然后本地安装，以下为安装命令：(抱歉本人不会源码编译安装。)</p>
+</li>
+<li>
+<p>在安装包所在位置使用命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo dpkg -i google-chrome-stable_current_amd64.deb
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo dpkg -i google-chrome-stable_current_amd64.deb
 </code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>直接使用 <code>apt install</code> 安装。</li>
-</ul>
+</div></li>
+<li>
+<p>直接使用 <code>apt install</code> 安装。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -356,171 +275,25 @@ $ sudo gedit /etc/rc.local
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ wget -q -O - http://dl.google.com/linux/linux_signing_key.pub <span class="p">|</span> sudo apt-key add -
-$ sudo sh -c <span class="s1">&#39;echo&#34;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&#34;&gt;&gt; /etc/apt/sources.list.d/google.list&#39;</span>
-$ sudo apt-get update
-$ sudo apt-get install google-chrome-stable
+<pre class="chroma"><code class="language-bash" data-lang="bash">wget -q -O - http://dl.google.com/linux/linux_signing_key.pub <span class="p">|</span> sudo apt-key add -
+sudo sh -c <span class="s1">&#39;echo&#34;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&#34;&gt;&gt; /etc/apt/sources.list.d/google.list&#39;</span>
+sudo apt-get update
+sudo apt-get install google-chrome-stable
 </code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
+</li>
+</ul>
 <blockquote>
 <p>参考链接： <a href="http://blog.topspeedsnail.com/archives/4793">WTF Daily Blog-Ubuntu 16.04 安装 Google Chorme</a></p>
 </blockquote>
-<ul>
-<li>安装 <code>SwitchOmega</code> 插件
-<ul>
-<li>百度/谷歌搜索下载插件，安装后 <code>proxy</code> 中配置的代理端口，默认的话，应该为 <code>127.0.0.1</code> 和 <code>1080</code> 。</li>
-<li>如果要走 <code>PAC</code> 代理，建议百度/谷歌相关教程，配置 <code>AutoSwitch</code> 选项，当然也可以自己尝试。(这里提供 Rule list: <a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</a>)</li>
-</ul>
-</li>
-</ul>
-<h3 id="设置终端走代理">设置终端走代理</h3>
-<p>本人使用 <code>Atom</code> ，插件的源一直基本无法链接，遍寻结果后，，发现让终端走代理，然后直接用终端下载插件效果较好。</p>
-<ul>
-<li>安装 <code>polipo</code></li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo apt install polipo
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>打开 <code>polipo</code> 的 <code>config</code> 文件：</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo gedit /etc/polipo/config
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>编辑 <code>config</code> 文件：</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">#</span> <span class="err">This</span> <span class="err">file</span> <span class="err">only</span> <span class="err">needs</span> <span class="err">to</span> <span class="err">list</span> <span class="err">configuration</span> <span class="err">variables</span> <span class="err">that</span> <span class="err">deviate</span>
-<span class="err">#</span> <span class="err">from</span> <span class="err">the</span> <span class="err">default</span> <span class="err">values.</span>  <span class="err">See</span> <span class="err">/usr/share/doc/polipo/examples/config.sample</span>
-<span class="err">#</span> <span class="err">and</span> <span class="s2">&#34;polipo -v&#34;</span> <span class="err">for</span> <span class="err">variables</span> <span class="err">you</span> <span class="err">can</span> <span class="err">tweak</span> <span class="err">and</span> <span class="err">further</span> <span class="err">information.</span>
-<span class="err">logSyslog</span> <span class="err">=</span> <span class="kc">true</span>
-<span class="err">logFile</span> <span class="err">=</span> <span class="err">/var/log/polipo/polipo.log</span>
-<span class="err">logLevel=</span><span class="mi">4</span>
-<span class="err">socksParentProxy</span> <span class="err">=</span> <span class="s2">&#34;localhost:1080&#34;</span>
-<span class="err">socksProxyType</span> <span class="err">=</span> <span class="err">socks</span><span class="mi">5</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>如果没有注释，可能你打开了错误的文档。</p>
-<ul>
-<li>重新启动 <code>polipo</code> ：</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ sudo service polipo stop
-$ sudo service polipo start
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>打开 bash 的设置</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sudo gedit ~/.bashrc
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>修改配置(文档末尾添加)</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#  add alias for proxy</span>
-<span class="nb">alias</span> <span class="nv">hp</span><span class="o">=</span><span class="s2">&#34;http_proxy=http://localhost:8123&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
-<li>验证使用</li>
-</ul>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">$ curl ip.gs
-Current IP / 当前 IP: 123.235.2.204
-ISP / 运营商:  ChinaUnicom
-City / 城市: Qingdao Shandong
-Country / 国家: China
-Please join Telegram group https://t.me/sbfans <span class="k">if</span> you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans
- /<span class="se">\_</span>/<span class="se">\
-</span><span class="se"></span><span class="o">=(</span> °w° <span class="o">)=</span>
- <span class="o">)</span>   <span class="o">(</span>  //
-<span class="o">(</span>__ __<span class="o">)</span>//
-$ hp curl ip.gs
-Current IP / 当前 IP: 139.162.75.147
-ISP / 运营商:  linode.com
-City / 城市: Shinagawa Tokyo
-Country / 国家: Japan
-Please join Telegram group https://t.me/sbfans <span class="k">if</span> you have any issues. / 如有问题，请加入 Telegram 群 https://t.me/sbfans
- /<span class="se">\_</span>/<span class="se">\
-</span><span class="se"></span><span class="o">=(</span> °w° <span class="o">)=</span>
- <span class="o">)</span>   <span class="o">(</span>  //
-<span class="o">(</span>__ __<span class="o">)</span>//
-</code></pre></td></tr></table>
-</div>
-</div><blockquote>
-<p>温馨提示：如果没有效果，请关机重启后，重试。</p>
-<p>参考链接：<a href="http://droidyue.com/blog/2016/04/04/set-shadowsocks-proxy-for-terminal/index.html">为终端设置 Shadowsocks 代理 - 技术小黑屋</a></p>
-</blockquote>
 <h2 id="总结">总结</h2>
-<p>以上是我的网络设置之路,记录下来希望少走弯路。</p>
+<p>以上是我的网络设置之路，记录下来希望少走弯路。</p>
     </div>
     <div id="copyright" class="card">
 
-    <div><span> 文章标题：一些安装完Ubuntu 16.04需要做的事(网络设置)</span>
+    <div><span> 文章标题：一些安装完 Ubuntu 16.04 需要做的事(网络设置)</span>
     </div>
 
 
@@ -530,8 +303,6 @@ Please join Telegram group https://t.me/sbfans <span class="k">if</span> you hav
 
     <div>文章标签：
       <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/ubuntu/">#ubuntu&nbsp</a>
-      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/shadowsocks/">#shadowsocks&nbsp</a>
-      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/">#polipo&nbsp</a>
       <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/terminal/">#terminal&nbsp</a>
     </div>
 
@@ -585,7 +356,11 @@ Please join Telegram group https://t.me/sbfans <span class="k">if</span> you hav
           
               
                   <ol class="subcategory">
-                      <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
                   </ol>
               
           
@@ -643,9 +418,7 @@ Please join Telegram group https://t.me/sbfans <span class="k">if</span> you hav
       <ul>
         <li><a href="#网卡设置">网卡设置</a></li>
         <li><a href="#更换下载源">更换下载源</a></li>
-        <li><a href="#设置-ss-科学上网个人使用">设置 ss 科学上网(个人使用)</a></li>
         <li><a href="#设置-web-使用">设置 web 使用</a></li>
-        <li><a href="#设置终端走代理">设置终端走代理</a></li>
       </ul>
     </li>
     <li><a href="#总结">总结</a></li>
@@ -671,7 +444,7 @@ Please join Telegram group https://t.me/sbfans <span class="k">if</span> you hav
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     
         <i class="icon-legal"></i>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
     
 </footer>
     </body>

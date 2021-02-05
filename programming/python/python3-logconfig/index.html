@@ -9,7 +9,7 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='Python 中有好用的 logging 模块，方便我们为程序添加 log 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 print 的方式来观察输出实在是忧伤，所以我试着配置了 log ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?' />
-<meta name="keywords" content='web,python,blog' />
+<meta name="keywords" content='web,python,blog,batch' />
 <meta name="generator" content="Hugo 0.80.0" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/' />
 <meta property="og:title" content='Python3 中的 log 文件配置方法' />
@@ -105,17 +105,16 @@
     <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
     <div id="mobile-toc" class="mobile"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#问题描述">问题描述</a></li>
+    <li><a href="#问题背景">问题背景</a></li>
+    <li><a href="#配置文件">配置文件</a>
       <ul>
-        <li><a href="#问题描述">问题描述</a></li>
-        <li><a href="#问题背景">问题背景</a></li>
-        <li><a href="#配置文件">配置文件</a></li>
         <li><a href="#mainpy-文件中导入配置文件"><code>main.py</code> 文件中导入配置文件</a></li>
-        <li><a href="#模块引入配置">模块引入配置</a></li>
-        <li><a href="#解决模块引入配置的问题">解决模块引入配置的问题</a></li>
-        <li><a href="#其他补充">其他补充</a></li>
       </ul>
     </li>
+    <li><a href="#模块引入配置">模块引入配置</a></li>
+    <li><a href="#解决模块引入配置的问题">解决模块引入配置的问题</a></li>
+    <li><a href="#其他补充">其他补充</a></li>
   </ul>
 </nav></div></li>
 
@@ -167,14 +166,14 @@
         <h1>Python3 中的 log 文件配置方法</h1>
     </div>
     <div id="post-cotent">
-        <p>Python 中有好用的 logging 模块，方便我们为程序添加 log 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 print 的方式来观察输出实在是忧伤，所以我试着配置了 log ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?</p>
-<h3 id="问题描述">问题描述</h3>
-<p>根据 <code>logconfig.yaml</code> 文件，配置 log，测试模块文件。</p>
-<h3 id="问题背景">问题背景</h3>
+        <p><code>Python</code> 中有好用的 <code>logging</code> 模块，方便我们为程序添加 <code>log</code> 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 <code>print</code> 的方式来观察输出实在是忧伤，所以我试着配置了 <code>log</code> ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?</p>
+<h2 id="问题描述">问题描述</h2>
+<p>根据 <code>logconfig.yaml</code> 文件，配置 <code>log</code>，测试模块文件。</p>
+<h2 id="问题背景">问题背景</h2>
 <blockquote>
 <p>此处引用输出级别描述：</p>
 <p>作者：好吃的野菜</p>
-<p>链接：http://www.jianshu.com/p/feb86c06c4f4</p>
+<p>链接：<a href="http://www.jianshu.com/p/feb86c06c4f4">http://www.jianshu.com/p/feb86c06c4f4</a></p>
 <p>來源：简书</p>
 <p>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 </blockquote>
@@ -268,7 +267,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="配置文件">配置文件</h3>
+<h2 id="配置文件">配置文件</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -277,7 +276,7 @@
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
-</div><p><code>version</code> 键值为 1 ，表示启用这个配置。</p>
+</div><p><code>version</code> 键值为 <code>1</code> ，表示启用这个配置。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -286,8 +285,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">formatters</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">simple</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">simple</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>formatters</code> 键值中需要有对应的 <code>format</code> 设置，可自定义 <code>format</code> 。
@@ -310,18 +309,18 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">handlers</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">console</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
-</span><span class="w">  </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
-</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">    </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
-</span><span class="w">    </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
-</span><span class="w">    </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="nt">console</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">        </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
+</span><span class="w">    </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
+</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
+</span><span class="w">        </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
+</span><span class="w">        </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>Handlers</code> 是处理 <code>log</code> 的处理器，主要配置输出模式，这里我设置两种模式，控制台（ <code>console</code> ）和日志文件（ <code>logfile</code> ）。</p>
@@ -347,13 +346,13 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">loggers</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">logger</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
-</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
-</span><span class="w">    </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">    </span><span class="nt">logger</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
+</span><span class="w">        </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
+</span><span class="w">        </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span><span class="w"></span><span class="nt">root</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">  </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>loggers</code> 指定自定义的 <code>log</code> 名称，此处设置名称为 <code>logger</code> ，<code>propagate</code> 指定是否将信息传到其他 <code>loggers</code> ，这里设置为 <code>yes</code> ，这样 logger 接收到的错误信息可以传到 <code>root</code> 那里， 以供显示输出。</p>
@@ -389,29 +388,29 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w"></span><span class="nt">formatters</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">simple</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
+</span><span class="w">    </span><span class="nt">simple</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
 </span><span class="w"></span><span class="nt">handlers</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">console</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
-</span><span class="w">  </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
-</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">    </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
-</span><span class="w">    </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
-</span><span class="w">    </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">    </span><span class="nt">console</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">        </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
+</span><span class="w">    </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
+</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
+</span><span class="w">        </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
+</span><span class="w">        </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span><span class="w"></span><span class="nt">loggers</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">logger</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
-</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
-</span><span class="w">    </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">    </span><span class="nt">logger</span><span class="p">:</span><span class="w">
+</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
+</span><span class="w">        </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
+</span><span class="w">        </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span><span class="w"></span><span class="nt">root</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">  </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><h3 id="mainpy-文件中导入配置文件"><code>main.py</code> 文件中导入配置文件</h3>
@@ -478,9 +477,9 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">2017-08-17 20:32:11,723 - main.py - <span class="m">39</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:32:11,724 - main.py - <span class="m">40</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:32:11,724 - main.py - <span class="m">41</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2017-08-17 20:32:11,723 - main.py - 39 - [WARNING] 测试warn
+2017-08-17 20:32:11,724 - main.py - 40 - [ERROR] 测试error
+2017-08-17 20:32:11,724 - main.py - 41 - [CRITICAL] 测试critical
 </code></pre></td></tr></table>
 </div>
 </div><p><code>log.log</code> 文件输出如下：</p>
@@ -492,13 +491,13 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">2017-08-17 20:32:11,723 - main.py - <span class="m">38</span> - <span class="o">[</span>INFO<span class="o">]</span> 测试info
-2017-08-17 20:32:11,723 - main.py - <span class="m">39</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:32:11,724 - main.py - <span class="m">40</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:32:11,724 - main.py - <span class="m">41</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2017-08-17 20:32:11,723 - main.py - 38 - [INFO] 测试info
+2017-08-17 20:32:11,723 - main.py - 39 - [WARNING] 测试warn
+2017-08-17 20:32:11,724 - main.py - 40 - [ERROR] 测试error
+2017-08-17 20:32:11,724 - main.py - 41 - [CRITICAL] 测试critical
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="模块引入配置">模块引入配置</h3>
+</div><h2 id="模块引入配置">模块引入配置</h2>
 <p>如果模块文件需要引入 <code>log</code> 配置，
 如下使用：</p>
 <p><code>test.py</code> 内容如下：</p>
@@ -598,12 +597,12 @@
 </span><span class="lnt">6
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">2017-08-17 20:45:40,586 - main.py - <span class="m">40</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:45:40,586 - main.py - <span class="m">41</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:45:40,587 - main.py - <span class="m">42</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
-2017-08-17 20:45:40,587 - test.py - <span class="m">17</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:45:40,587 - test.py - <span class="m">18</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:45:40,587 - test.py - <span class="m">19</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2017-08-17 20:45:40,586 - main.py - 40 - [WARNING] 测试warn
+2017-08-17 20:45:40,586 - main.py - 41 - [ERROR] 测试error
+2017-08-17 20:45:40,587 - main.py - 42 - [CRITICAL] 测试critical
+2017-08-17 20:45:40,587 - test.py - 17 - [WARNING] 测试warn
+2017-08-17 20:45:40,587 - test.py - 18 - [ERROR] 测试error
+2017-08-17 20:45:40,587 - test.py - 19 - [CRITICAL] 测试critical
 </code></pre></td></tr></table>
 </div>
 </div><p><code>log.log</code> 输出如下：</p>
@@ -623,21 +622,21 @@
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">2017-08-17 20:45:14,225 - main.py - <span class="m">39</span> - <span class="o">[</span>INFO<span class="o">]</span> 测试info
-2017-08-17 20:45:14,225 - main.py - <span class="m">40</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:45:14,225 - main.py - <span class="m">41</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:45:14,225 - main.py - <span class="m">42</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
-2017-08-17 20:45:40,586 - main.py - <span class="m">39</span> - <span class="o">[</span>INFO<span class="o">]</span> 测试info
-2017-08-17 20:45:40,586 - main.py - <span class="m">40</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:45:40,586 - main.py - <span class="m">41</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:45:40,587 - main.py - <span class="m">42</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
-2017-08-17 20:45:40,587 - test.py - <span class="m">16</span> - <span class="o">[</span>INFO<span class="o">]</span> 测试info
-2017-08-17 20:45:40,587 - test.py - <span class="m">17</span> - <span class="o">[</span>WARNING<span class="o">]</span> 测试warn
-2017-08-17 20:45:40,587 - test.py - <span class="m">18</span> - <span class="o">[</span>ERROR<span class="o">]</span> 测试error
-2017-08-17 20:45:40,587 - test.py - <span class="m">19</span> - <span class="o">[</span>CRITICAL<span class="o">]</span> 测试critical
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">2017-08-17 20:45:14,225 - main.py - 39 - [INFO] 测试info
+2017-08-17 20:45:14,225 - main.py - 40 - [WARNING] 测试warn
+2017-08-17 20:45:14,225 - main.py - 41 - [ERROR] 测试error
+2017-08-17 20:45:14,225 - main.py - 42 - [CRITICAL] 测试critical
+2017-08-17 20:45:40,586 - main.py - 39 - [INFO] 测试info
+2017-08-17 20:45:40,586 - main.py - 40 - [WARNING] 测试warn
+2017-08-17 20:45:40,586 - main.py - 41 - [ERROR] 测试error
+2017-08-17 20:45:40,587 - main.py - 42 - [CRITICAL] 测试critical
+2017-08-17 20:45:40,587 - test.py - 16 - [INFO] 测试info
+2017-08-17 20:45:40,587 - test.py - 17 - [WARNING] 测试warn
+2017-08-17 20:45:40,587 - test.py - 18 - [ERROR] 测试error
+2017-08-17 20:45:40,587 - test.py - 19 - [CRITICAL] 测试critical
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="解决模块引入配置的问题">解决模块引入配置的问题</h3>
+</div><h2 id="解决模块引入配置的问题">解决模块引入配置的问题</h2>
 <p>模块引入 <code>log</code> 后，<code>log.log</code> 的信息有重复。</p>
 <p>修复方法：
 <code>logconfig.yaml</code> 文件添加一条配置</p>
@@ -673,7 +672,7 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>问题解决，控制台输出同上。</p>
-<h3 id="其他补充">其他补充</h3>
+<h2 id="其他补充">其他补充</h2>
 <ul>
 <li>
 <p><code>logconfig.yaml</code> 配置文件对大小写敏感。</p>
@@ -688,7 +687,7 @@
 <p><code>logconfig.yaml</code> 配置文件键值冒号后需要一个空格！</p>
 </li>
 <li>
-<p>本文仅提供配置文件的部分参数介绍，需要了解详情，建议参考 <a href="http://python.usyiyi.cn/documents/python_352/library/logging.html#logging-levels">Python 3.5.2 标准库 logging 模块文档（中文）</a> 。</p>
+<p>本文仅提供配置文件的部分参数介绍，需要了解详情，建议参考 <a href="http://python.usyiyi.cn/documents/python_352/library/logging.html#logging-levels"><code>Python 3.5.2</code> 标准库 <code>logging</code> 模块文档（中文）</a> 。</p>
 </li>
 </ul>
     </div>
@@ -730,7 +729,7 @@
             </a>
         
             
-            <a class="button next-page" href= /hugo-theme-whiteink/programming/python/html-to-csv/ title=python实现HTML的表格转csv>
+            <a class="button next-page" href= /hugo-theme-whiteink/programming/python/html-to-csv/ title=python&#32;实现&#32;HTML&#32;的表格转&#32;csv>
                 下一页
             </a>
             
@@ -758,7 +757,11 @@
           
               
                   <ol class="subcategory">
-                      <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
                   </ol>
               
           
@@ -806,17 +809,16 @@
             <div class="card-title sidebar-title">目录</div>
             <div id="toc"><nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#问题描述">问题描述</a></li>
+    <li><a href="#问题背景">问题背景</a></li>
+    <li><a href="#配置文件">配置文件</a>
       <ul>
-        <li><a href="#问题描述">问题描述</a></li>
-        <li><a href="#问题背景">问题背景</a></li>
-        <li><a href="#配置文件">配置文件</a></li>
         <li><a href="#mainpy-文件中导入配置文件"><code>main.py</code> 文件中导入配置文件</a></li>
-        <li><a href="#模块引入配置">模块引入配置</a></li>
-        <li><a href="#解决模块引入配置的问题">解决模块引入配置的问题</a></li>
-        <li><a href="#其他补充">其他补充</a></li>
       </ul>
     </li>
+    <li><a href="#模块引入配置">模块引入配置</a></li>
+    <li><a href="#解决模块引入配置的问题">解决模块引入配置的问题</a></li>
+    <li><a href="#其他补充">其他补充</a></li>
   </ul>
 </nav></div>
         </div>
@@ -839,7 +841,7 @@
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     
         <i class="icon-legal"></i>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
     
 </footer>
     </body>

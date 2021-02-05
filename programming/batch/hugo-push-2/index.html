@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content='yi_Xu' />
+<meta name="description" content='在 《通过复制 git 信息提交网站更新 commit》 中，我们通过新的复制 git 信息的方法，将每次的站点更新保存到 github 的 commit 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 git 信息，将脚本合并为 1 个呢？答案在下文给出。' />
+<meta name="keywords" content='web,python,blog,batch' />
+<meta name="generator" content="Hugo 0.80.0" />
+<meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/' />
+<meta property="og:title" content='单文件推送远程库批处理脚本' />
+<meta property="og:description" content='在 《通过复制 git 信息提交网站更新 commit》 中，我们通过新的复制 git 信息的方法，将每次的站点更新保存到 github 的 commit 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 git 信息，将脚本合并为 1 个呢？答案在下文给出。' />
+<meta property="og:site_name" content='WhiteInk' />
+<meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta property="og:locale" content='zh-CN' />
+<meta property="fb:app_id" content='198934840692875' />
+<meta property="fb:admins" content='' />
+<meta itemprop="name" content='单文件推送远程库批处理脚本' />
+<meta itemprop="description" content='在 《通过复制 git 信息提交网站更新 commit》 中，我们通过新的复制 git 信息的方法，将每次的站点更新保存到 github 的 commit 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 git 信息，将脚本合并为 1 个呢？答案在下文给出。' />
+<meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta name="twitter:card" content='summary' />
+
+<meta name="twitter:site" content='' />
+
+<meta name="twitter:creator" content='' />
+<meta name="twitter:title" content='单文件推送远程库批处理脚本' />
+<meta name="twitter:description" content='在 《通过复制 git 信息提交网站更新 commit》 中，我们通过新的复制 git 信息的方法，将每次的站点更新保存到 github 的 commit 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 git 信息，将脚本合并为 1 个呢？答案在下文给出。' />
+<meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<title>单文件推送远程库批处理脚本 | WhiteInk </title>
+<link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/ />
+<link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
+<link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+<link rel="stylesheet" href=/hugo-theme-whiteink/css/style.min.css />
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src=/hugo-theme-whiteink/js/custom.min.js></script>
+        
+        
+    </head>
+    <body>
+        <div>
+    <a href=/hugo-theme-whiteink/about>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+    </a>
+</div>
+<div id="mobile-navbar" class="mobile">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
+    <ul id="mobile-menu">
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/>
+                        首页
+                    </a>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/>
+                        关于
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/>
+                        卡片集
+                    </a>
+                </li>
+            
+        
+    
+    <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
+    <div id="mobile-toc" class="mobile"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#待解决的问题">待解决的问题</a></li>
+    <li><a href="#解决思路">解决思路</a></li>
+    <li><a href="#推送远程库批处理脚本实现">推送远程库批处理脚本实现</a></li>
+    <li><a href="#一些说明">一些说明</a></li>
+  </ul>
+</nav></div></li>
+
+</div>
+        <header>
+    <div id="header">
+        <a id = "site-title" href= https://yi-Xu-0100.github.io/hugo-theme-whiteink/ >
+            <span>WhiteInk</span>
+        </a>
+        <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
+            
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/ >
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/archieves/ >
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/ >
+                        关于
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/ >
+                        卡片集
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</header>
+
+        <div id="container">
+            <section id="main">
+                
+    <article id="post" class="card">
+    <div id="post-title">
+        <h1>单文件推送远程库批处理脚本</h1>
+    </div>
+    <div id="post-cotent">
+        <p>在 <a href="https://www.yixuju.cn/programming/batch/hugo-push-1/">《通过复制 git 信息提交网站更新 commit》</a> 中，我们通过新的复制 <code>git</code> 信息的方法，将每次的站点更新保存到 <code>github</code> 的 <code>commit</code> 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 <code>git</code> 信息，将脚本合并为 1 个呢？答案在下文给出。</p>
+<h2 id="待解决的问题">待解决的问题</h2>
+<p>两个脚本还是内容太多，如果为了尽可能少的影响仓库文件，去除 <code>old</code> 备份并使用单脚本方式最好。</p>
+<h2 id="解决思路">解决思路</h2>
+<ol>
+<li>将 <code>copyDirectory.bat</code> 核心语句复制文件单独拿出来使用。</li>
+<li>先使用 <code>hugo</code> 命令生成站点，再将 <code>.git</code> 文件夹复制进去。</li>
+</ol>
+<h2 id="推送远程库批处理脚本实现">推送远程库批处理脚本实现</h2>
+<p>下面是推送远程库批处理脚本，其中部分路径脚本会生成临时文件，但不用担心，脚本运行完，会删除它们防止污染仓库。</p>
+<ol>
+<li><code>pan</code> 参数指代 <code>hugo</code> 生成的目录。</li>
+<li><code>repo</code> 参数指代生成文档的远程库。</li>
+<li><code>branch</code> 参数指代生成文档的远程库分支名。</li>
+<li><code>repogit</code> 参数指代临时存放远程库的目录。</li>
+<li>该脚本名字可任意取，后缀设置 <code>bat</code> 即可。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="p">@</span><span class="k">echo</span> off
+
+<span class="k">set</span> <span class="nv">pan</span><span class="p">=</span>.\public\
+<span class="k">set</span> <span class="nv">repo</span><span class="p">=</span>git@blog:yi-Xu-0100/www.yixuju.cn.git
+<span class="k">set</span> <span class="nv">branch</span><span class="p">=</span>master
+<span class="k">set</span> <span class="nv">repogit</span><span class="p">=</span>.\www.yixuju.cn\
+<span class="k">set</span> <span class="s2">&#34;repogitinfo=</span><span class="nv">%repogit%</span><span class="s2">.git&#34;</span>
+<span class="k">set</span> <span class="s2">&#34;pangitinfo=</span><span class="nv">%pan%</span><span class="s2">.git&#34;</span>
+
+<span class="p">:</span><span class="c1">: Clean pubilc directory</span>
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%pan%</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Clean public directory&#34;</span>
+    <span class="k">rd</span> /S /Q <span class="nv">%pan%</span>
+<span class="p">)</span> <span class="k">else</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Can not find public directory&#34;</span>
+<span class="p">)</span>
+
+<span class="p">:</span><span class="c1">: Hugo for new site</span>
+<span class="k">echo</span> <span class="s2">&#34;Hugo for new site&#34;</span>
+hugo -F
+
+<span class="p">:</span><span class="c1">: Clean pangitinfo</span>
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%pangitinfo%</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Find </span><span class="nv">%repogit%</span><span class="s2"> directory and clean it&#34;</span>
+    <span class="k">rd</span> /S /Q <span class="nv">%repogit%</span>
+<span class="p">)</span> <span class="k">else</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Create empty </span><span class="nv">%pangitinfo%</span><span class="s2">&#34;</span>
+    <span class="k">md</span> <span class="nv">%pangitinfo%</span>
+<span class="p">)</span>
+
+<span class="p">:</span><span class="c1">: Set gitinfo</span>
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%repogit%</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Find </span><span class="nv">%repogit%</span><span class="s2"> directory and clean it&#34;</span>
+    <span class="k">rd</span> /S /Q <span class="nv">%repogit%</span>
+<span class="p">)</span>
+<span class="k">echo</span> <span class="s2">&#34;Git pull lastest gitinfo&#34;</span>
+git clone <span class="nv">%repo%</span> --depth=1
+<span class="k">echo</span> <span class="s2">&#34;Move gitinfo to Public&#34;</span>
+xcopy /e/y/i/f <span class="nv">%repogitinfo%</span> <span class="nv">%pangitinfo%</span>
+<span class="k">echo</span> <span class="s2">&#34;Clean </span><span class="nv">%repogit%</span><span class="s2"> directory&#34;</span>
+<span class="k">rd</span> /S /Q <span class="nv">%repogit%</span>
+
+<span class="k">if</span> <span class="k">exist</span> <span class="nv">%pan%</span> <span class="p">(</span>
+    <span class="k">cd</span> <span class="nv">%pan%</span>
+    <span class="k">echo</span> <span class="s2">&#34;Git add all and commit&#34;</span>
+    <span class="k">if</span> <span class="k">exist</span> .\.git <span class="p">(</span>
+    git add --all
+    git commit -m <span class="s2">&#34;Update site at </span><span class="nv">%time%</span><span class="s2">&#34;</span>
+    git push -f origin <span class="nv">%branch%</span>:<span class="nv">%branch%</span> -v
+    <span class="p">)</span> <span class="k">else</span> <span class="p">(</span>
+        <span class="k">echo</span> <span class="s2">&#34;Can not find .git directory, git push fail!&#34;</span>
+    <span class="p">)</span>
+<span class="p">)</span> <span class="k">else</span> <span class="p">(</span>
+    <span class="k">echo</span> <span class="s2">&#34;Can not find public directory, hugo fail!&#34;</span>
+<span class="p">)</span>
+<span class="k">pause</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="一些说明">一些说明</h2>
+<p>这个脚本运行可能会碰到一些问题，本质上说，需要一定的条件：</p>
+<ul>
+<li>需要完成免密码与 <code>github</code> 链接。</li>
+<li>脚本中的路径需要自己修改设置。</li>
+<li>仅支持 <code>windows</code> 系统。【 <code>win10</code> 系统测试通过】</li>
+<li>仅提供英文版以消除文件编码方式影响。</li>
+</ul>
+    </div>
+    <div id="copyright" class="card">
+
+    <div><span> 文章标题：单文件推送远程库批处理脚本</span>
+    </div>
+
+
+    <div><span> 文章作者：yi_Xu</span>
+    </div>
+
+
+    <div>文章标签：
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/bat/">#bat&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/cmd/">#cmd&nbsp</a>
+    </div>
+
+
+
+    <div>创建时间：<time datetime=2020-08-21></time>2020-08-21 | 最新更新于：<time datetime=2020-08-21></time>2020-08-21
+    </div>
+
+    <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+
+    <div>许可协议：<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank rel="nofollow">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </div>
+
+</div>
+</article>
+
+    
+        <div class=" card pagination">
+        
+            <a class="button prev-page" href=/hugo-theme-whiteink/programming/batch/hugo-push-1/ title=通过复制&#32;git&#32;信息提交网站更新&#32;commit>
+                上一页
+            </a>
+        
+            
+        </div>
+    
+
+
+            </section>
+            <section id="sidebar">
+                
+    <aside class="sidebar">
+  <div id="avatar" class="card">
+      <a href=/hugo-theme-whiteink/page/about>
+          <img class="animated zoomIn" id="avatar-img" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+      </a>
+      <div id="motto">
+          <span>品水如酒，愚醉……</span>
+      </div>
+  </div>
+  <div id="categories" class="card">
+      <div class="card-title sidebar-title">文章分类</div>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+          
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
+                  </ol>
+              
+          
+      </li>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/other/>其他分享</a>
+          
+      </li>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+          
+      </li>
+      
+  </div>
+  <div id="communication" class="card">
+    <div class="card-title sidebar-title">联系方式</div>
+    
+    <li class="communication-list">
+      <span>TG 频道: <a href="https://t.me/yixuju_notify" target="_blank" rel="nofollow">t.me/yixuju_notify</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>TG 群组: <a href="https://t.me/yixuju" target="_blank" rel="nofollow">t.me/yixuju</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>QQ 群组: <a href="https://jq.qq.com/?_wv=1027&amp;k=XKIJXRol" target="_blank" rel="nofollow">495793229</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>联系邮箱: <a href="mailto:yi_Xu@yixuju.cn" target="_blank" rel="nofollow">yi_Xu@yixuju.cn</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>微信公众号: <a href="" target="_blank" rel="nofollow">逸絮居</a></span>
+    </li>
+    
+</div>
+</aside>
+    
+    <aside class="sidebar">
+        <div id="post-menu" class="card">
+            <div class="card-title sidebar-title">目录</div>
+            <div id="toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#待解决的问题">待解决的问题</a></li>
+    <li><a href="#解决思路">解决思路</a></li>
+    <li><a href="#推送远程库批处理脚本实现">推送远程库批处理脚本实现</a></li>
+    <li><a href="#一些说明">一些说明</a></li>
+  </ul>
+</nav></div>
+        </div>
+    </aside>
+
+
+            </section>
+        </div>
+        <footer>
+    <a  
+            href="mailto:yi_Xu@yixuju.cn"
+            target = "_blank"
+        
+        target = "_self" rel="nofollow">
+            &copy; 2014 - 2021 yi_Xu
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo 0.80.0</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    
+        <i class="icon-legal"></i>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
+    
+</footer>
+    </body>
+</html>

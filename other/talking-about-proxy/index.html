@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang=zh-cmn-Hans>
+    <head>
+        <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content='yi_Xu' />
+<meta name="description" content='代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 VPN 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 git clone 命令下载 Github 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。' />
+<meta name="keywords" content='web,python,blog,batch' />
+<meta name="generator" content="Hugo 0.80.0" />
+<meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/' />
+<meta property="og:title" content='在 Windows 终端中设置代理' />
+<meta property="og:description" content='代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 VPN 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 git clone 命令下载 Github 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。' />
+<meta property="og:site_name" content='WhiteInk' />
+<meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta property="og:locale" content='zh-CN' />
+<meta property="fb:app_id" content='198934840692875' />
+<meta property="fb:admins" content='' />
+<meta itemprop="name" content='在 Windows 终端中设置代理' />
+<meta itemprop="description" content='代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 VPN 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 git clone 命令下载 Github 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。' />
+<meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<meta name="twitter:card" content='summary' />
+
+<meta name="twitter:site" content='' />
+
+<meta name="twitter:creator" content='' />
+<meta name="twitter:title" content='在 Windows 终端中设置代理' />
+<meta name="twitter:description" content='代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 VPN 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 git clone 命令下载 Github 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。' />
+<meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
+<title>在 Windows 终端中设置代理 | WhiteInk </title>
+<link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/ />
+<link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
+<link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/index.xml" />
+<link rel="stylesheet" href=/hugo-theme-whiteink/css/style.min.css />
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script src=/hugo-theme-whiteink/js/custom.min.js></script>
+        
+        
+    </head>
+    <body>
+        <div>
+    <a href=/hugo-theme-whiteink/about>
+        <img id="mobile-avatar" class="mobile animated zoomIn" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+    </a>
+</div>
+<div id="mobile-navbar" class="mobile">
+    <div class=" button mobile-navbar">
+        <span>菜单</span>
+    </div>
+</div>
+<div id="gotop" class="mobile gotop">
+    <div class=" button mobile-navbar">
+        <span>置顶</span>
+    </div>
+</div>
+<div id="jquery-menu" class="mobile">
+    <ul id="mobile-menu">
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/>
+                        首页
+                    </a>
+                </li>
+            
+        
+            
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/other/>其他分享</a>
+                    </li>
+                
+                    <li>
+                        <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+                    </li>
+                
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/>
+                        关于
+                    </a>
+                </li>
+            
+        
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/>
+                        卡片集
+                    </a>
+                </li>
+            
+        
+    
+    <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
+    <div id="mobile-toc" class="mobile"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#代理软件与代理规则">代理软件与代理规则</a>
+      <ul>
+        <li><a href="#vpn-的认识"><code>VPN</code> 的认识</a></li>
+        <li><a href="#可以设置规则的端口代理软件">可以设置规则的端口代理软件</a></li>
+      </ul>
+    </li>
+    <li><a href="#为终端设置代理">为终端设置代理</a>
+      <ul>
+        <li><a href="#windows-终端的选择">Windows 终端的选择</a></li>
+        <li><a href="#cmd-设置代理">cmd 设置代理</a></li>
+        <li><a href="#powershell-设置代理">PowerShell 设置代理</a></li>
+        <li><a href="#为-git-设置代理">为 <code>git</code> 设置代理</a></li>
+        <li><a href="#结语">结语</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div></li>
+
+</div>
+        <header>
+    <div id="header">
+        <a id = "site-title" href= https://yi-Xu-0100.github.io/hugo-theme-whiteink/ >
+            <span>WhiteInk</span>
+        </a>
+        <ul id="header-menu">
+            <li>
+                <a class="gotop" href="#">置顶</a>
+            </li>
+            
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/ >
+                        首页
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/archieves/ >
+                        归档
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/about/ >
+                        关于
+                    </a>
+                </li>
+            
+                <li>
+                    <a href= /hugo-theme-whiteink/page/cards/ >
+                        卡片集
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</header>
+
+        <div id="container">
+            <section id="main">
+                
+    <article id="post" class="card">
+    <div id="post-title">
+        <h1>在 Windows 终端中设置代理</h1>
+    </div>
+    <div id="post-cotent">
+        <p>代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 <code>VPN</code> 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 <code>git clone</code> 命令下载 <code>Github</code> 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。</p>
+<h2 id="代理软件与代理规则">代理软件与代理规则</h2>
+<p>许多人认为代理软件代理后，就是全部都走了所谓的 <strong>代理</strong> ，这里是一个误区，主要我们分为两种代理软件，一种是 <code>VPN</code>，一种是可以设置规则的端口代理软件。</p>
+<h3 id="vpn-的认识"><code>VPN</code> 的认识</h3>
+<p>VPN 是一种全局代理软件，这里的 <strong>全局</strong> 的概念指的是，<strong>所有的网络请求都会走代理服务器经过</strong>，这在某种程度上说，安全性由提供方支持。当然你只使用学校的 <code>VPN</code> 连接校园网的话，我想是不用太担心安全问题的。</p>
+<h3 id="可以设置规则的端口代理软件">可以设置规则的端口代理软件</h3>
+<p>端口代理软件，顾名思义，该软件提供的代理会代理计算机中的某一个端口。如果将系统代理设置为该代理的端口，则会被该软件代理，但是注意，被该软件代理，非被代理服务器代理。如果是内置规则或可自定义规则的代理软件，我们的网络请求在使用该软件代理后，会先去查询内部规则，在规则中规定的部分网络请求，会被该软件设置好的代理服务器代理访问。所以，<strong>使用该软件的全局代理也仅仅是电脑所有的网络请求会按照规则去访问代理或者直连或者被屏蔽</strong>。而如果该软件没有设置全局代理，设置的是系统代理，则经过该软件的网络请求只有那些使用系统代理的软件，如浏览器。大部分安装的应用可能需要自行设置代理服务器或者开启全局代理，才能实现它们的网络请求经过该软件。</p>
+<p>还有一个名词叫做 <code>PAC</code>，这在部分端口代理软件中会使用，并被认为是代理规则，而开启 <code>PAC</code> 代理模式，则仅仅意味着所有经过端口代理的网络请求会根据 <code>PAC</code> 的规则去完成请求。但是未使用端口代理浏览器或者软件的话，则和直连没有区别。</p>
+<h2 id="为终端设置代理">为终端设置代理</h2>
+<p>说明了两种代理方式后，为终端代理才开始配置。显而易见，<code>VPN</code> 代理模式无需对终端设置代理，他会接管所有的网络请求，所以代理服务器能访问的，本地都能访问了。而端口代理软件对终端代理的方法则有许多，为 <code>git</code> 设置代理的方式也有很多，此处仅介绍我所知道的。</p>
+<h3 id="windows-终端的选择">Windows 终端的选择</h3>
+<p>首先得说明我使用的终端是 <code>Windows PowerShell</code>，并不是 <code>cmd</code>，甚至于我使用的是 <code>win10</code> 中的 <code>Terminal</code>，不过 <code>Terminal</code>是集成终端，我使用的默认界面是 <code>Windows PowerShell</code>。所以归根结底，使用的终端是 <code>Windows PowerShell</code>。但是我都会提到相关的设置。</p>
+<h3 id="cmd-设置代理">cmd 设置代理</h3>
+<p>由于 cmd 终端的广泛流传，我先将 cmd 代理设置的方式列出：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="k">set</span> <span class="nv">http_proxy</span><span class="p">=</span>http://127.0.0.1:7890
+<span class="k">set</span> <span class="nv">https_proxy</span><span class="p">=</span>http://127.0.0.1:7890
+</code></pre></td></tr></table>
+</div>
+</div><p>每次在打开的 cmd 终端中执行这两段命令，会让终端中的所有命令走端口代理软件的代理。（注意：此处非走代理服务器，而是走代理软件，还会通过代理规则的判断）</p>
+<p>当然这是临时命令，重新代理终端需要重新输入。如果想要永久设置代理，我建议是使用自定义配置，使每次代理 cmd 窗口时，运行如上命令。</p>
+<ol>
+<li>新建一个 <code>cmd_init.cmd</code>，将上面的命令放入其中。</li>
+<li>打开注册表：<code>win+R</code> -&gt; 输入 <code>regedit</code> 后运行</li>
+<li>找到 <code>HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\</code>，在文件夹下，新建字符串值 <code>AutoRun</code>，数据的值是一个绝对路径，路径指向新建的 <code>cmd_init.cmd</code>，可以将这个文件放在 C 盘根目录，即路径为 <code>C:\cmd_init.cmd</code>。</li>
+<li>重新打开终端，你会看到命令行会先运行这两条命令，而不需要你自己输入。</li>
+</ol>
+<h3 id="powershell-设置代理">PowerShell 设置代理</h3>
+<p>为 <code>PowerShell</code> 设置代理的方式类似，命令如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ps1" data-lang="ps1"><span class="nv">$Env:http_proxy</span><span class="p">=</span><span class="s2">&#34;http://127.0.0.1:7890&#34;</span><span class="p">;</span>
+<span class="nv">$Env:https_proxy</span><span class="p">=</span><span class="s2">&#34;http://127.0.0.1:7890&#34;</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>当然这也是临时命令，重新代理终端需要重新输入。如果想要永久设置代理，我建议是使用自定义配置，使每次代理 <code>PowerShell</code> 窗口时，运行如上命令。</p>
+<ol>
+<li>
+<p>在 <code>PowerShell</code> 窗口中运行如下指令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ps1" data-lang="ps1"><span class="k">if</span> <span class="p">(!(</span><span class="nb">Test-Path</span> <span class="n">-Path</span> <span class="nv">$PROFILE</span> <span class="p">))</span> <span class="p">{</span> <span class="nb">New-Item</span> <span class="n">-Type</span> <span class="n">File</span> <span class="n">-Path</span> <span class="nv">$PROFILE</span> <span class="n">-Force</span> <span class="p">}</span>
+<span class="n">notepad</span> <span class="nv">$PROFILE</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>默认会使用记事本打开一个文件，在文件中加入上面设置代理的命令，保存关闭即可。</p>
+</li>
+</ol>
+<p>上面的配置文件在 <code>此电脑\文档\WindowsPowerShell</code> 下，文件名为：<code>Microsoft.PowerShell_profile.ps1</code>，
+这个文件的内容会在 <code>PowerShell</code> 的每次运行时使用。（注意不要修改文件位置，除非你明白这样操作的目的）</p>
+<p>上述的自定义配置方法，便于设置和修改，故为我所推崇，如果你使用网上的永久设置，我想可能会有各种问题，不如这样设置的直观，当然观点仅供参考。</p>
+<h3 id="为-git-设置代理">为 <code>git</code> 设置代理</h3>
+<p>不得不说，为终端设置代理主要是为 <code>git</code> 设置全局代理，这里给出单独设置的方法。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git config --global https.proxy http://127.0.0.1:1080
+git config --global https.proxy https://127.0.0.1:1080
+</code></pre></td></tr></table>
+</div>
+</div><p>这里给出取消设置代理的方法，防止端口需要切换。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git config --global --unset http.proxy
+git config --global --unset https.proxy
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="结语">结语</h3>
+<p>总的来说：</p>
+<ol>
+<li>理解代理模式，减少了对于代理流量，是否会拖慢不想代理软件的困扰。</li>
+<li>而为了给 <code>git</code> 设置代理，我个人倾向于使用为终端设置代理的方法，因为那样的方式，配置文件是便于修改的，而使用 <code>git</code> 相关命令设置，则容易限于，是否命令无效等问题。</li>
+</ol>
+<p>希望我的理解，说明和方法对你有所帮助~</p>
+    </div>
+    <div id="copyright" class="card">
+
+    <div><span> 文章标题：在 Windows 终端中设置代理</span>
+    </div>
+
+
+    <div><span> 文章作者：yi_Xu</span>
+    </div>
+
+
+    <div>文章标签：
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/proxy/">#proxy&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/git/">#git&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/cmd/">#cmd&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/powershell/">#powershell&nbsp</a>
+      <a href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/windows/">#windows&nbsp</a>
+    </div>
+
+
+
+    <div>创建时间：<time datetime=2020-08-28></time>2020-08-28 | 最新更新于：<time datetime=2020-08-28></time>2020-08-28
+    </div>
+
+    <div>原始链接：https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/<span class="copy-path" title="点击复制文章链接" data-clipboard-demo="" data-clipboard-action="copy" data-clipboard-text='https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/' aria-label="复制成功！"><i class="icon-copy"></i></span>
+    </div>
+
+    <div>许可协议：<a rel="license nofollow" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank rel="nofollow">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </div>
+
+</div>
+</article>
+
+    
+        <div class=" card pagination">
+        
+            <a class="button prev-page" href=/hugo-theme-whiteink/other/the-gains-from-personal-blog-building-1/ title=【建站拾橞】第一期：git&#32;初探与基础应用>
+                上一页
+            </a>
+        
+            
+        </div>
+    
+
+
+            </section>
+            <section id="sidebar">
+                
+    <aside class="sidebar">
+  <div id="avatar" class="card">
+      <a href=/hugo-theme-whiteink/page/about>
+          <img class="animated zoomIn" id="avatar-img" src=/hugo-theme-whiteink/img/avatar.jpg alt=yi_Xu>
+      </a>
+      <div id="motto">
+          <span>品水如酒，愚醉……</span>
+      </div>
+  </div>
+  <div id="categories" class="card">
+      <div class="card-title sidebar-title">文章分类</div>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/programming/>编程体验</a>
+          
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
+                  </ol>
+              
+          
+      </li>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/other/>其他分享</a>
+          
+      </li>
+      
+      <li class="category">
+          <a href=/hugo-theme-whiteink/blog/>生活感悟</a>
+          
+      </li>
+      
+  </div>
+  <div id="communication" class="card">
+    <div class="card-title sidebar-title">联系方式</div>
+    
+    <li class="communication-list">
+      <span>TG 频道: <a href="https://t.me/yixuju_notify" target="_blank" rel="nofollow">t.me/yixuju_notify</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>TG 群组: <a href="https://t.me/yixuju" target="_blank" rel="nofollow">t.me/yixuju</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>QQ 群组: <a href="https://jq.qq.com/?_wv=1027&amp;k=XKIJXRol" target="_blank" rel="nofollow">495793229</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>联系邮箱: <a href="mailto:yi_Xu@yixuju.cn" target="_blank" rel="nofollow">yi_Xu@yixuju.cn</a></span>
+    </li>
+    
+    <li class="communication-list">
+      <span>微信公众号: <a href="" target="_blank" rel="nofollow">逸絮居</a></span>
+    </li>
+    
+</div>
+</aside>
+    
+    <aside class="sidebar">
+        <div id="post-menu" class="card">
+            <div class="card-title sidebar-title">目录</div>
+            <div id="toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#代理软件与代理规则">代理软件与代理规则</a>
+      <ul>
+        <li><a href="#vpn-的认识"><code>VPN</code> 的认识</a></li>
+        <li><a href="#可以设置规则的端口代理软件">可以设置规则的端口代理软件</a></li>
+      </ul>
+    </li>
+    <li><a href="#为终端设置代理">为终端设置代理</a>
+      <ul>
+        <li><a href="#windows-终端的选择">Windows 终端的选择</a></li>
+        <li><a href="#cmd-设置代理">cmd 设置代理</a></li>
+        <li><a href="#powershell-设置代理">PowerShell 设置代理</a></li>
+        <li><a href="#为-git-设置代理">为 <code>git</code> 设置代理</a></li>
+        <li><a href="#结语">结语</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+        </div>
+    </aside>
+
+
+            </section>
+        </div>
+        <footer>
+    <a  
+            href="mailto:yi_Xu@yixuju.cn"
+            target = "_blank"
+        
+        target = "_self" rel="nofollow">
+            &copy; 2014 - 2021 yi_Xu
+    </a>
+    <i class="icon-lightbulb"></i>
+    <a href="https://gohugo.io/" target="_blank" rel="nofollow">Power_by Hugo 0.80.0</a>
+    <i class="icon-coffee"></i>
+    <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
+    
+        <i class="icon-legal"></i>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
+    
+</footer>
+    </body>
+</html>

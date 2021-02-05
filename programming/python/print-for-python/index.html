@@ -9,7 +9,7 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……' />
-<meta name="keywords" content='web,python,blog' />
+<meta name="keywords" content='web,python,blog,batch' />
 <meta name="generator" content="Hugo 0.80.0" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/' />
 <meta property="og:title" content='Python 中的 Print' />
@@ -105,11 +105,11 @@
     <li id="mobile-toc-title">目录<i id="down-up" class="icon-double-angle-down"></i>
     <div id="mobile-toc" class="mobile"><nav id="TableOfContents">
   <ul>
-    <li><a href="#python-中的一般-print-的语法">Python 中的一般 Print 的语法</a>
+    <li><a href="#python-中的一般-print-的语法">Python 中的一般 <code>Print</code> 的语法</a>
       <ul>
         <li><a href="#对单引号和双引号的显示问题">对单引号('')和双引号(&quot;&quot;)的显示问题</a></li>
-        <li><a href="#print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</a></li>
-        <li><a href="#input-和-raw_input-的区别">input() 和 raw_input() 的区别</a></li>
+        <li><a href="#print-中-s-和-r-的区别"><code>Print</code> 中 <code>%s</code> 和 <code>%r</code> 的区别</a></li>
+        <li><a href="#input-和-raw_input-的区别"><code>input()</code> 和 <code>raw_input()</code> 的区别</a></li>
         <li><a href="#相关说明">相关说明</a></li>
       </ul>
     </li>
@@ -164,10 +164,10 @@
         <h1>Python 中的 Print</h1>
     </div>
     <div id="post-cotent">
-        <p>编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……</p>
-<h2 id="python-中的一般-print-的语法">Python 中的一般 Print 的语法</h2>
+        <p>编程语言学习之旅总是从各种 <code>Print</code> 和 <code>Input</code> 语句中开始， <code>Python</code> 也不例外，那你能看出什么问题呢？没有？那我提几个吧……</p>
+<h2 id="python-中的一般-print-的语法">Python 中的一般 <code>Print</code> 的语法</h2>
 <h3 id="对单引号和双引号的显示问题">对单引号('')和双引号(&quot;&quot;)的显示问题</h3>
-<p>print 需要用引号来标记输出信息，但如果输出中含有单引号或者双引号时，有时需要转义。</p>
+<p><code>print</code> 需要用引号来标记输出信息，但如果输出中含有单引号或者双引号时，有时需要转义。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -182,7 +182,7 @@
  <span class="n">I</span> <span class="n">don</span><span class="s2">&#34;t like Tony&#34;</span><span class="n">s</span> <span class="n">dog</span><span class="o">.</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>上述例子可以看出，对于两边的引号， Python 会将其默认为标记符，只要句子中的引号和标记符不同，可以不使用转义。</p>
+</div><p>上述例子可以看出，对于两边的引号， <code>Python</code> 会将其默认为标记符，只要句子中的引号和标记符不同，可以不使用转义。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -286,7 +286,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</h3>
+<h3 id="print-中-s-和-r-的区别"><code>Print</code> 中 <code>%s</code> 和 <code>%r</code> 的区别</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -313,8 +313,8 @@
 <span class="n">Hi</span><span class="p">,</span><span class="s2">&#34;Tom&#39;s son&#34;</span><span class="err">!</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>可以看出， %s 输出为你想要输出的内容，而 %r 输出为原始内容。</p>
-<h3 id="input-和-raw_input-的区别">input() 和 raw_input() 的区别</h3>
+</div><p>可以看出， <code>%s</code> 输出为你想要输出的内容，而 <code>%r</code> 输出为原始内容。</p>
+<h3 id="input-和-raw_input-的区别"><code>input()</code> 和 <code>raw_input()</code> 的区别</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -393,8 +393,8 @@
 </div><p>不知道你发现了什么没有，希望你能够理解。比较不同哦。</p>
 <h3 id="相关说明">相关说明</h3>
 <ul>
-<li>上述代码在 Python2.7.12 环境下测试</li>
-<li>【2017-08-16 19:09:15】更新： python3+ 仅支持 input()</li>
+<li>上述代码在 <code>Python2.7.12</code> 环境下测试</li>
+<li>【2017-08-16 19:09:15】更新： <code>python3+</code> 仅支持 <code>input()</code></li>
 </ul>
     </div>
     <div id="copyright" class="card">
@@ -460,7 +460,11 @@
           
               
                   <ol class="subcategory">
-                      <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
                   </ol>
               
           
@@ -508,11 +512,11 @@
             <div class="card-title sidebar-title">目录</div>
             <div id="toc"><nav id="TableOfContents">
   <ul>
-    <li><a href="#python-中的一般-print-的语法">Python 中的一般 Print 的语法</a>
+    <li><a href="#python-中的一般-print-的语法">Python 中的一般 <code>Print</code> 的语法</a>
       <ul>
         <li><a href="#对单引号和双引号的显示问题">对单引号('')和双引号(&quot;&quot;)的显示问题</a></li>
-        <li><a href="#print-中-s-和-r-的区别">Print 中 %s 和 %r 的区别</a></li>
-        <li><a href="#input-和-raw_input-的区别">input() 和 raw_input() 的区别</a></li>
+        <li><a href="#print-中-s-和-r-的区别"><code>Print</code> 中 <code>%s</code> 和 <code>%r</code> 的区别</a></li>
+        <li><a href="#input-和-raw_input-的区别"><code>input()</code> 和 <code>raw_input()</code> 的区别</a></li>
         <li><a href="#相关说明">相关说明</a></li>
       </ul>
     </li>
@@ -538,7 +542,7 @@
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     
         <i class="icon-legal"></i>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
     
 </footer>
     </body>

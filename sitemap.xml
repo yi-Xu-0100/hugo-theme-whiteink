@@ -3,53 +3,183 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/cmd/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/git/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/powershell/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/proxy/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/</loc>
-    <lastmod>2020-10-21T17:01:49+00:00</lastmod>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/windows/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/</loc>
+    <lastmod>2020-08-28T08:40:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/bat/</loc>
+    <lastmod>2020-08-21T09:24:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/</loc>
+    <lastmod>2020-08-21T09:24:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/</loc>
+    <lastmod>2020-08-21T09:24:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/</loc>
+    <lastmod>2020-08-21T09:24:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-1/</loc>
+    <lastmod>2020-08-18T17:00:32+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/blog/</loc>
-    <lastmod>2018-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/</loc>
-    <lastmod>2018-02-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/fitness/</loc>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/reading/</loc>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/reading-record-1/</loc>
+    <lastmod>2019-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/github/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hugo/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/the-gains-from-personal-blog-building-1/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/talk-about-novels/</loc>
+    <lastmod>2018-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/record-books/</loc>
+    <lastmod>2018-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/fire-may/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/walk-and-rest/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/soliloquy/</loc>
+    <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/expectation-under-the-sun/</loc>
+    <lastmod>2018-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/futrue-that-no-here/</loc>
+    <lastmod>2018-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/json/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/python3/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/yaml/</loc>
+    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -218,16 +348,6 @@
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hexo/</loc>
-    <lastmod>2017-11-19T21:29:55+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/</loc>
-    <lastmod>2017-11-19T21:29:55+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/theme/</loc>
     <lastmod>2017-11-19T21:29:55+00:00</lastmod>
   </url>
@@ -288,16 +408,6 @@
   </url>
   
   <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/polipo/</loc>
-    <lastmod>2017-06-02T07:41:49+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/shadowsocks/</loc>
-    <lastmod>2017-06-02T07:41:49+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/terminal/</loc>
     <lastmod>2017-06-02T07:41:49+00:00</lastmod>
   </url>
@@ -335,11 +445,6 @@
   <url>
     <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/page/cards/</loc>
     <lastmod>2017-03-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/github/</loc>
-    <lastmod>2017-03-22T09:17:43+00:00</lastmod>
   </url>
   
   <url>

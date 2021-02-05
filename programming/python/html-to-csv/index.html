@@ -9,17 +9,17 @@
 <meta name="format-detection" content="telephone=no" />
 <meta name="author" content='yi_Xu' />
 <meta name="description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
-<meta name="keywords" content='web,python,blog' />
+<meta name="keywords" content='web,python,blog,batch' />
 <meta name="generator" content="Hugo 0.80.0" />
 <meta property="og:url" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/' />
-<meta property="og:title" content='python实现HTML的表格转csv' />
+<meta property="og:title" content='python 实现 HTML 的表格转 csv' />
 <meta property="og:description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
 <meta property="og:site_name" content='WhiteInk' />
 <meta property="og:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
 <meta property="og:locale" content='zh-CN' />
 <meta property="fb:app_id" content='198934840692875' />
 <meta property="fb:admins" content='' />
-<meta itemprop="name" content='python实现HTML的表格转csv' />
+<meta itemprop="name" content='python 实现 HTML 的表格转 csv' />
 <meta itemprop="description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
 <meta itemprop="image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
 <meta name="twitter:card" content='summary' />
@@ -27,10 +27,10 @@
 <meta name="twitter:site" content='' />
 
 <meta name="twitter:creator" content='' />
-<meta name="twitter:title" content='python实现HTML的表格转csv' />
+<meta name="twitter:title" content='python 实现 HTML 的表格转 csv' />
 <meta name="twitter:description" content='个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。' />
 <meta name="twitter:image" content='https://yi-Xu-0100.github.io/hugo-theme-whiteink/img/background.jpg' />
-<title>python实现HTML的表格转csv | WhiteInk </title>
+<title>python 实现 HTML 的表格转 csv | WhiteInk </title>
 <link rel="canonical" href=https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/ />
 <link rel="icon" type="image/x-icon" href=/hugo-theme-whiteink/favicon.ico />
 <link rel="icon" type="image/png" href=/hugo-theme-whiteink/favicon.png />
@@ -150,7 +150,7 @@
                 
     <article id="post" class="card">
     <div id="post-title">
-        <h1>python实现HTML的表格转csv</h1>
+        <h1>python 实现 HTML 的表格转 csv</h1>
     </div>
     <div id="post-cotent">
         <p>个人需要整一张网页上的表格，不好的我需要保留网页的表格样式，我试着去提取网页中的内容，写了点代码，做为参考。</p>
@@ -220,85 +220,79 @@
 </span><span class="lnt">62
 </span><span class="lnt">63
 </span><span class="lnt">64
-</span><span class="lnt">65
-</span><span class="lnt">66
-</span><span class="lnt">67
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python">    <span class="c1"># -*- coding: utf-8 -*-</span>
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;yi_Xu&#39;</span>
+
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">class</span> <span class="nc">getPage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;page1.html&#39;</span><span class="p">),</span> <span class="n">classname</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">backup_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">csv_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">src</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">classname</span> <span class="o">=</span> <span class="n">classname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">src</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">backup_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_change.html&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_modify.csv&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_page</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">page_table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_table</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_get_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">src</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">src</span><span class="p">),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">html_code</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_code</span><span class="p">,</span> <span class="s2">&#34;html.parser&#34;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">modify_backup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">html_code</span><span class="p">,</span> <span class="n">backup_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">backup_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;result&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span><span class="p">)),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">html_code</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">modify_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+        <span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="n">page_html</span><span class="o">.</span><span class="n">tr</span>
+        <span class="n">csv_src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">)</span>
+        <span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
+                <span class="n">child</span><span class="o">.</span><span class="n">string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="n">column_number</span><span class="p">])</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">modify_backup</span><span class="p">(</span><span class="n">page_html</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_get_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">csv_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
+        <span class="n">table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span><span class="o">.</span><span class="n">tbody</span><span class="o">.</span><span class="n">tr</span>
+        <span class="n">csv_src</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">))</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
+                <span class="n">tables</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">count</span><span class="p">,</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span><span class="o">.</span><span class="n">string</span><span class="p">))</span>
+            <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="n">data</span><span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;*&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">column_number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
+            <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">csv_src</span><span class="p">)</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+            <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">df</span>
 
 
-    <span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;yi_Xu&#39;</span>
-
-
-    <span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-    <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-    <span class="kn">import</span> <span class="nn">os</span>
-
-    <span class="k">class</span> <span class="nc">getPage</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-        <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="s1">&#39;page1.html&#39;</span><span class="p">),</span> <span class="n">classname</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">backup_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="n">csv_name</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="n">src</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">classname</span> <span class="o">=</span> <span class="n">classname</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">src</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">backup_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_change.html&#39;</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_name</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">[:</span><span class="o">-</span><span class="mi">5</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;_modify.csv&#39;</span><span class="p">)</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_page</span><span class="p">()</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">page_table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_table</span><span class="p">()</span>
-
-        <span class="k">def</span> <span class="nf">_get_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
-            <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">src</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">src</span><span class="p">),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-                <span class="n">html_code</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-                <span class="k">return</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html_code</span><span class="p">,</span> <span class="s2">&#34;html.parser&#34;</span><span class="p">)</span>
-
-        <span class="k">def</span> <span class="nf">modify_backup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">html_code</span><span class="p">,</span> <span class="n">backup_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
-            <span class="k">with</span> <span class="nb">open</span><span class="p">((</span><span class="n">backup_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;result&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">backup_name</span><span class="p">)),</span> <span class="n">mode</span> <span class="o">=</span> <span class="s2">&#34;w&#34;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">html_code</span><span class="o">.</span><span class="n">prettify</span><span class="p">())</span>
-
-        <span class="k">def</span> <span class="nf">modify_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
-            <span class="n">page_html</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span>
-            <span class="n">table</span> <span class="o">=</span> <span class="n">page_html</span><span class="o">.</span><span class="n">tr</span>
-            <span class="n">csv_src</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">)</span>
-            <span class="n">df</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">None</span><span class="p">)</span>
-            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
-                <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
-                    <span class="n">child</span><span class="o">.</span><span class="n">string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">count</span><span class="p">][</span><span class="n">column_number</span><span class="p">])</span>
-                <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
-                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">modify_backup</span><span class="p">(</span><span class="n">page_html</span><span class="p">)</span>
-
-        <span class="k">def</span> <span class="nf">_get_table</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">csv_src</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">):</span>
-            <span class="n">table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">page_html</span><span class="o">.</span><span class="n">tbody</span><span class="o">.</span><span class="n">tr</span>
-            <span class="n">csv_src</span> <span class="o">=</span> <span class="p">(</span><span class="n">csv_src</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;.&#34;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">csv_name</span><span class="p">))</span>
-            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-            <span class="n">tables</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="k">while</span> <span class="p">(</span><span class="n">table</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">):</span>
-                <span class="k">for</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">children</span><span class="p">):</span>
-                    <span class="n">tables</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">count</span><span class="p">,</span> <span class="n">column_number</span><span class="p">,</span> <span class="n">child</span><span class="o">.</span><span class="n">string</span><span class="p">))</span>
-                <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">find_next_sibling</span><span class="p">(</span><span class="s2">&#34;tr&#34;</span><span class="p">)</span>
-                <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-            <span class="n">data</span><span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;*&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">column_number</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
-            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">tables</span><span class="p">:</span>
-                <span class="n">data</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]][</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-            <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">csv_src</span><span class="p">)</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
-                <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_src</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">df</span>
-
-
-    <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-        <span class="n">page</span> <span class="o">=</span> <span class="n">getPage</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s1">&#39;./html/page1.html&#39;</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">page_table</span><span class="p">)</span>
-        <span class="c1">#page.modify_table(result = &#39;./result/page1.html&#39;)</span>
-
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">getPage</span><span class="p">(</span><span class="n">src</span> <span class="o">=</span> <span class="s1">&#39;./html/page1.html&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">page</span><span class="o">.</span><span class="n">page_table</span><span class="p">)</span>
+    <span class="c1">#page.modify_table(result = &#39;./result/page1.html&#39;)</span>
 </code></pre></td></tr></table>
 </div>
 </div>
     </div>
     <div id="copyright" class="card">
 
-    <div><span> 文章标题：python实现HTML的表格转csv</span>
+    <div><span> 文章标题：python 实现 HTML 的表格转 csv</span>
     </div>
 
 
@@ -362,7 +356,11 @@
           
               
                   <ol class="subcategory">
-                      <a href=/hugo-theme-whiteink/programming/python/>Python</a>
+                      <a href=/hugo-theme-whiteink/programming/batch/>batch</a>
+                  </ol>
+              
+                  <ol class="subcategory">
+                      <a href=/hugo-theme-whiteink/programming/python/>python</a>
                   </ol>
               
           
@@ -429,7 +427,7 @@
     <a href="https://github.com/yi-Xu-0100/hugo-theme-whiteink" target="_blank">Theme_by WhiteInk</a>
     
         <i class="icon-legal"></i>
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁ICP备17049362号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鲁 ICP 备 17049362 号</a>
     
 </footer>
     </body>

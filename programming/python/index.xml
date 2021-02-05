@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on WhiteInk</title>
+    <title>python on WhiteInk</title>
     <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/</link>
-    <description>Recent content in Python on WhiteInk</description>
+    <description>Recent content in python on WhiteInk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cmn-Hans</language>
     <copyright>yi_Xu</copyright>
@@ -14,11 +14,11 @@
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/</guid>
-      <description>&lt;p&gt;将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。&lt;/p&gt;</description>
+      <description>&lt;p&gt;将网站的生成器换成 &lt;code&gt;hugo&lt;/code&gt; 之后，希望整改一下我的 &lt;code&gt;front matter&lt;/code&gt; ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 &lt;code&gt;front matter&lt;/code&gt; 的内容，也为以后批量设置 &lt;code&gt;front matter&lt;/code&gt; 打下基础。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>python实现HTML的表格转csv</title>
+      <title>python 实现 HTML 的表格转 csv</title>
       <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/html-to-csv/</link>
       <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
       
@@ -32,7 +32,7 @@
       <pubDate>Thu, 17 Aug 2017 13:19:48 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/python3-logconfig/</guid>
-      <description>&lt;p&gt;Python 中有好用的 logging 模块，方便我们为程序添加 log 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 print 的方式来观察输出实在是忧伤，所以我试着配置了 log ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;code&gt;Python&lt;/code&gt; 中有好用的 &lt;code&gt;logging&lt;/code&gt; 模块，方便我们为程序添加 &lt;code&gt;log&lt;/code&gt; 输出，我一直希望能够写个小程序，现在的现在有个小的关于数据提取的小程序，我希望能够提取相关数据，但是用 &lt;code&gt;print&lt;/code&gt; 的方式来观察输出实在是忧伤，所以我试着配置了 &lt;code&gt;log&lt;/code&gt; ，问题出现了，我希望同时输出到控制台和文件中保存，恩，怎么配置呢?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <pubDate>Sun, 23 Jul 2017 14:22:28 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/print-for-python/</guid>
-      <description>&lt;p&gt;编程语言学习之旅总是从各种 Print 和 Input 语句中开始， Python 也不例外，那你能看出什么问题呢？没有？那我提几个吧……&lt;/p&gt;</description>
+      <description>&lt;p&gt;编程语言学习之旅总是从各种 &lt;code&gt;Print&lt;/code&gt; 和 &lt;code&gt;Input&lt;/code&gt; 语句中开始， &lt;code&gt;Python&lt;/code&gt; 也不例外，那你能看出什么问题呢？没有？那我提几个吧……&lt;/p&gt;</description>
     </item>
     
   </channel>

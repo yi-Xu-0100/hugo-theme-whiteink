@@ -14,7 +14,7 @@
       <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/python/change-meta-data/</guid>
-      <description>&lt;p&gt;将网站的生成器换成 hugo 之后，希望整改一下我的 front matter ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 front matter 的内容，也为以后批量设置 front matter 打下基础。&lt;/p&gt;</description>
+      <description>&lt;p&gt;将网站的生成器换成 &lt;code&gt;hugo&lt;/code&gt; 之后，希望整改一下我的 &lt;code&gt;front matter&lt;/code&gt; ，奈何文档有点多，怕改错了，改漏了，所以写了一个小文件，修订一下我的 &lt;code&gt;front matter&lt;/code&gt; 的内容，也为以后批量设置 &lt;code&gt;front matter&lt;/code&gt; 打下基础。&lt;/p&gt;</description>
     </item>
     
   </channel>

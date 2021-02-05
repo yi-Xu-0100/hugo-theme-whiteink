@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cmd on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/cmd/</link>
+    <description>Recent content in cmd on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Fri, 28 Aug 2020 08:40:39 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/cmd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Windows 终端中设置代理</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/</link>
+      <pubDate>Fri, 28 Aug 2020 08:40:39 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/other/talking-about-proxy/</guid>
+      <description>&lt;p&gt;代理软件在计算机使用中开始变得频繁，现在主要用于学术研究，为了下载文献，不得不使用学校的 &lt;code&gt;VPN&lt;/code&gt; 服务连入校园网。而对于代理软件，代理规则的说法和配置说明，却不是明确的，为了更快的在终端中使用 &lt;code&gt;git clone&lt;/code&gt; 命令下载 &lt;code&gt;Github&lt;/code&gt; 的库，如何在终端中设置代理，也有许多教程，本篇文章主要说明一些代理软件方面的理解和对终端设置代理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>单文件推送远程库批处理脚本</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/</link>
+      <pubDate>Fri, 21 Aug 2020 09:24:47 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-2/</guid>
+      <description>&lt;p&gt;在 &lt;a href=&#34;https://www.yixuju.cn/programming/batch/hugo-push-1/&#34;&gt;《通过复制 git 信息提交网站更新 commit》&lt;/a&gt; 中，我们通过新的复制 &lt;code&gt;git&lt;/code&gt; 信息的方法，将每次的站点更新保存到 &lt;code&gt;github&lt;/code&gt; 的 &lt;code&gt;commit&lt;/code&gt; 信息中，但是确实使用两个脚本去实现，而且对于不添加多余文件来说，还是有点多了，能否不备份旧的 &lt;code&gt;git&lt;/code&gt; 信息，将脚本合并为 1 个呢？答案在下文给出。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通过复制 git 信息提交网站更新 commit</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-1/</link>
+      <pubDate>Tue, 18 Aug 2020 17:00:32 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push-1/</guid>
+      <description>&lt;p&gt;在 &lt;a href=&#34;https://www.yixuju.cn/programming/batch/hugo-push/&#34;&gt;《编写 bat 批处理脚本文件来设置自动推送》&lt;/a&gt; 中，我们使用强制覆盖的方式忽略仓库的错误，造成没有相应的版本控制信息被保存下来，这次，通过新的复制 &lt;code&gt;git&lt;/code&gt; 信息的方法，将每次的站点更新保存到 &lt;code&gt;github&lt;/code&gt; 的 &lt;code&gt;commit&lt;/code&gt; 信息中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>编写 bat 批处理脚本文件来设置自动推送</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/programming/batch/hugo-push/</guid>
+      <description>&lt;p&gt;现在整个网站是部署在阿里云上的，但基础代码还是放在 github 上，这样通过 github 的 webhook 可以实现自动推送，但是本地生成的文件还是需要几步更新，推送到 github 的上的，所以写了一个脚本来进行，最后一步的生成和推送。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

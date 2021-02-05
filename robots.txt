@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /page/archives/
-Disallow: /page/404/
 Disallow: /categories/
 Disallow: /tags/
 Disallow: README.md
