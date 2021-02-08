@@ -1,5 +1,5 @@
 node_modules/
-/exampleSite/public/
+exampleSite/
 public/
 .vscode/
 static/js/custom.min.js
