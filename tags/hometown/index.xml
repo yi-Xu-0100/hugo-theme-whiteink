@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hometown on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hometown/</link>
+    <description>Recent content in hometown on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Tue, 15 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/hometown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>归家的旅途</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/home-journey/</link>
+      <pubDate>Tue, 15 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/home-journey/</guid>
+      <description>&lt;p&gt;家乡总在发生改变，但最近变得有一点多，让我有点措手不及，却又简简单单的适应了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

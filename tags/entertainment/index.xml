@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>entertainment on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/entertainment/</link>
+    <description>Recent content in entertainment on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Fri, 05 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/entertainment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于娱乐</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/about-entertainment/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/about-entertainment/</guid>
+      <description>&lt;p&gt;娱乐是生活中必不可少的，但挑选好自己的娱乐方式会让自己更能长久玩耍。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

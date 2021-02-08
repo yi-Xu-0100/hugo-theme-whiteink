@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>snow on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/snow/</link>
+    <description>Recent content in snow on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Fri, 12 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/snow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>青岛的雪</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/qingdao-snow/</link>
+      <pubDate>Fri, 12 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/qingdao-snow/</guid>
+      <description>&lt;p&gt;冬天的雪很多了，今年下了挺大，从南方那边一直到北方，都开始陆陆续续的下雪了。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

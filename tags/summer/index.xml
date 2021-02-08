@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>summer on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/summer/</link>
+    <description>Recent content in summer on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Tue, 24 Jun 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/summer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>热烤</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/hot-roasted/</link>
+      <pubDate>Tue, 24 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/hot-roasted/</guid>
+      <description>&lt;p&gt;每年的这个时候都是这样，烤得让人受不了，只能呆在家里像热锅上的蚂蚁一样……&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>夏午</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/summer-afternoon/</link>
+      <pubDate>Sun, 25 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/summer-afternoon/</guid>
+      <description>&lt;p&gt;阳光变得强烈极了，空气似乎也能灼烧起皮肤，血液沸腾，汗水不断落下，消散，似乎从未属于我……不知道是我心乱了，还是天热了，我变得连动都不想动，但就是不动，也让我心烦。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

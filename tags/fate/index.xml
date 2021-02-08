@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fate on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/fate/</link>
+    <description>Recent content in fate on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Thu, 08 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/fate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>未来的未来</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/futrue-that-no-here/</link>
+      <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/futrue-that-no-here/</guid>
+      <description>&lt;p&gt;看的出，做的决定是有点冲动的，但是这个冲动的决定也让我能够看清楚没有决定的黑洞，我会试着剥离我的生活和思考，决定之后就去做，我想行动可能才能看到更多的未来，而不是让他陷入未知。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新的一天</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/new-day/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/new-day/</guid>
+      <description>&lt;p&gt;时间匆匆，当我发现已经来不及的时候，我也只是微微一笑，我知道我能做到的也只是接受事实。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>追忆昔年</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2017/memories-of-the-past/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2017/memories-of-the-past/</guid>
+      <description>&lt;p&gt;在这新年的最后天，我也写点东西放在这里，权当留个念想，也算作是惆怅的叹息。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>灰白的色彩</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/gray-color/</link>
+      <pubDate>Sat, 05 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/gray-color/</guid>
+      <description>&lt;p&gt;人生像个三角正弦周期函数，虽然看起来没有那么规则，但形状方向都是那么相像，要想少走下坡路，就得找到平衡位置，以退为进，重新到达下一个巅峰。但在这起起落落的过程中，我们有着形形色色的记忆记录着我们难以回去的过去。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

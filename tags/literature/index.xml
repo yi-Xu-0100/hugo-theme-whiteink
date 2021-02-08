@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>literature on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/literature/</link>
+    <description>Recent content in literature on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/literature/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>等待戈多</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/waiting-for-godot/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/waiting-for-godot/</guid>
+      <description>&lt;p&gt;戈多就快来了，我在这等待戈多，他就要来了，应该会来吧，他从没说过不来的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>乱象</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/chaos/</link>
+      <pubDate>Tue, 23 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/chaos/</guid>
+      <description>&lt;p&gt;眼前树影稀疏，却微摇曳戏之。耳边风声咋起，又如空穴来风。独游神以享酒，窥虚市之乱象。嘴角越弧，心沉碧潭。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

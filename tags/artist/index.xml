@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>artist on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/artist/</link>
+    <description>Recent content in artist on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Tue, 30 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/artist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>艺术的价值</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/the-value-of-art/</link>
+      <pubDate>Tue, 30 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/the-value-of-art/</guid>
+      <description>&lt;p&gt;艺术是有着足够价值的，不管是从艺术本身的人文意义上看，还是从艺术对人思想教化的作用来看，都是足够的有意义的。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

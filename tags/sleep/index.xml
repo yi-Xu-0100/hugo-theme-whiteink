@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sleep on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/sleep/</link>
+    <description>Recent content in sleep on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Sat, 20 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>睡觉之前</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/before-sleep/</link>
+      <pubDate>Sat, 20 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/before-sleep/</guid>
+      <description>&lt;p&gt;时间越来越紧张了，我不知道在期待什么，可能是真的想家了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>试着休息</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/try-rest/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/try-rest/</guid>
+      <description>总得有那么一刻事需要休息的，不能总是那么的忙碌，最近的事情我做的有点紧张，没有调理，必然盛极必衰。 我</description>
+    </item>
+    
+    <item>
+      <title>从睡到醒，从醒到睡</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/sleep-and-wake/</link>
+      <pubDate>Sun, 29 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/sleep-and-wake/</guid>
+      <description>&lt;p&gt;人们多数喜欢讨论物质，我却比较喜欢讨论非物质，可能因为没人了解其本质，这可以让我们去无限遐想吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>静晌</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/quiet-noon/</link>
+      <pubDate>Mon, 02 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/quiet-noon/</guid>
+      <description>&lt;p&gt;我在桌几旁，略显破旧的小椅上坐着……&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

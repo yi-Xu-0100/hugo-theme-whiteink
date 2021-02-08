@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>plan on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/plan/</link>
+    <description>Recent content in plan on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Thu, 11 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/plan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>往后计划</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/plan-for-next/</link>
+      <pubDate>Thu, 11 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/plan-for-next/</guid>
+      <description>&lt;p&gt;自己这个逸絮居也算打扮了许久，还有许多内容没有管，往后得试着准备点什么了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如果计划没有完成</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/if-plan-no-completed/</link>
+      <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/if-plan-no-completed/</guid>
+      <description>&lt;p&gt;如果计划没有完成，你能怎么办？天还没有塌下来，请别忘了没多少时间烦恼了！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

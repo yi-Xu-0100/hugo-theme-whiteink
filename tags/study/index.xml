@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>study on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/study/</link>
+    <description>Recent content in study on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Sun, 14 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>待学习</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/for-study/</link>
+      <pubDate>Sun, 14 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/for-study/</guid>
+      <description>&lt;p&gt;总觉得自己喜欢很多东西，想要学习的东西太多，我都不知道该怎么办，只好列个清单，希望自己有朝一日能够做得好一点吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

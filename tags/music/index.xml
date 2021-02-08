@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>music on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/music/</link>
+    <description>Recent content in music on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>听，汪峰《存在》</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/exist-for-wangfeng/</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2014/exist-for-wangfeng/</guid>
+      <description>&lt;p&gt;多少人走着，却困在原地。多少人活着，却如同死去。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

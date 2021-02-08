@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>attention on WhiteInk</title>
+    <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/attention/</link>
+    <description>Recent content in attention on WhiteInk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cmn-Hans</language>
+    <copyright>yi_Xu</copyright>
+    <lastBuildDate>Wed, 03 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://yi-Xu-0100.github.io/hugo-theme-whiteink/tags/attention/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>注意力的自我调节方式</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/attention-regulation/</link>
+      <pubDate>Wed, 03 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/attention-regulation/</guid>
+      <description>&lt;p&gt;我有我的调节注意力的方式，偶尔是有效的，当然，也会受到周围环境的影响，这样达到的效果有一部分取决于个人的侧重选择。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>注意力管理的必要性</title>
+      <link>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/attention-manager/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://yi-Xu-0100.github.io/hugo-theme-whiteink/blog/2018/attention-manager/</guid>
+      <description>&lt;p&gt;我是不适合写这个文章的，但我想谈一下我的看法以及我的做法，希望头脑风暴之后能有好的结果。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
