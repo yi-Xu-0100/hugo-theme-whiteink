@@ -108,7 +108,7 @@
     <li><a href="#基于hexogithub搭建博客">基于<code>Hexo+Github</code>搭建博客</a>
       <ul>
         <li><a href="#题材选择">题材选择</a></li>
-        <li><a href="#github-pages的准备">Github Pages的准备</a></li>
+        <li><a href="#github-pages-的准备">Github Pages 的准备</a></li>
         <li><a href="#环境准备">环境准备</a></li>
         <li><a href="#域名相关">域名相关</a></li>
         <li><a href="#主题选择">主题选择</a></li>
@@ -168,154 +168,81 @@
         <p>这本是<code>Hexo</code>搭建博客时自动生成的页面，我将其搬运到我的<a href="https://wiki.yixuju.cn/Introduction/getting-started-for-hexo.html"><code>Wiki</code></a>中，并在此处填写我的填坑之旅。</p>
 <h2 id="基于hexogithub搭建博客">基于<code>Hexo+Github</code>搭建博客</h2>
 <p>基于<code>Hexo+Github</code>搭建博客，你可以从参考的相关文章在<a href="https://www.baidu.com/baidu?tn=64075107_1_dg&amp;ie=utf-8&amp;wd=%E5%9F%BA%E4%BA%8EHexo%2BGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><code>Baidu</code></a>或<a href="https://www.google.com/search?q=%E5%9F%BA%E4%BA%8EHexo%2BGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&amp;oq=%E5%9F%BA%E4%BA%8EHexo%2BGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&amp;aqs=chrome..69i57j69i65l2j69i60.8760j0j4&amp;sourceid=chrome&amp;ie=UTF-8"><code>Google</code></a>上一找一大堆，我就不在此处赘述了。</p>
-<blockquote>
 <p>我的参考链接如下：</p>
-<p><a href="https://zhuanlan.zhihu.com/p/25729240">教你免费搭建个人博客，Hexo&amp;Github</a></p>
-<p><a href="http://chaserr.github.io/2016/06/01/%E6%9C%80%E7%AE%80%E4%BE%BF%E7%9A%84%E6%96%B9%E6%B3%95%E6%90%AD%E5%BB%BAHexo-Github%E5%8D%9A%E5%AE%A2-%E5%9F%BA%E4%BA%8ENext%E4%B8%BB%E9%A2%98/#more">最简便的方法搭建Hexo+Github博客,基于Next主题</a></p>
-<p><a href="https://munen.cc/tech/hexo-init.html">GITHUB PAGES + HEXO 搭建博客从入门到进阶</a></p>
-</blockquote>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/25729240">教你免费搭建个人博客，Hexo&amp;Github</a></li>
+<li><a href="http://chaserr.github.io/2016/06/01/%E6%9C%80%E7%AE%80%E4%BE%BF%E7%9A%84%E6%96%B9%E6%B3%95%E6%90%AD%E5%BB%BAHexo-Github%E5%8D%9A%E5%AE%A2-%E5%9F%BA%E4%BA%8ENext%E4%B8%BB%E9%A2%98/#more">最简便的方法搭建 Hexo+Github 博客,基于 Next 主题</a></li>
+<li><a href="https://munen.cc/tech/hexo-init.html">GITHUB PAGES + HEXO 搭建博客从入门到进阶</a></li>
+</ul>
 <p>我仅在此留下我在搭建博客中遇到的一些问题，并给出相关解决方案。</p>
 <h3 id="题材选择">题材选择</h3>
-<blockquote>
 <ul>
 <li>博主仅使用<a href="https://hexo.io/"><code>Hexo</code></a>搭建了个人博客，不了解其他的搭建过程，请恕我不能帮忙解答其他相关搭建方法的问题。</li>
-<li>博主仅使用<a href="http://simiki.org/"><code>Simiki</code></a>搭建了个人Wiki，其他同上。</li>
+<li>博主仅使用<a href="http://simiki.org/"><code>Simiki</code></a>搭建了个人 Wiki，其他同上。</li>
 <li>博主仅使用<a href="https://github.com/MOxFIVE/hexo-theme-yelee"><code>Yelee</code></a>作为个人博客的主题，其他同上。</li>
-<li>博主仅使用<a href="https://github.com/tankywoo/simiki-themes"><code>Sample2</code></a>的作为个人Wiki的主题，其他同上。</li>
+<li>博主仅使用<a href="https://github.com/tankywoo/simiki-themes"><code>Sample2</code></a>的作为个人 Wiki 的主题，其他同上。</li>
 </ul>
-</blockquote>
-<h3 id="github-pages的准备">Github Pages的准备</h3>
-<blockquote>
+<h3 id="github-pages-的准备">Github Pages 的准备</h3>
 <ul>
 <li>温馨提示：<code>username</code>请务必认真选择，毕竟改掉会影响很多的内容。</li>
 <li><a href="https://github.com"><code>Github</code></a>网站页面为全英文的，<strong>如非强烈必要，请勿用全网页翻译</strong>，影响理解和使用，个别单词不认识，查一查正好可以扩充一下词汇量嘛。</li>
 </ul>
-</blockquote>
 <h3 id="环境准备">环境准备</h3>
-<blockquote>
 <ul>
-<li><code>Git</code>虽说是初次接触，但我非常喜欢他的版本管理，喜欢它的观念，使用教程参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git教程</a>。</li>
+<li><code>Git</code>虽说是初次接触，但我非常喜欢他的版本管理，喜欢它的观念，使用教程参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000">Git 教程</a>。</li>
 <li><code>Node.js</code>我并不了解，以后要是能够学到，或有更多的接触，再来添加相关建议。</li>
-<li><code>Atom</code>是一款编辑器，目录树我非常喜欢，介绍请参考<a href="http://jeffjade.com/2016/03/03/2016-03-02-how-to-use-atom/">新编码神器Atom使用纪要</a>和<a href="https://atom-china.org/">中文Atom社区</a>。</li>
-<li><code>Markdown</code>自接触之后非常喜欢，在线编辑可选<a href="https://www.zybuluo.com/mdeditor">作业部落</a>，语法说明见<a href="http://wowubuntu.com/markdown/">Markdown中文简明语法</a>。</li>
+<li><code>Atom</code>是一款编辑器，目录树我非常喜欢，介绍请参考<a href="http://jeffjade.com/2016/03/03/2016-03-02-how-to-use-atom/">新编码神器 Atom 使用纪要</a>和<a href="https://atom-china.org/">中文 Atom 社区</a>。</li>
+<li><code>Markdown</code>自接触之后非常喜欢，在线编辑可选<a href="https://www.zybuluo.com/mdeditor">作业部落</a>，语法说明见<a href="http://wowubuntu.com/markdown/">Markdown 中文简明语法</a>。</li>
 </ul>
-</blockquote>
 <h3 id="域名相关">域名相关</h3>
-<blockquote>
 <ul>
 <li><strong>域名购买建议慎重，毕竟花钱</strong>。考虑好，做过的事不后悔就行。对了，如要购买，可以网上找找优惠码，你要买的域名在任何域名发售商那都是可以购买的，买完之后，别人就不能购买你的域名了，当然别忘了续费。</li>
 <li>你可以解析不同的页面地址到你的域名下，我同时部署在<a href="https://pages.github.com/"><code>Github Pages</code></a>和<a href="https://coding.net/help/doc/pages/index.html"><code>Coding Pages</code></a>上，但显示内容只有<code>Coding Pages</code>的内容，但我还是一直部署两个在，感觉以后弄懂再说。</li>
 </ul>
-</blockquote>
 <h3 id="主题选择">主题选择</h3>
-<blockquote>
 <ul>
-<li>主题选择看自己喜欢，主题配置找该主题的教程就行，大部分都非常详细。实在不行，去<code>Github</code>上提issue，作者或其他热心人会很乐意回答你的。这是<a href="http://moxfive.coding.me/yelee/">我的主题Yelee配置教程</a>。</li>
+<li>主题选择看自己喜欢，主题配置找该主题的教程就行，大部分都非常详细。实在不行，去<code>Github</code>上提 issue，作者或其他热心人会很乐意回答你的。这是<a href="http://moxfive.coding.me/yelee/">我的主题 Yelee 配置教程</a>。</li>
 </ul>
-</blockquote>
 <p>个人对主题的小修改如下：</p>
-<blockquote>
 <ul>
-<li><strong>下方的<code>Copy</code>改成<code>Copyright</code></strong>。以下为解决方案：
-在<code>themes\yelee\layout\_partial\footer.ejs</code>中找到以下内容：</li>
-</ul>
+<li>
+<p><strong>下方的<code>Copy</code>改成<code>Copyright</code></strong>。以下为解决方案：
+在<code>themes\yelee\layout\_partial\footer.ejs</code>中找到以下内容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;footer-left&#34;</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">i</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;fa fa-copyright&#34;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;</span>
+    <span class="o">&lt;%</span> <span class="k">if</span> <span class="p">(</span><span class="nx">theme</span><span class="p">.</span><span class="nx">since</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">theme</span><span class="p">.</span><span class="nx">since</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">since</span> <span class="o">&lt;</span> <span class="nx">date</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="s1">&#39;YYYY&#39;</span><span class="p">))</span> <span class="p">{</span> <span class="o">%&gt;&lt;%-</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">since</span><span class="o">%&gt;-&lt;%</span> <span class="p">}</span> <span class="o">%&gt;&lt;%=</span> <span class="nx">date</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="s1">&#39;YYYY&#39;</span><span class="p">)</span> <span class="o">%&lt;%=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">author</span> <span class="o">||</span> <span class="nx">config</span><span class="p">.</span><span class="nx">title</span> <span class="o">%&gt;</span>
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div></blockquote>
-<!-- raw HTML omitted -->
-<pre><code>      &lt;!-- http://img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
-           因为本 hexo 生成的博客所用的 theme 的 a:hover 带动画效果，
-         为了在让打赏按钮显示效果正常 而 添加了以下几行 css，
-         嵌入其它博客时不一定要它们。 --&gt;
-      -webkit-transition: background 0s;
-      -moz-transition: background 0s;
-      -o-transition: background 0s;
-      -ms-transition: background 0s;
-      transition: background 0s;
-      &lt;!-- /让打赏按钮的效果显示正常 而 添加的几行 css 到此结束 --&gt;
-    }
-
-    .donate_bar a.btn_donate:hover{ background-position: 0px -82px;}
-    .donate_bar .donate_txt {
-      display: block;
-      color: #9d9d9d;
-      font: 14px/2 &quot;Microsoft Yahei&quot;;
-    }
-    .bold{ font-weight: bold; }
-  &lt;/style&gt;
-  &lt;!-- /css --&gt;
-
-    &lt;!-- Donate Module --&gt;
-&lt;div id=&quot;donate_module&quot;&gt;
-
-  &lt;!-- btn_donate &amp; tips --&gt;
-  &lt;div id=&quot;donate_board&quot; class=&quot;donate_bar center&quot;&gt;
-      &lt;br&gt;
-      ------------------------------------------------------------------------------------------------------------------------------
-      &lt;br&gt;
-    &lt;a id=&quot;btn_donate&quot; class=&quot;btn_donate&quot; target=&quot;_self&quot; href=&quot;javascript:;&quot; title=&quot;Donate 打赏&quot;&gt;&lt;/a&gt;
-    &lt;span class=&quot;donate_txt&quot;&gt;
-      &lt;%= theme.donate.text %&gt;
-    &lt;/span&gt;
-
-
-  &lt;/div&gt;
-  &lt;!-- /btn_donate &amp; tips --&gt;
-
-  &lt;!-- donate guide --&gt;
-
-  &lt;div id=&quot;donate_guide&quot; class=&quot;donate_bar center hidden&quot;&gt;
-        &lt;br&gt;
-      ------------------------------------------------------------------------------------------------------------------------------
-      &lt;br&gt;
-
-    &lt;a href=&quot;&lt;%= theme.donate.wechat %&gt;&quot; title=&quot;用微信扫一扫哦~&quot; class=&quot;fancybox&quot; rel=&quot;article0&quot;&gt;
-      &lt;img src=&quot;&lt;%= theme.donate.wechat %&gt;&quot; title=&quot;微信打赏 yi_Xu&quot; height=&quot;190px&quot; width=&quot;auto&quot;/&gt;
-    &lt;/a&gt;
-
-        &amp;nbsp;&amp;nbsp;
-
-    &lt;a href=&quot;&lt;%= theme.donate.alipay %&gt;&quot; title=&quot;用支付宝扫一扫即可~&quot; class=&quot;fancybox&quot; rel=&quot;article0&quot;&gt;
-      &lt;img src=&quot;&lt;%= theme.donate.alipay %&gt;&quot; title=&quot;支付宝打赏 yi_Xu&quot; height=&quot;190px&quot; width=&quot;auto&quot;/&gt;
-    &lt;/a&gt;
-
-    &lt;span class=&quot;donate_txt&quot;&gt;
-      &lt;%= theme.donate.text %&gt;
-    &lt;/span&gt;
-
-  &lt;/div&gt;
-  &lt;!-- /donate guide --&gt;
-
-  &lt;!-- donate script --&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    document.getElementById('btn_donate').onclick = function() {
-      $('#donate_board').addClass('hidden');
-      $('#donate_guide').removeClass('hidden');
-    }
-
-    function donate_on_web(){
-      $('#donate').submit();
-        }
-
-    var original_window_onload = window.onload;
-        window.onload = function () {
-            if (original_window_onload) {
-                original_window_onload();
-            }
-            document.getElementById('donate_board_wdg').className = 'hidden';
-    }
-  &lt;/script&gt;
-  &lt;!-- /donate script --&gt;
-&lt;/div&gt;
-</code></pre>
-<p>&lt;% }%&gt;
-&lt;% }%&gt;</p>
+</div><p>将内容修改为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;</span><span class="nx">div</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;footer-left&#34;</span><span class="o">&gt;</span>
+    <span class="nx">Copyright</span>
+    <span class="o">&lt;</span><span class="nx">i</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;fa fa-copyright&#34;</span><span class="o">&gt;&lt;</span><span class="err">/i&gt;</span>
+    <span class="o">&lt;%</span> <span class="k">if</span> <span class="p">(</span><span class="nx">theme</span><span class="p">.</span><span class="nx">since</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">theme</span><span class="p">.</span><span class="nx">since</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">since</span> <span class="o">&lt;</span> <span class="nx">date</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="s1">&#39;YYYY&#39;</span><span class="p">))</span> <span class="p">{</span> <span class="o">%&gt;&lt;%-</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">since</span><span class="o">%&gt;-&lt;%</span> <span class="p">}</span> <span class="o">%&gt;&lt;%=</span> <span class="nx">date</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(),</span> <span class="s1">&#39;YYYY&#39;</span><span class="p">)</span> <span class="o">%&gt;</span> <span class="o">&lt;%=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">author</span> <span class="o">||</span> <span class="nx">config</span><span class="p">.</span><span class="nx">title</span> <span class="o">%&gt;</span>
+<span class="o">&lt;</span><span class="err">/div&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>添加打赏功能</strong>，教程参考：<a href="http://colin1994.github.io/2016/06/02/hexo-copyright-and-donate/">为 Hexo 博客添加版权说明和打赏功能</a>，当然我只是选取其中部分进行匹配我的需要。以下为解决方案：
+在<code>themes\yelee\_config.yml</code>中添加以下内容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -324,17 +251,269 @@
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">&gt;效果显示见文章下方。
-&gt;
-&gt;* **保持图片居中**，主题默认不居中，我参考了主题中的[issue#87](https://github.com/MOxFIVE/hexo-theme-yelee/issues/87)。以下为解决方案:
-&gt; 在`\themes\yelee\source\css\_partial\article.styl`的末尾添加：
-&gt; ``` css
-.article img {display: block;}
+<pre class="chroma"><code class="language-yml" data-lang="yml"><span class="c">#打赏</span><span class="w">
+</span><span class="w"></span><span class="nt">donate</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">on</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l">如果觉得我的文章有值得赞赏的地方，可以给予支持！</span><span class="w">
+</span><span class="w">  </span><span class="nt">wechat</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="c">#此处填上你的微信支付图片地址。</span><span class="w">
+</span><span class="w">  </span><span class="nt">alipay</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="c">#此处填上你的支付宝支付图片地址。</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>在<code>themes\yelee\layout\_partial\article.ejs</code>找到以下内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;%</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">index</span> <span class="o">&amp;&amp;</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">share</span><span class="p">.</span><span class="nx">on</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">post</span><span class="p">.</span><span class="nx">share</span> <span class="o">!=</span> <span class="kc">false</span> <span class="o">||</span> <span class="nx">post</span><span class="p">.</span><span class="nx">share</span><span class="p">)){</span> <span class="o">%&gt;</span>
+  <span class="o">&lt;%-</span> <span class="nx">partial</span><span class="p">(</span><span class="s1">&#39;post/share&#39;</span><span class="p">)</span> <span class="o">%&gt;</span>
+<span class="o">&lt;%</span> <span class="p">}</span> <span class="o">%&gt;</span>
 </code></pre></td></tr></table>
 </div>
+</div><p>在这个的上面加上以下内容：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="o">&lt;%</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">index</span> <span class="o">&amp;&amp;</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">donate</span><span class="p">.</span><span class="nx">on</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="nx">post</span><span class="p">.</span><span class="nx">donate</span> <span class="o">!=</span> <span class="kc">false</span> <span class="o">||</span> <span class="nx">post</span><span class="p">.</span><span class="nx">donate</span><span class="p">)){</span> <span class="o">%&gt;</span>
+  <span class="o">&lt;%</span> <span class="k">if</span> <span class="p">(</span><span class="nx">theme</span><span class="p">.</span><span class="nx">donate</span><span class="p">)</span> <span class="p">{</span> <span class="o">%&gt;</span>
+      <span class="c">&lt;!--</span> <span class="nx">css</span> <span class="o">--&gt;</span>
+      <span class="o">&lt;</span><span class="nx">style</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/css&#34;</span><span class="o">&gt;</span>
+          <span class="p">.</span><span class="nx">center</span> <span class="p">{</span>
+              <span class="nx">text</span><span class="o">-</span><span class="nx">align</span><span class="o">:</span> <span class="nx">center</span><span class="p">;</span>
+          <span class="p">}</span>
+          <span class="p">.</span><span class="nx">hidden</span> <span class="p">{</span>
+              <span class="nx">display</span><span class="o">:</span> <span class="nx">none</span><span class="p">;</span>
+          <span class="p">}</span>
+        <span class="p">.</span><span class="nx">donate_bar</span> <span class="nx">a</span><span class="p">.</span><span class="nx">btn_donate</span><span class="p">{</span>
+          <span class="nx">display</span><span class="o">:</span> <span class="nx">inline</span><span class="o">-</span><span class="nx">block</span><span class="p">;</span>
+          <span class="nx">width</span><span class="o">:</span> <span class="mi">82</span><span class="nx">px</span><span class="p">;</span>
+          <span class="nx">height</span><span class="o">:</span> <span class="mi">82</span><span class="nx">px</span><span class="p">;</span>
+          <span class="nx">background</span><span class="o">:</span> <span class="nx">url</span><span class="p">(</span><span class="s2">&#34;http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif&#34;</span><span class="p">)</span> <span class="nx">no</span><span class="o">-</span><span class="nx">repeat</span><span class="p">;</span>
+          <span class="nx">_background</span><span class="o">:</span> <span class="nx">url</span><span class="p">(</span><span class="s2">&#34;http://7xsl28.com1.z0.glb.clouddn.com/btn_reward.gif&#34;</span><span class="p">)</span> <span class="nx">no</span><span class="o">-</span><span class="nx">repeat</span><span class="p">;</span>
+
+          <span class="c">&lt;!--</span> <span class="nx">http</span><span class="o">:</span><span class="c1">//img.t.sinajs.cn/t5/style/images/apps_PRF/e_media/btn_reward.gif
+</span><span class="c1"></span>              <span class="nx">因为本</span> <span class="nx">hexo</span> <span class="nx">生成的博客所用的</span> <span class="nx">theme</span> <span class="nx">的</span> <span class="nx">a</span><span class="o">:</span><span class="nx">hover</span> <span class="nx">带动画效果</span><span class="err">，</span>
+            <span class="nx">为了在让打赏按钮显示效果正常</span> <span class="nx">而</span> <span class="nx">添加了以下几行</span> <span class="nx">css</span><span class="err">，</span>
+            <span class="nx">嵌入其它博客时不一定要它们</span><span class="err">。</span> <span class="o">--&gt;</span>
+          <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">transition</span><span class="o">:</span> <span class="nx">background</span> <span class="mi">0</span><span class="nx">s</span><span class="p">;</span>
+          <span class="o">-</span><span class="nx">moz</span><span class="o">-</span><span class="nx">transition</span><span class="o">:</span> <span class="nx">background</span> <span class="mi">0</span><span class="nx">s</span><span class="p">;</span>
+          <span class="o">-</span><span class="nx">o</span><span class="o">-</span><span class="nx">transition</span><span class="o">:</span> <span class="nx">background</span> <span class="mi">0</span><span class="nx">s</span><span class="p">;</span>
+          <span class="o">-</span><span class="nx">ms</span><span class="o">-</span><span class="nx">transition</span><span class="o">:</span> <span class="nx">background</span> <span class="mi">0</span><span class="nx">s</span><span class="p">;</span>
+          <span class="nx">transition</span><span class="o">:</span> <span class="nx">background</span> <span class="mi">0</span><span class="nx">s</span><span class="p">;</span>
+          <span class="c">&lt;!--</span> <span class="err">/让打赏按钮的效果显示正常 而 添加的几行 css 到此结束 --&gt;</span>
+        <span class="p">}</span>
+
+        <span class="p">.</span><span class="nx">donate_bar</span> <span class="nx">a</span><span class="p">.</span><span class="nx">btn_donate</span><span class="o">:</span><span class="nx">hover</span><span class="p">{</span> <span class="nx">background</span><span class="o">-</span><span class="nx">position</span><span class="o">:</span> <span class="mi">0</span><span class="nx">px</span> <span class="o">-</span><span class="mi">82</span><span class="nx">px</span><span class="p">;}</span>
+        <span class="p">.</span><span class="nx">donate_bar</span> <span class="p">.</span><span class="nx">donate_txt</span> <span class="p">{</span>
+          <span class="nx">display</span><span class="o">:</span> <span class="nx">block</span><span class="p">;</span>
+          <span class="nx">color</span><span class="o">:</span> <span class="err">#</span><span class="mi">9</span><span class="nx">d9d9d</span><span class="p">;</span>
+          <span class="nx">font</span><span class="o">:</span> <span class="mi">14</span><span class="nx">px</span><span class="o">/</span><span class="mi">2</span> <span class="s2">&#34;Microsoft Yahei&#34;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="p">.</span><span class="nx">bold</span><span class="p">{</span> <span class="nx">font</span><span class="o">-</span><span class="nx">weight</span><span class="o">:</span> <span class="nx">bold</span><span class="p">;</span> <span class="p">}</span>
+      <span class="o">&lt;</span><span class="err">/style&gt;</span>
+      <span class="c">&lt;!--</span> <span class="err">/css --&gt;</span>
+
+        <span class="c">&lt;!--</span> <span class="nx">Donate</span> <span class="nx">Module</span> <span class="o">--&gt;</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;donate_module&#34;</span><span class="o">&gt;</span>
+
+      <span class="c">&lt;!--</span> <span class="nx">btn_donate</span> <span class="o">&amp;</span> <span class="nx">tips</span> <span class="o">--&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;donate_board&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;donate_bar center&#34;</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+          <span class="o">------------------------------------------------------------------------------------------------------------------------------</span>
+          <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;btn_donate&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;btn_donate&#34;</span> <span class="nx">target</span><span class="o">=</span><span class="s2">&#34;_self&#34;</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;javascript:;&#34;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&#34;Donate 打赏&#34;</span><span class="o">&gt;&lt;</span><span class="err">/a&gt;</span>
+        <span class="o">&lt;</span><span class="nx">span</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;donate_txt&#34;</span><span class="o">&gt;</span>
+          <span class="o">&lt;%=</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">donate</span><span class="p">.</span><span class="nx">text</span> <span class="o">%&gt;</span>
+        <span class="o">&lt;</span><span class="err">/span&gt;</span>
+
+
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+      <span class="c">&lt;!--</span> <span class="err">/btn_donate &amp; tips --&gt;</span>
+
+      <span class="c">&lt;!--</span> <span class="nx">donate</span> <span class="nx">guide</span> <span class="o">--&gt;</span>
+
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;donate_guide&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;donate_bar center hidden&#34;</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+          <span class="o">------------------------------------------------------------------------------------------------------------------------------</span>
+          <span class="o">&lt;</span><span class="nx">br</span><span class="o">&gt;</span>
+
+        <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;&lt;%= theme.donate.wechat %&gt;&#34;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&#34;用微信扫一扫哦~&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;fancybox&#34;</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;article0&#34;</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;&lt;%= theme.donate.wechat %&gt;&#34;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&#34;微信打赏 yi_Xu&#34;</span> <span class="nx">height</span><span class="o">=</span><span class="s2">&#34;190px&#34;</span> <span class="nx">width</span><span class="o">=</span><span class="s2">&#34;auto&#34;</span><span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="err">/a&gt;</span>
+
+            <span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">nbsp</span><span class="p">;</span>
+
+        <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;&lt;%= theme.donate.alipay %&gt;&#34;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&#34;用支付宝扫一扫即可~&#34;</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;fancybox&#34;</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">&#34;article0&#34;</span><span class="o">&gt;</span>
+          <span class="o">&lt;</span><span class="nx">img</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;&lt;%= theme.donate.alipay %&gt;&#34;</span> <span class="nx">title</span><span class="o">=</span><span class="s2">&#34;支付宝打赏 yi_Xu&#34;</span> <span class="nx">height</span><span class="o">=</span><span class="s2">&#34;190px&#34;</span> <span class="nx">width</span><span class="o">=</span><span class="s2">&#34;auto&#34;</span><span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="err">/a&gt;</span>
+
+        <span class="o">&lt;</span><span class="nx">span</span> <span class="kr">class</span><span class="o">=</span><span class="s2">&#34;donate_txt&#34;</span><span class="o">&gt;</span>
+          <span class="o">&lt;%=</span> <span class="nx">theme</span><span class="p">.</span><span class="nx">donate</span><span class="p">.</span><span class="nx">text</span> <span class="o">%&gt;</span>
+        <span class="o">&lt;</span><span class="err">/span&gt;</span>
+
+      <span class="o">&lt;</span><span class="err">/div&gt;</span>
+      <span class="c">&lt;!--</span> <span class="err">/donate guide --&gt;</span>
+
+      <span class="c">&lt;!--</span> <span class="nx">donate</span> <span class="nx">script</span> <span class="o">--&gt;</span>
+      <span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&#34;text/javascript&#34;</span><span class="o">&gt;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;btn_donate&#39;</span><span class="p">).</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#donate_board&#39;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;hidden&#39;</span><span class="p">);</span>
+          <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#donate_guide&#39;</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">&#39;hidden&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="kd">function</span> <span class="nx">donate_on_web</span><span class="p">(){</span>
+          <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#donate&#39;</span><span class="p">).</span><span class="nx">submit</span><span class="p">();</span>
+            <span class="p">}</span>
+
+        <span class="kd">var</span> <span class="nx">original_window_onload</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="p">;</span>
+            <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="nx">original_window_onload</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">original_window_onload</span><span class="p">();</span>
+                <span class="p">}</span>
+                <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;donate_board_wdg&#39;</span><span class="p">).</span><span class="nx">className</span> <span class="o">=</span> <span class="s1">&#39;hidden&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+      <span class="o">&lt;</span><span class="err">/script&gt;</span>
+      <span class="c">&lt;!--</span> <span class="err">/donate script --&gt;</span>
+    <span class="o">&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;%</span> <span class="p">}</span><span class="o">%&gt;</span>
+<span class="o">&lt;%</span> <span class="p">}</span><span class="o">%&gt;</span>
+
+</code></pre></td></tr></table>
 </div>
+</div><p>效果显示见文章下方。</p>
+</li>
+<li>
+<p><strong>保持图片居中</strong>，主题默认不居中，我参考了主题中的<a href="https://github.com/MOxFIVE/hexo-theme-yelee/issues/87">issue#87</a>。以下为解决方案:
+在<code>\themes\yelee\source\css\_partial\article.styl</code>的末尾添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">article</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
     </div>
     <div id="copyright" class="card">
 
@@ -458,7 +637,7 @@
     <li><a href="#基于hexogithub搭建博客">基于<code>Hexo+Github</code>搭建博客</a>
       <ul>
         <li><a href="#题材选择">题材选择</a></li>
-        <li><a href="#github-pages的准备">Github Pages的准备</a></li>
+        <li><a href="#github-pages-的准备">Github Pages 的准备</a></li>
         <li><a href="#环境准备">环境准备</a></li>
         <li><a href="#域名相关">域名相关</a></li>
         <li><a href="#主题选择">主题选择</a></li>

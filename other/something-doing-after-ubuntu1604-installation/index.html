@@ -173,13 +173,13 @@
         <p>最近不满足于在 <code>Windows</code> 的系统中使用虚拟机的 <code>Ubuntu</code> 了，所以我试着装了双系统，虽然有过种种挫折，甚至将引导弄坏了，不得不同时重新装了 <code>Windows</code> ，但最后还是装好了觊觎已久的我的第一个 <code>Linux</code> 系统—— <code>Ubuntu</code> 。下面是我重装一次 <code>Ubuntu</code> 后总结的装机后应该要做的事，就酱……</p>
 <h2 id="安装-ubuntu-1604">安装 <code>Ubuntu 16.04</code></h2>
 <p>感觉网上教程很多，但有些误区，毕竟有些资料有点老，所以稍微说说。</p>
-<blockquote>
-<p>安装介质： U盘(个人首推)</p>
-<p>安装的系统： <code>Ubuntu 16.04 + Windows 10</code> (个人使用)</p>
-<p>U盘刻录： <a href="https://rufus.akeo.ie/">Rufus</a> (小巧简单)</p>
-<p>个人硬件： 笔记本(<code>战神 Z6-SL7D1</code>)</p>
-<p><strong>温馨提示：请注意备份原系统和相关重要资料，以防各种意外发生……</strong></p>
-</blockquote>
+<ul>
+<li>安装介质： U 盘(个人首推)</li>
+<li>安装的系统： <code>Ubuntu 16.04 + Windows 10</code> (个人使用)</li>
+<li>U 盘刻录： <a href="https://rufus.akeo.ie/">Rufus</a> (小巧简单)</li>
+<li>个人硬件： 笔记本(<code>战神 Z6-SL7D1</code>)</li>
+</ul>
+<p><strong>温馨提示</strong>：请注意备份原系统和相关重要资料，以防各种意外发生……</p>
 <h3 id="bios-和-uefi-的提醒"><code>BIOS</code> 和 <code>UEFI</code> 的提醒</h3>
 <p>不要随意修改引导，随时记得备份，如果改坏了，可能需要重装系统。</p>
 <ul>
@@ -190,7 +190,7 @@
 <h3 id="装机后可能的错误">装机后可能的错误</h3>
 <p><strong>不知道我是不是倒霉，其实我不是如你所想一次成功，然后捣鼓坏了，觉得好多事要每次装机都做，然后才记录一下。</strong></p>
 <ul>
-<li>我因为上面的引导问题装过 <strong>3</strong> 次，终于理解了问题所在时，发现我以前重装的 <code>Windows 10</code> 引导是假冒的 <code>UEFI</code>的方式(没有 efi 分区，从系统盘的boot启动)，重装 <code>Windows 10</code>后，才最终正确安装 <code>Ubuntu 16.04</code> 。</li>
+<li>我因为上面的引导问题装过 <strong>3</strong> 次，终于理解了问题所在时，发现我以前重装的 <code>Windows 10</code> 引导是假冒的 <code>UEFI</code>的方式(没有 efi 分区，从系统盘的 boot 启动)，重装 <code>Windows 10</code>后，才最终正确安装 <code>Ubuntu 16.04</code> 。</li>
 <li>我一晚上正确安装完 <code>Ubuntu 16.04</code> 后，觉得没问题就准备第二天起再看看……然后启动时一直有错误。我能怎么办，我也很绝望啊~</li>
 <li>我的错误是
 <ul>
@@ -204,7 +204,7 @@
 <h2 id="网络设置">网络设置</h2>
 <p>网络没了，怎么算用电脑(我知道我错了……但还好啦)</p>
 <h3 id="网卡设置">网卡设置</h3>
-<p><strong>注意： 本人没有这个问题，本人的笔记本是 <code>战神 Z6-SL7D1</code>，没有网卡驱动没有加载的问题。如果有这样的问题，可能需要插网线，或者手机用USB共享网络，然后从网上查一下具体的驱动并安装，具体教程请自行百度/谷歌，祝顺……</strong></p>
+<p><strong>注意： 本人没有这个问题，本人的笔记本是 <code>战神 Z6-SL7D1</code>，没有网卡驱动没有加载的问题。如果有这样的问题，可能需要插网线，或者手机用 USB 共享网络，然后从网上查一下具体的驱动并安装，具体教程请自行百度/谷歌，祝顺……</strong></p>
 <h3 id="更换下载源">更换下载源</h3>
 <ul>
 <li><strong>备份源的配置文件</strong>(以防万一……)</li>
@@ -247,9 +247,14 @@
 </blockquote>
 <h3 id="设置-web-使用">设置 web 使用</h3>
 <ul>
-<li>个人使用： <code>chorme</code></li>
-<li>浏览器是我们可视化查询网络资源的途径，设置好浏览器，那些设置会消失， <code>Google Chorme</code> 是很好的账户同步设置的方式。(前提：你使用 <code>Google</code> 账号以前在同步中)</li>
-<li>安装 <code>Google Chorme</code> 的一般方案：
+<li>
+<p>个人使用： <code>chrome</code></p>
+</li>
+<li>
+<p>浏览器是我们可视化查询网络资源的途径，设置好浏览器，那些设置会消失， <code>Google Chrome</code> 是很好的账户同步设置的方式。(前提：你使用 <code>Google</code> 账号以前在同步中)</p>
+</li>
+<li>
+<p>安装 <code>Google Chrome</code> 的一般方案：</p>
 <ul>
 <li>
 <p>网上下载安装包，然后本地安装，以下为安装命令：(抱歉本人不会源码编译安装。)</p>
@@ -285,9 +290,7 @@ sudo apt-get install google-chrome-stable
 </ul>
 </li>
 </ul>
-<blockquote>
-<p>参考链接： <a href="http://blog.topspeedsnail.com/archives/4793">WTF Daily Blog-Ubuntu 16.04 安装 Google Chorme</a></p>
-</blockquote>
+<p><strong>参考链接：</strong> <a href="http://blog.topspeedsnail.com/archives/4793">WTF Daily Blog-Ubuntu 16.04 安装 Google Chrome</a></p>
 <h2 id="总结">总结</h2>
 <p>以上是我的网络设置之路，记录下来希望少走弯路。</p>
     </div>
