@@ -285,8 +285,8 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">formatters</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">simple</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">simple</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>formatters</code> 键值中需要有对应的 <code>format</code> 设置，可自定义 <code>format</code> 。
@@ -309,18 +309,18 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">handlers</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">console</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">        </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
-</span><span class="w">    </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
-</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
-</span><span class="w">        </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
-</span><span class="w">        </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w">  </span><span class="nt">console</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
+</span><span class="w">  </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
+</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">    </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
+</span><span class="w">    </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
+</span><span class="w">    </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>Handlers</code> 是处理 <code>log</code> 的处理器，主要配置输出模式，这里我设置两种模式，控制台（ <code>console</code> ）和日志文件（ <code>logfile</code> ）。</p>
@@ -346,13 +346,13 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">loggers</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">logger</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
-</span><span class="w">        </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
-</span><span class="w">        </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w">  </span><span class="nt">logger</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
+</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
+</span><span class="w">    </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
 </span><span class="w"></span><span class="nt">root</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
+</span><span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">  </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p><code>loggers</code> 指定自定义的 <code>log</code> 名称，此处设置名称为 <code>logger</code> ，<code>propagate</code> 指定是否将信息传到其他 <code>loggers</code> ，这里设置为 <code>yes</code> ，这样 logger 接收到的错误信息可以传到 <code>root</code> 那里， 以供显示输出。</p>
@@ -388,29 +388,29 @@
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
 </span><span class="w"></span><span class="nt">formatters</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">simple</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
+</span><span class="w">  </span><span class="nt">simple</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;%(asctime)s - %(filename)s - %(lineno)d - [%(levelname)s] %(message)s&#39;</span><span class="w">
 </span><span class="w"></span><span class="nt">handlers</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">console</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">        </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
-</span><span class="w">    </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
-</span><span class="w">        </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
-</span><span class="w">        </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
-</span><span class="w">        </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
-</span><span class="w">        </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
-</span><span class="w"></span><span class="nt">loggers</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">logger</span><span class="p">:</span><span class="w">
-</span><span class="w">        </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
-</span><span class="w">        </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
-</span><span class="w">        </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
-</span><span class="w"></span><span class="nt">root</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">console</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.StreamHandler</span><span class="w">
 </span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
-</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
+</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">    </span><span class="nt">stream</span><span class="p">:</span><span class="w"> </span><span class="l">ext://sys.stdout</span><span class="w">
+</span><span class="w">  </span><span class="nt">logfile</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">class</span><span class="p">:</span><span class="w"> </span><span class="l">logging.handlers.RotatingFileHandler</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">DEBUG</span><span class="w">
+</span><span class="w">    </span><span class="nt">formatter</span><span class="p">:</span><span class="w"> </span><span class="l">simple</span><span class="w">
+</span><span class="w">    </span><span class="nt">filename</span><span class="p">:</span><span class="w"> </span><span class="l">log.log</span><span class="w">
+</span><span class="w">    </span><span class="nt">maxBytes</span><span class="p">:</span><span class="w"> </span><span class="m">10485760</span><span class="w">
+</span><span class="w">    </span><span class="nt">backupCount</span><span class="p">:</span><span class="w"> </span><span class="m">3</span><span class="w">
+</span><span class="w"></span><span class="nt">loggers</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">logger</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">INFO</span><span class="w">
+</span><span class="w">    </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">logfile]</span><span class="w">
+</span><span class="w">    </span><span class="nt">propagate</span><span class="p">:</span><span class="w"> </span><span class="kc">yes</span><span class="w">
+</span><span class="w"></span><span class="nt">root</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l">WARNING</span><span class="w">
+</span><span class="w">  </span><span class="nt">handlers</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">console]</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><h3 id="mainpy-文件中导入配置文件"><code>main.py</code> 文件中导入配置文件</h3>
