@@ -1,10 +1,17 @@
-# 这是我的 Blog - [逸絮居](https://www.yixuju.cn)
+# 逸絮居
 
-[![last-commit](https://img.shields.io/github/last-commit/yi-Xu-0100/www.yixuju.cn)](https://www.yixuju.cn)
-[![LICENSE](https://img.shields.io/github/license/yi-Xu-0100/www.yixuju.cn)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-## 欢迎踩踩
+## Website link
 
-## License
+<https://www.yixuju.cn>
 
-[MIT](./LICENSE)
+## themes
+
+[hugo-theme-whiteink](https://github.com/yi-Xu-0100/hugo-theme-whiteink)
+
+## Licenses
+
+- 仓库结构 - [MIT](./LICENSE)
+- 文章内容默认协议 - [知识共享署名-非商业性使用 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc/4.0/)
