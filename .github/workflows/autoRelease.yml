@@ -22,7 +22,7 @@ jobs:
           result-encoding: string
           script: |
             try {
-                var latestRelease = await github.repos.getLatestRelease({ owner: context.repo.owner, repo: context.repo.repo });
+                var latestRelease = await github.rest.repos.getLatestRelease({ owner: context.repo.owner, repo: context.repo.repo });
                 return latestRelease.data.tag_name;
             } catch (error) {
                 if (error.message === 'Not Found') {
