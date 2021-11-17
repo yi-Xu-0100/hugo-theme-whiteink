@@ -46,7 +46,7 @@
   "homepage": "https://github.com/yi-Xu-0100/hugo-theme-whiteink#readme",
   "dependencies": {},
   "devDependencies": {
-    "@vercel/ncc": "^0.31.1",
+    "@vercel/ncc": "^0.32.0",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
