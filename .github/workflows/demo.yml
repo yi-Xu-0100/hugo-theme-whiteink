@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: Checkout private blog content
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
         with:
           repository: yi-Xu-0100/yixuju
           token: ${{ secrets.REPO_TOKEN }}
