@@ -15,6 +15,10 @@
 
 内容来自[逸絮居](https://www.yixuju.cn/)
 
+
+## [hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+
 示例站点：<https://github.yixuju.cn/hugo-theme-whiteink>
 
 ## 特点
