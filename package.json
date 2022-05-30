@@ -54,7 +54,7 @@
     "lint-staged": "^12.4.2",
     "prettier": "2.6.2",
     "rimraf": "^3.0.2",
-    "stylus": "^0.57.0",
+    "stylus": "^0.58.0",
     "uglifyjs": "^2.4.11"
   }
 }
